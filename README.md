@@ -94,7 +94,23 @@ Después componé con los tokens:
 }
 ```
 
-`tokens.css` trae cada custom property en ambos temas, ambos estilos y los tres viewports. Axiforma es una fuente comercial y no se distribuye acá; si no está cargada, los titulares caen a `sans-serif`.
+**En Astro (o cualquier proyecto con Vite):** instalalo desde GitHub e importalo una vez en el layout.
+
+```bash
+npm install github:Baah07/benjamin-abud-design-system
+```
+
+```astro
+---
+// src/layouts/Base.astro
+import '@benjamin-abud/design-system/tokens.css';
+import { tokens } from '@benjamin-abud/design-system'; // opcional: los valores en JS/TS, tipados
+---
+```
+
+Verificado: un build de Astro 7 con el paquete instalado conserva cada token, los bloques de tema, estilo y viewport, y el fallback.
+
+`tokens.css` trae cada custom property en ambos temas, ambos estilos y los tres viewports. Los colores van en `oklch()`; los navegadores sin CSS Color 4 (Safari anterior a 15.4, Chrome anterior a 111) reciben los mismos colores en hex o `rgba()` desde un bloque `@supports not`, generado por Style Dictionary desde el mismo `tokens.json`. Renderizado en Chrome, el fallback pinta los mismos colores que oklch: 80 de 80 roles, en claro, oscuro, Clásico y Lienzo. Axiforma es una fuente comercial y no se distribuye acá; si no está cargada, los titulares caen a `sans-serif`.
 
 **¿Construís con un agente de IA?** Tres entradas, de la más barata a la más completa:
 

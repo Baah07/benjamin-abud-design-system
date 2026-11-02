@@ -16,6 +16,14 @@ export function toOklch(dtcg) {
   return `oklch(${round(l * 100, 2)}% ${chroma} ${hue}${alpha < 1 ? ` / ${round(alpha, 3)}` : ''})`;
 }
 
+// Fallback for browsers without CSS Color 4 (Safari < 15.4, Chrome < 111): hex, or rgba() when translucent.
+export function toLegacy(dtcg) {
+  const alpha = dtcg.alpha ?? 1;
+  if (alpha >= 1) return toHex(dtcg);
+  const [r, g, b] = toColor({ ...dtcg, alpha: 1 }).to('srgb').toGamut().coords.map((c) => Math.round(c * 255));
+  return `rgba(${r}, ${g}, ${b}, ${round(alpha, 3)})`;
+}
+
 export function toHex(dtcg) {
   return toColor({ ...dtcg, alpha: 1 }).to('srgb').toString({ format: 'hex', collapse: false });
 }

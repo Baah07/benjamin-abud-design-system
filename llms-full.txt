@@ -315,6 +315,8 @@ Linkeá los tokens; no copies valores. Cargá primero las fuentes y después `to
 ```
 <!-- DESIGN:links:end -->
 
+En Astro o con Vite: `npm install github:Baah07/benjamin-abud-design-system` e `import '@benjamin-abud/design-system/tokens.css'` una vez en el layout. Los navegadores sin `oklch()` reciben los mismos colores en hex o `rgba()` desde el bloque `@supports not` del final de `tokens.css`.
+
 Tema y estilo son atributos en `<html>`: `data-theme="light|dark"` (por defecto sigue `prefers-color-scheme`) y `data-style="lienzo"` para la piel Lienzo. Los componentes viven en Figma; esta es la lista completa, con su página y su nodo:
 
 <!-- DESIGN:component-list:start -->
