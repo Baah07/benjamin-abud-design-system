@@ -1,0 +1,2408 @@
+{
+  "Primitives-colors": {
+    "Light": {
+      "color": {
+        "palette": {
+          "brand": {
+            "base": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.392157,
+                  0.356863,
+                  1
+                ],
+                "hex": "#645bff"
+              },
+              "$type": "color",
+              "$description": "Marca original #6359FF; distinta del índigo 500."
+            }
+          },
+          "indigo": {
+            "50": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.940392,
+                  0.937255,
+                  1
+                ],
+                "hex": "#f0efff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 50."
+            },
+            "100": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.880784,
+                  0.87451,
+                  1
+                ],
+                "hex": "#e1dfff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 100."
+            },
+            "200": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.792157,
+                  0.780392,
+                  1
+                ],
+                "hex": "#cac7ff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 200."
+            },
+            "300": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.662491,
+                  0.644728,
+                  1
+                ],
+                "hex": "#a9a4ff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 300."
+            },
+            "400": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.529412,
+                  0.505882,
+                  1
+                ],
+                "hex": "#8781ff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 400."
+            },
+            "500": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.392157,
+                  0.356863,
+                  1
+                ],
+                "hex": "#645bff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 500."
+            },
+            "600": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.25098,
+                  0.219608,
+                  0.858824
+                ],
+                "hex": "#4038db"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 600."
+            },
+            "700": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.129412,
+                  0.0980392,
+                  0.705882
+                ],
+                "hex": "#2119b4"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 700."
+            },
+            "800": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.027451,
+                  0,
+                  0.529412
+                ],
+                "hex": "#070087"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 800."
+            },
+            "900": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.0196078,
+                  0,
+                  0.364706
+                ],
+                "hex": "#05005d"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 900."
+            },
+            "950": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.00784314,
+                  0,
+                  0.176471
+                ],
+                "hex": "#02002d"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 950."
+            },
+            "dark-source": {
+              "50": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.00886559,
+                    0,
+                    0.177311
+                  ],
+                  "hex": "#02002d"
+                },
+                "$type": "color"
+              },
+              "100": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0182354,
+                    0,
+                    0.364706
+                  ],
+                  "hex": "#05005d"
+                },
+                "$type": "color"
+              },
+              "200": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0264707,
+                    0,
+                    0.529412
+                  ],
+                  "hex": "#070087"
+                },
+                "$type": "color"
+              },
+              "300": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.128431,
+                    0.0980392,
+                    0.705882
+                  ],
+                  "hex": "#2119b4"
+                },
+                "$type": "color"
+              },
+              "400": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.251569,
+                    0.219608,
+                    0.858824
+                  ],
+                  "hex": "#4038db"
+                },
+                "$type": "color"
+              },
+              "600": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.530588,
+                    0.505882,
+                    1
+                  ],
+                  "hex": "#8781ff"
+                },
+                "$type": "color"
+              },
+              "700": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.66098,
+                    0.643137,
+                    1
+                  ],
+                  "hex": "#a9a4ff"
+                },
+                "$type": "color"
+              },
+              "800": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.791373,
+                    0.780392,
+                    1
+                  ],
+                  "hex": "#cac7ff"
+                },
+                "$type": "color"
+              },
+              "900": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.880665,
+                    0.874385,
+                    1
+                  ],
+                  "hex": "#e1dfff"
+                },
+                "$type": "color"
+              }
+            }
+          },
+          "neutral": {
+            "50": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.961176,
+                  0.960784,
+                  0.968627
+                ],
+                "hex": "#f5f5f7"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 50."
+            },
+            "100": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.906471,
+                  0.905882,
+                  0.917647
+                ],
+                "hex": "#e7e7ea"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 100."
+            },
+            "200": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.831961,
+                  0.831373,
+                  0.843137
+                ],
+                "hex": "#d4d4d7"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 200."
+            },
+            "300": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.718235,
+                  0.717647,
+                  0.729412
+                ],
+                "hex": "#b7b7ba"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 300."
+            },
+            "400": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.596863,
+                  0.596078,
+                  0.611765
+                ],
+                "hex": "#98989c"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 400."
+            },
+            "500": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.479216,
+                  0.478431,
+                  0.494118
+                ],
+                "hex": "#7a7a7e"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 500."
+            },
+            "600": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.36549,
+                  0.364706,
+                  0.380392
+                ],
+                "hex": "#5d5d61"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 600."
+            },
+            "700": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.271176,
+                  0.270588,
+                  0.282353
+                ],
+                "hex": "#454548"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 700."
+            },
+            "800": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.177059,
+                  0.176471,
+                  0.188235
+                ],
+                "hex": "#2d2d30"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 800."
+            },
+            "900": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.10359,
+                  0.103213,
+                  0.110755
+                ],
+                "hex": "#1a1a1c"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 900."
+            },
+            "950": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.0276471,
+                  0.027451,
+                  0.0313726
+                ],
+                "hex": "#070708"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 950."
+            }
+          },
+          "paper": {
+            "50": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.984314,
+                  0.984314,
+                  0.988235
+                ],
+                "hex": "#fbfbfc"
+              },
+              "$type": "color"
+            },
+            "100": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.933333,
+                  0.933333,
+                  0.941176
+                ],
+                "hex": "#eeeef0"
+              },
+              "$type": "color"
+            },
+            "dot": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.823529,
+                  0.823529,
+                  0.843137
+                ],
+                "hex": "#d2d2d7"
+              },
+              "$type": "color"
+            },
+            "edge": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.882353,
+                  0.882353,
+                  0.898039
+                ],
+                "hex": "#e1e1e5"
+              },
+              "$type": "color"
+            }
+          },
+          "playground": {
+            "blue": {
+              "base": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.145098,
+                    0.388235,
+                    0.921569
+                  ],
+                  "hex": "#2563eb"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo DY_wXYmTz, valor #2563EB. No rol semántico ni tema global aprobado."
+              },
+              "dark": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0901961,
+                    0.211765,
+                    0.364706
+                  ],
+                  "hex": "#17365d"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo ItWZWYgpR, valor #17365D. No rol semántico ni tema global aprobado."
+              },
+              "light": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.858824,
+                    0.917647,
+                    0.996078
+                  ],
+                  "hex": "#dbeafe"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo cv82gJmr8, valor #DBEAFE. No rol semántico ni tema global aprobado."
+              }
+            },
+            "brand": {
+              "dark": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.188235,
+                    0.14902,
+                    0.368627
+                  ],
+                  "hex": "#30265e"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo JXkLzMbm2, valor #30265E. No rol semántico ni tema global aprobado."
+              },
+              "light": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.909804,
+                    0.898039,
+                    1
+                  ],
+                  "hex": "#e8e5ff"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo IzM1NQ6SO, valor #E8E5FF. No rol semántico ni tema global aprobado."
+              }
+            },
+            "green": {
+              "base": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0862745,
+                    0.639216,
+                    0.290196
+                  ],
+                  "hex": "#16a34a"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo QCMrsj4dw, valor #16A34A. No rol semántico ni tema global aprobado."
+              },
+              "dark": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0862745,
+                    0.305882,
+                    0.239216
+                  ],
+                  "hex": "#164e3d"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo hmBl39VSJ, valor #164E3D. No rol semántico ni tema global aprobado."
+              },
+              "light": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.862745,
+                    0.988235,
+                    0.905882
+                  ],
+                  "hex": "#dcfce7"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo ibm_ax3n8, valor #DCFCE7. No rol semántico ni tema global aprobado."
+              }
+            },
+            "neutral": {
+              "base": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.490196,
+                    0.490196,
+                    0.490196
+                  ],
+                  "hex": "#7d7d7d"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo Z4nyS1o8K, valor #7D7D7D. No rol semántico ni tema global aprobado."
+              },
+              "dark": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.219608,
+                    0.219608,
+                    0.219608
+                  ],
+                  "hex": "#383838"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo fepNQyWiW, valor #383838. No rol semántico ni tema global aprobado."
+              },
+              "light": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.909804,
+                    0.909804,
+                    0.909804
+                  ],
+                  "hex": "#e8e8e8"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo hwDyagf85, valor #E8E8E8. No rol semántico ni tema global aprobado."
+              }
+            }
+          }
+        }
+      }
+    },
+    "Dark": {
+      "color": {
+        "palette": {
+          "brand": {
+            "base": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.392157,
+                  0.356863,
+                  1
+                ],
+                "hex": "#645bff"
+              },
+              "$type": "color",
+              "$description": "Marca original #6359FF; distinta del índigo 500."
+            }
+          },
+          "indigo": {
+            "50": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.00886559,
+                  0,
+                  0.177311
+                ],
+                "hex": "#02002d"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 50."
+            },
+            "100": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.0182354,
+                  0,
+                  0.364706
+                ],
+                "hex": "#05005d"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 100."
+            },
+            "200": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.0264707,
+                  0,
+                  0.529412
+                ],
+                "hex": "#070087"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 200."
+            },
+            "300": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.128431,
+                  0.0980392,
+                  0.705882
+                ],
+                "hex": "#2119b4"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 300."
+            },
+            "400": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.251569,
+                  0.219608,
+                  0.858824
+                ],
+                "hex": "#4038db"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 400."
+            },
+            "500": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.392157,
+                  0.356863,
+                  1
+                ],
+                "hex": "#645bff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 500."
+            },
+            "600": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.530588,
+                  0.505882,
+                  1
+                ],
+                "hex": "#8781ff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 600."
+            },
+            "700": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.66098,
+                  0.643137,
+                  1
+                ],
+                "hex": "#a9a4ff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 700."
+            },
+            "800": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.791373,
+                  0.780392,
+                  1
+                ],
+                "hex": "#cac7ff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 800."
+            },
+            "900": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.880665,
+                  0.874385,
+                  1
+                ],
+                "hex": "#e1dfff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 900."
+            },
+            "950": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.940392,
+                  0.937255,
+                  1
+                ],
+                "hex": "#f0efff"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 950."
+            },
+            "dark-source": {
+              "50": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.00886559,
+                    0,
+                    0.177311
+                  ],
+                  "hex": "#02002d"
+                },
+                "$type": "color"
+              },
+              "100": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0182354,
+                    0,
+                    0.364706
+                  ],
+                  "hex": "#05005d"
+                },
+                "$type": "color"
+              },
+              "200": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0264707,
+                    0,
+                    0.529412
+                  ],
+                  "hex": "#070087"
+                },
+                "$type": "color"
+              },
+              "300": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.128431,
+                    0.0980392,
+                    0.705882
+                  ],
+                  "hex": "#2119b4"
+                },
+                "$type": "color"
+              },
+              "400": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.251569,
+                    0.219608,
+                    0.858824
+                  ],
+                  "hex": "#4038db"
+                },
+                "$type": "color"
+              },
+              "600": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.530588,
+                    0.505882,
+                    1
+                  ],
+                  "hex": "#8781ff"
+                },
+                "$type": "color"
+              },
+              "700": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.66098,
+                    0.643137,
+                    1
+                  ],
+                  "hex": "#a9a4ff"
+                },
+                "$type": "color"
+              },
+              "800": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.791373,
+                    0.780392,
+                    1
+                  ],
+                  "hex": "#cac7ff"
+                },
+                "$type": "color"
+              },
+              "900": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.880665,
+                    0.874385,
+                    1
+                  ],
+                  "hex": "#e1dfff"
+                },
+                "$type": "color"
+              }
+            }
+          },
+          "neutral": {
+            "50": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.0276471,
+                  0.027451,
+                  0.0313726
+                ],
+                "hex": "#070708"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 50."
+            },
+            "100": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.10359,
+                  0.103213,
+                  0.110755
+                ],
+                "hex": "#1a1a1c"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 100."
+            },
+            "200": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.177059,
+                  0.176471,
+                  0.188235
+                ],
+                "hex": "#2d2d30"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 200."
+            },
+            "300": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.271176,
+                  0.270588,
+                  0.282353
+                ],
+                "hex": "#454548"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 300."
+            },
+            "400": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.36549,
+                  0.364706,
+                  0.380392
+                ],
+                "hex": "#5d5d61"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 400."
+            },
+            "500": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.479216,
+                  0.478431,
+                  0.494118
+                ],
+                "hex": "#7a7a7e"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 500."
+            },
+            "600": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.596863,
+                  0.596078,
+                  0.611765
+                ],
+                "hex": "#98989c"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 600."
+            },
+            "700": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.718235,
+                  0.717647,
+                  0.729412
+                ],
+                "hex": "#b7b7ba"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 700."
+            },
+            "800": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.831961,
+                  0.831373,
+                  0.843137
+                ],
+                "hex": "#d4d4d7"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 800."
+            },
+            "900": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.906471,
+                  0.905882,
+                  0.917647
+                ],
+                "hex": "#e7e7ea"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 900."
+            },
+            "950": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.961176,
+                  0.960784,
+                  0.968627
+                ],
+                "hex": "#f5f5f7"
+              },
+              "$type": "color",
+              "$description": "Valor de la paleta existente; escala 950."
+            }
+          },
+          "paper": {
+            "50": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.0784314,
+                  0.0784314,
+                  0.0862745
+                ],
+                "hex": "#141416"
+              },
+              "$type": "color"
+            },
+            "100": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.117647,
+                  0.117647,
+                  0.129412
+                ],
+                "hex": "#1e1e21"
+              },
+              "$type": "color"
+            },
+            "dot": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.164706,
+                  0.164706,
+                  0.180392
+                ],
+                "hex": "#2a2a2e"
+              },
+              "$type": "color"
+            },
+            "edge": {
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.172549,
+                  0.172549,
+                  0.188235
+                ],
+                "hex": "#2c2c30"
+              },
+              "$type": "color"
+            }
+          },
+          "playground": {
+            "blue": {
+              "base": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.145098,
+                    0.388235,
+                    0.921569
+                  ],
+                  "hex": "#2563eb"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo DY_wXYmTz, valor #2563EB. No rol semántico ni tema global aprobado."
+              },
+              "dark": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0901961,
+                    0.211765,
+                    0.364706
+                  ],
+                  "hex": "#17365d"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo ItWZWYgpR, valor #17365D. No rol semántico ni tema global aprobado."
+              },
+              "light": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.858824,
+                    0.917647,
+                    0.996078
+                  ],
+                  "hex": "#dbeafe"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo cv82gJmr8, valor #DBEAFE. No rol semántico ni tema global aprobado."
+              }
+            },
+            "brand": {
+              "dark": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.188235,
+                    0.14902,
+                    0.368627
+                  ],
+                  "hex": "#30265e"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo JXkLzMbm2, valor #30265E. No rol semántico ni tema global aprobado."
+              },
+              "light": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.909804,
+                    0.898039,
+                    1
+                  ],
+                  "hex": "#e8e5ff"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo IzM1NQ6SO, valor #E8E5FF. No rol semántico ni tema global aprobado."
+              }
+            },
+            "green": {
+              "base": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0862745,
+                    0.639216,
+                    0.290196
+                  ],
+                  "hex": "#16a34a"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo QCMrsj4dw, valor #16A34A. No rol semántico ni tema global aprobado."
+              },
+              "dark": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.0862745,
+                    0.305882,
+                    0.239216
+                  ],
+                  "hex": "#164e3d"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo hmBl39VSJ, valor #164E3D. No rol semántico ni tema global aprobado."
+              },
+              "light": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.862745,
+                    0.988235,
+                    0.905882
+                  ],
+                  "hex": "#dcfce7"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo ibm_ax3n8, valor #DCFCE7. No rol semántico ni tema global aprobado."
+              }
+            },
+            "neutral": {
+              "base": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.490196,
+                    0.490196,
+                    0.490196
+                  ],
+                  "hex": "#7d7d7d"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo Z4nyS1o8K, valor #7D7D7D. No rol semántico ni tema global aprobado."
+              },
+              "dark": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.219608,
+                    0.219608,
+                    0.219608
+                  ],
+                  "hex": "#383838"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo fepNQyWiW, valor #383838. No rol semántico ni tema global aprobado."
+              },
+              "light": {
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.909804,
+                    0.909804,
+                    0.909804
+                  ],
+                  "hex": "#e8e8e8"
+                },
+                "$type": "color",
+                "$description": "Muestra de Playground; fuente Framer /sistema OXaZhLPWg, nodo hwDyagf85, valor #E8E8E8. No rol semántico ni tema global aprobado."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Semantic-Tokens": {
+    "Light": {
+      "bg": {
+        "fill": {
+          "primary": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
+            "$type": "color",
+            "$description": "Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/600 (Primitives Light). Dark → indigo/700 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "primary-hover": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.700}",
+            "$type": "color",
+            "$description": "Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/600 (Primitives Light). Dark → indigo/700 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "primary-pressed": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.800}",
+            "$type": "color",
+            "$description": "Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/600 (Primitives Light). Dark → indigo/700 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "secondary": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.100}",
+            "$type": "color",
+            "$description": "Primary Container · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/100 (Primitives Light). Dark → indigo/200 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          }
+        },
+        "surface": {
+          "container": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.100}",
+            "$type": "color",
+            "$description": "Surface Container · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/100 (Primitives Light). Dark → neutral/100 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "container-high": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.200}",
+            "$type": "color",
+            "$description": "Surface Container High · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/200 (Primitives Light). Dark → neutral/200 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "default": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.50}",
+            "$type": "color",
+            "$description": "Surface · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/50 (Primitives Light). Dark → neutral/50 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "inverse": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.800}",
+            "$type": "color",
+            "$description": "Inverse Surface · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/800 (Primitives Light). Dark → neutral/900 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "white": {
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.177059,
+                0.176471,
+                0.188235
+              ],
+              "hex": "#2d2d30"
+            },
+            "$type": "color",
+            "$description": "Inverse Surface · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/800 (Primitives Light). Dark → neutral/900 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          }
+        }
+      },
+      "border": {
+        "error": {
+          "$value": "{Primitives-colors.Light.color.palette.neutral.500}",
+          "$type": "color",
+          "$description": "Validación: color de la paleta vigente; acompañar de mensaje explícito. No depende del color para comunicar error."
+        },
+        "focus-ring": {
+          "$value": "{Primitives-colors.Light.color.palette.neutral.900}",
+          "$type": "color",
+          "$description": "Anillo de foco compartido por Button y Link. Conserva los valores anteriores en Light y Dark."
+        },
+        "outline": {
+          "$value": "{Primitives-colors.Light.color.palette.neutral.500}",
+          "$type": "color",
+          "$description": "Outline · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/500 (Primitives Light). Dark → neutral/500 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "outline-variant": {
+          "$value": "{Primitives-colors.Light.color.palette.neutral.200}",
+          "$type": "color",
+          "$description": "Outline Variant · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/200 (Primitives Light). Dark → neutral/300 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "primary": {
+          "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
+          "$type": "color"
+        },
+        "primary-hover": {
+          "$value": "{Primitives-colors.Light.color.palette.indigo.700}",
+          "$type": "color"
+        },
+        "primary-pressed": {
+          "$value": "{Primitives-colors.Light.color.palette.indigo.800}",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "error": {
+          "$value": "{Primitives-colors.Light.color.palette.neutral.900}",
+          "$type": "color",
+          "$description": "Validación: color de la paleta vigente; acompañar de mensaje explícito. No depende del color para comunicar error."
+        },
+        "inverse-primary": {
+          "$value": "{Primitives-colors.Light.color.palette.indigo.300}",
+          "$type": "color",
+          "$description": "Inverse Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/300 (Primitives Light). Dark → indigo/400 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-primary": {
+          "$value": "{Primitives-colors.Light.color.palette.white}",
+          "$type": "color",
+          "$description": "On Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → white (Primitives Light). Dark → indigo/100 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-primary-container": {
+          "$value": "{Primitives-colors.Light.color.palette.indigo.700}",
+          "$type": "color",
+          "$description": "On Primary Container · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/800 (Primitives Light). Dark → indigo/950 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-primary-container-pressed": {
+          "$value": "{Primitives-colors.Light.color.palette.indigo.800}",
+          "$type": "color",
+          "$description": "On Primary Container · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/800 (Primitives Light). Dark → indigo/950 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-surface": {
+          "$value": "{Primitives-colors.Light.color.palette.neutral.900}",
+          "$type": "color",
+          "$description": "On Surface · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/900 (Primitives Light). Dark → neutral/950 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-surface-variant": {
+          "$value": "{Primitives-colors.Light.color.palette.neutral.600}",
+          "$type": "color",
+          "$description": "On Surface Variant · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/600 (Primitives Light). Dark → neutral/700 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "primary": {
+          "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
+          "$type": "color"
+        }
+      }
+    },
+    "Dark": {
+      "bg": {
+        "fill": {
+          "primary": {
+            "$value": "{Primitives-colors.Dark.color.palette.indigo.700}",
+            "$type": "color",
+            "$description": "Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/600 (Primitives Light). Dark → indigo/700 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "primary-hover": {
+            "$value": "{Primitives-colors.Dark.color.palette.indigo.700}",
+            "$type": "color",
+            "$description": "Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/600 (Primitives Light). Dark → indigo/700 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "primary-pressed": {
+            "$value": "{Primitives-colors.Dark.color.palette.indigo.700}",
+            "$type": "color",
+            "$description": "Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/600 (Primitives Light). Dark → indigo/700 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "secondary": {
+            "$value": "{Primitives-colors.Dark.color.palette.indigo.200}",
+            "$type": "color",
+            "$description": "Primary Container · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/100 (Primitives Light). Dark → indigo/200 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          }
+        },
+        "surface": {
+          "container": {
+            "$value": "{Primitives-colors.Dark.color.palette.neutral.100}",
+            "$type": "color",
+            "$description": "Surface Container · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/100 (Primitives Light). Dark → neutral/100 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "container-high": {
+            "$value": "{Primitives-colors.Dark.color.palette.neutral.200}",
+            "$type": "color",
+            "$description": "Surface Container High · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/200 (Primitives Light). Dark → neutral/200 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "default": {
+            "$value": "{Primitives-colors.Dark.color.palette.neutral.50}",
+            "$type": "color",
+            "$description": "Surface · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/50 (Primitives Light). Dark → neutral/50 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "inverse": {
+            "$value": "{Primitives-colors.Dark.color.palette.neutral.900}",
+            "$type": "color",
+            "$description": "Inverse Surface · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/800 (Primitives Light). Dark → neutral/900 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          },
+          "white": {
+            "$value": "{Primitives-colors.Dark.color.palette.neutral.900}",
+            "$type": "color",
+            "$description": "Inverse Surface · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/800 (Primitives Light). Dark → neutral/900 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+          }
+        }
+      },
+      "border": {
+        "error": {
+          "$value": "{Primitives-colors.Dark.color.palette.neutral.500}",
+          "$type": "color",
+          "$description": "Validación: color de la paleta vigente; acompañar de mensaje explícito. No depende del color para comunicar error."
+        },
+        "focus-ring": {
+          "$value": "{Primitives-colors.Dark.color.palette.neutral.100}",
+          "$type": "color",
+          "$description": "Anillo de foco compartido por Button y Link. Conserva los valores anteriores en Light y Dark."
+        },
+        "outline": {
+          "$value": "{Primitives-colors.Dark.color.palette.neutral.500}",
+          "$type": "color",
+          "$description": "Outline · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/500 (Primitives Light). Dark → neutral/500 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "outline-variant": {
+          "$value": "{Primitives-colors.Dark.color.palette.neutral.700}",
+          "$type": "color",
+          "$description": "Outline Variant · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/200 (Primitives Light). Dark → neutral/300 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "primary": {
+          "$value": "{Primitives-colors.Dark.color.palette.indigo.300}",
+          "$type": "color"
+        },
+        "primary-hover": {
+          "$value": "{Primitives-colors.Dark.color.palette.indigo.dark-source.700}",
+          "$type": "color"
+        },
+        "primary-pressed": {
+          "$value": "{Primitives-colors.Dark.color.palette.indigo.dark-source.800}",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "error": {
+          "$value": "{Primitives-colors.Dark.color.palette.neutral.950}",
+          "$type": "color",
+          "$description": "Validación: color de la paleta vigente; acompañar de mensaje explícito. No depende del color para comunicar error."
+        },
+        "inverse-primary": {
+          "$value": "{Primitives-colors.Dark.color.palette.indigo.400}",
+          "$type": "color",
+          "$description": "Inverse Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/300 (Primitives Light). Dark → indigo/400 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-primary": {
+          "$value": "{Primitives-colors.Dark.color.palette.indigo.100}",
+          "$type": "color",
+          "$description": "On Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → white (Primitives Light). Dark → indigo/100 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-primary-container": {
+          "$value": "{Primitives-colors.Dark.color.palette.indigo.950}",
+          "$type": "color",
+          "$description": "On Primary Container · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/800 (Primitives Light). Dark → indigo/950 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-primary-container-pressed": {
+          "$value": "{Primitives-colors.Dark.color.palette.indigo.950}",
+          "$type": "color",
+          "$description": "On Primary Container · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/800 (Primitives Light). Dark → indigo/950 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-surface": {
+          "$value": "{Primitives-colors.Dark.color.palette.neutral.950}",
+          "$type": "color",
+          "$description": "On Surface · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/900 (Primitives Light). Dark → neutral/950 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "on-surface-variant": {
+          "$value": "{Primitives-colors.Dark.color.palette.neutral.700}",
+          "$type": "color",
+          "$description": "On Surface Variant · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/600 (Primitives Light). Dark → neutral/700 (Primitives Dark). Usar el mismo modo en ambas colecciones."
+        },
+        "primary": {
+          "$value": "{Primitives-colors.Dark.color.palette.indigo.700}",
+          "$type": "color"
+        }
+      }
+    }
+  },
+  "Layout": {
+    "Mobile": {
+      "layout": {
+        "breakpoint": {
+          "min-width": {
+            "$value": "{Dimension.size.320}",
+            "$type": "dimension",
+            "$description": "Umbral mínimo del dispositivo documentado en Layout Grid. Referencia; no cambia el modo automáticamente."
+          }
+        },
+        "container": {
+          "reference-width": {
+            "$value": "{Dimension.size.343}",
+            "$type": "dimension",
+            "$description": "Ancho disponible en el frame de referencia: viewport menos dos márgenes. Valor de referencia, no máximo ni fórmula automática."
+          }
+        },
+        "grid": {
+          "columns": {
+            "$value": "{Dimension.count.4}",
+            "$type": "dimension",
+            "$description": "Cantidad de columnas de la grilla. Alias de count; no representa píxeles."
+          },
+          "gutter": {
+            "$value": "{Dimension.size.12}",
+            "$type": "dimension",
+            "$description": "Separación entre columnas."
+          },
+          "margin": {
+            "$value": "{Dimension.size.16}",
+            "$type": "dimension",
+            "$description": "Margen por lado de la grilla y padding horizontal del contenedor."
+          }
+        },
+        "viewport": {
+          "reference-width": {
+            "$value": "{Dimension.size.375}",
+            "$type": "dimension",
+            "$description": "Ancho del frame de referencia de cada dispositivo. Aplicar al ancho del frame del ejemplo."
+          }
+        }
+      }
+    },
+    "Tablet": {
+      "layout": {
+        "breakpoint": {
+          "min-width": {
+            "$value": "{Dimension.size.600}",
+            "$type": "dimension",
+            "$description": "Umbral mínimo del dispositivo documentado en Layout Grid. Referencia; no cambia el modo automáticamente."
+          }
+        },
+        "container": {
+          "reference-width": {
+            "$value": "{Dimension.size.704}",
+            "$type": "dimension",
+            "$description": "Ancho disponible en el frame de referencia: viewport menos dos márgenes. Valor de referencia, no máximo ni fórmula automática."
+          }
+        },
+        "grid": {
+          "columns": {
+            "$value": "{Dimension.count.6}",
+            "$type": "dimension",
+            "$description": "Cantidad de columnas de la grilla. Alias de count; no representa píxeles."
+          },
+          "gutter": {
+            "$value": "{Dimension.size.20}",
+            "$type": "dimension",
+            "$description": "Separación entre columnas."
+          },
+          "margin": {
+            "$value": "{Dimension.size.32}",
+            "$type": "dimension",
+            "$description": "Margen por lado de la grilla y padding horizontal del contenedor."
+          }
+        },
+        "viewport": {
+          "reference-width": {
+            "$value": "{Dimension.size.768}",
+            "$type": "dimension",
+            "$description": "Ancho del frame de referencia de cada dispositivo. Aplicar al ancho del frame del ejemplo."
+          }
+        }
+      }
+    },
+    "Desktop": {
+      "layout": {
+        "breakpoint": {
+          "min-width": {
+            "$value": "{Dimension.size.1136}",
+            "$type": "dimension",
+            "$description": "Umbral mínimo del dispositivo documentado en Layout Grid. Referencia; no cambia el modo automáticamente."
+          }
+        },
+        "container": {
+          "reference-width": {
+            "$value": "{Dimension.size.1320}",
+            "$type": "dimension",
+            "$description": "Ancho disponible en el frame de referencia: viewport menos dos márgenes. Valor de referencia, no máximo ni fórmula automática."
+          }
+        },
+        "grid": {
+          "columns": {
+            "$value": "{Dimension.count.12}",
+            "$type": "dimension",
+            "$description": "Cantidad de columnas de la grilla. Alias de count; no representa píxeles."
+          },
+          "gutter": {
+            "$value": "{Dimension.size.24}",
+            "$type": "dimension",
+            "$description": "Separación entre columnas."
+          },
+          "margin": {
+            "$value": "{Dimension.size.60}",
+            "$type": "dimension",
+            "$description": "Margen por lado de la grilla y padding horizontal del contenedor."
+          }
+        },
+        "viewport": {
+          "reference-width": {
+            "$value": "{Dimension.size.1440}",
+            "$type": "dimension",
+            "$description": "Ancho del frame de referencia de cada dispositivo. Aplicar al ancho del frame del ejemplo."
+          }
+        }
+      }
+    }
+  },
+  "Dimension": {
+    "radius": {
+      "none": {
+        "$value": "{Dimension.size.0}",
+        "$type": "dimension",
+        "$description": "0 px · radio documentado en Spacing"
+      },
+      "sm": {
+        "$value": "{Dimension.size.4}",
+        "$type": "dimension",
+        "$description": "4 px · radio documentado en Spacing"
+      },
+      "md": {
+        "$value": "{Dimension.size.8}",
+        "$type": "dimension",
+        "$description": "8 px · radio documentado en Spacing"
+      },
+      "lg": {
+        "$value": "{Dimension.size.12}",
+        "$type": "dimension",
+        "$description": "12 px · radio documentado en Spacing"
+      },
+      "xl": {
+        "$value": "{Dimension.size.16}",
+        "$type": "dimension",
+        "$description": "16 px · radio documentado en Spacing"
+      },
+      "full": {
+        "$value": "{Dimension.size.9999}",
+        "$type": "dimension",
+        "$description": "9999 px · radio documentado en Spacing"
+      }
+    },
+    "size": {
+      "0": {
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "0 px · escala base de Spacing"
+      },
+      "4": {
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "4 px · escala base de Spacing"
+      },
+      "6": {
+        "$value": {
+          "value": 6,
+          "unit": "px"
+        },
+        "$type": "dimension"
+      },
+      "8": {
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "8 px · escala base de Spacing"
+      },
+      "12": {
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "12 px · escala base de Spacing"
+      },
+      "16": {
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "16 px · escala base de Spacing"
+      },
+      "20": {
+        "$value": {
+          "value": 20,
+          "unit": "px"
+        },
+        "$type": "dimension"
+      },
+      "24": {
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "24 px · escala base de Spacing"
+      },
+      "32": {
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "32 px · escala base de Spacing"
+      },
+      "36": {
+        "$value": {
+          "value": 36,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "36 px · escala base de Spacing"
+      },
+      "48": {
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "48 px · escala base de Spacing"
+      },
+      "60": {
+        "$value": {
+          "value": 60,
+          "unit": "px"
+        },
+        "$type": "dimension"
+      },
+      "64": {
+        "$value": {
+          "value": 64,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "64 px · escala base de Spacing"
+      },
+      "96": {
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "96 px · escala base de Spacing"
+      },
+      "128": {
+        "$value": {
+          "value": 128,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "128 px · escala base de Spacing"
+      },
+      "192": {
+        "$value": {
+          "value": 192,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "192 px · escala base de Spacing"
+      },
+      "256": {
+        "$value": {
+          "value": 256,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "256 px · escala base de Spacing"
+      },
+      "320": {
+        "$value": {
+          "value": 320,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "Valor base utilizado por Layout; coincide con la página Layout Grid."
+      },
+      "343": {
+        "$value": {
+          "value": 343,
+          "unit": "px"
+        },
+        "$type": "dimension"
+      },
+      "375": {
+        "$value": {
+          "value": 375,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "Valor base utilizado por Layout; coincide con la página Layout Grid."
+      },
+      "384": {
+        "$value": {
+          "value": 384,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "384 px · escala base de Spacing"
+      },
+      "512": {
+        "$value": {
+          "value": 512,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "512 px · escala base de Spacing"
+      },
+      "600": {
+        "$value": {
+          "value": 600,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "Valor base utilizado por Layout; coincide con la página Layout Grid."
+      },
+      "640": {
+        "$value": {
+          "value": 640,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "640 px · escala base de Spacing"
+      },
+      "704": {
+        "$value": {
+          "value": 704,
+          "unit": "px"
+        },
+        "$type": "dimension"
+      },
+      "768": {
+        "$value": {
+          "value": 768,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "768 px · escala base de Spacing"
+      },
+      "1024": {
+        "$value": {
+          "value": 1024,
+          "unit": "px"
+        },
+        "$type": "dimension"
+      },
+      "1136": {
+        "$value": {
+          "value": 1136,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "Valor base utilizado por Layout; coincide con la página Layout Grid."
+      },
+      "1320": {
+        "$value": {
+          "value": 1320,
+          "unit": "px"
+        },
+        "$type": "dimension"
+      },
+      "1440": {
+        "$value": {
+          "value": 1440,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "Valor base utilizado por Layout; coincide con la página Layout Grid."
+      },
+      "9999": {
+        "$value": {
+          "value": 9999,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "9999 px · escala base de Spacing"
+      }
+    },
+    "space": {
+      "0": {
+        "$value": "{Dimension.size.0}",
+        "$type": "dimension",
+        "$description": "space-0 = 0 px. Fuente: columna Pixels de Spacing."
+      },
+      "1": {
+        "$value": "{Dimension.size.4}",
+        "$type": "dimension",
+        "$description": "space-1 = 4 px. Fuente: columna Pixels de Spacing."
+      },
+      "2": {
+        "$value": "{Dimension.size.8}",
+        "$type": "dimension",
+        "$description": "space-2 = 8 px. Fuente: columna Pixels de Spacing."
+      },
+      "3": {
+        "$value": "{Dimension.size.12}",
+        "$type": "dimension",
+        "$description": "space-3 = 12 px. Fuente: columna Pixels de Spacing."
+      },
+      "4": {
+        "$value": "{Dimension.size.16}",
+        "$type": "dimension",
+        "$description": "space-4 = 16 px. Fuente: columna Pixels de Spacing."
+      },
+      "6": {
+        "$value": "{Dimension.size.24}",
+        "$type": "dimension",
+        "$description": "space-6 = 24 px. Fuente: columna Pixels de Spacing."
+      },
+      "8": {
+        "$value": "{Dimension.size.32}",
+        "$type": "dimension",
+        "$description": "space-8 = 32 px. Fuente: columna Pixels de Spacing."
+      },
+      "9": {
+        "$value": "{Dimension.size.36}",
+        "$type": "dimension",
+        "$description": "space-9 = 36 px. Fuente: columna Pixels de Spacing."
+      },
+      "12": {
+        "$value": "{Dimension.size.48}",
+        "$type": "dimension",
+        "$description": "space-12 = 48 px. Fuente: columna Pixels de Spacing."
+      },
+      "16": {
+        "$value": "{Dimension.size.64}",
+        "$type": "dimension",
+        "$description": "space-16 = 64 px. Fuente: columna Pixels de Spacing."
+      },
+      "24": {
+        "$value": "{Dimension.size.96}",
+        "$type": "dimension",
+        "$description": "space-24 = 96 px. Fuente: columna Pixels de Spacing."
+      },
+      "32": {
+        "$value": "{Dimension.size.128}",
+        "$type": "dimension",
+        "$description": "space-32 = 128 px. Fuente: columna Pixels de Spacing."
+      },
+      "48": {
+        "$value": "{Dimension.size.192}",
+        "$type": "dimension",
+        "$description": "space-48 = 192 px. Fuente: columna Pixels de Spacing."
+      },
+      "64": {
+        "$value": "{Dimension.size.256}",
+        "$type": "dimension",
+        "$description": "space-64 = 256 px. Fuente: columna Pixels de Spacing."
+      },
+      "96": {
+        "$value": "{Dimension.size.384}",
+        "$type": "dimension",
+        "$description": "space-96 = 384 px. Fuente: columna Pixels de Spacing."
+      },
+      "128": {
+        "$value": "{Dimension.size.512}",
+        "$type": "dimension",
+        "$description": "space-128 = 512 px. Fuente: columna Pixels de Spacing."
+      },
+      "160": {
+        "$value": "{Dimension.size.640}",
+        "$type": "dimension",
+        "$description": "space-160 = 640 px. Fuente: columna Pixels de Spacing."
+      },
+      "192": {
+        "$value": "{Dimension.size.768}",
+        "$type": "dimension",
+        "$description": "space-192 = 768 px. Fuente: columna Pixels de Spacing."
+      },
+      "legacy-number": {
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        },
+        "$type": "dimension",
+        "$description": "LEGACY: formerly spacing/Number. Retained until all consumers are audited."
+      }
+    }
+  },
+  "Typography-Tokens": {
+    "font": {
+      "family": {
+        "axiforma": {
+          "$value": "Axiforma",
+          "$type": "fontFamily"
+        },
+        "inter": {
+          "$value": "Inter",
+          "$type": "fontFamily"
+        }
+      },
+      "letter-spacing": {
+        "0": {
+          "$value": {
+            "value": 0,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        }
+      },
+      "line-height": {
+        "20": {
+          "$value": 20,
+          "$type": "number"
+        },
+        "24": {
+          "$value": 24,
+          "$type": "number"
+        },
+        "28": {
+          "$value": 28,
+          "$type": "number"
+        },
+        "32": {
+          "$value": 32,
+          "$type": "number"
+        },
+        "40": {
+          "$value": 40,
+          "$type": "number"
+        },
+        "48": {
+          "$value": 48,
+          "$type": "number"
+        },
+        "56": {
+          "$value": 56,
+          "$type": "number"
+        },
+        "72": {
+          "$value": 72,
+          "$type": "number"
+        },
+        "80": {
+          "$value": 80,
+          "$type": "number"
+        },
+        "88": {
+          "$value": 88,
+          "$type": "number"
+        },
+        "96": {
+          "$value": 96,
+          "$type": "number"
+        },
+        "104": {
+          "$value": 104,
+          "$type": "number"
+        },
+        "112": {
+          "$value": 112,
+          "$type": "number"
+        }
+      },
+      "size": {
+        "12": {
+          "$value": {
+            "value": 12,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "14": {
+          "$value": {
+            "value": 14,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "16": {
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "20": {
+          "$value": {
+            "value": 20,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "24": {
+          "$value": {
+            "value": 24,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "32": {
+          "$value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "40": {
+          "$value": {
+            "value": 40,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "48": {
+          "$value": {
+            "value": 48,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "56": {
+          "$value": {
+            "value": 56,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "64": {
+          "$value": {
+            "value": 64,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "72": {
+          "$value": {
+            "value": 72,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "80": {
+          "$value": {
+            "value": 80,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "88": {
+          "$value": {
+            "value": 88,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        },
+        "96": {
+          "$value": {
+            "value": 96,
+            "unit": "px"
+          },
+          "$type": "dimension"
+        }
+      },
+      "weight": {
+        "black": {
+          "$value": 900,
+          "$type": "fontWeight"
+        },
+        "bold": {
+          "$value": 700,
+          "$type": "fontWeight"
+        },
+        "extrabold": {
+          "$value": 800,
+          "$type": "fontWeight"
+        },
+        "medium": {
+          "$value": 500,
+          "$type": "fontWeight"
+        },
+        "regular": {
+          "$value": 400,
+          "$type": "fontWeight"
+        },
+        "semibold": {
+          "$value": 600,
+          "$type": "fontWeight"
+        }
+      }
+    }
+  },
+  "Style": {
+    "Clásico": {
+      "style": {
+        "bg": {
+          "accent": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
+            "$type": "color"
+          },
+          "canvas": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.50}",
+            "$type": "color"
+          },
+          "canvas-dot": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.50}",
+            "$type": "color"
+          },
+          "control": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.100}",
+            "$type": "color"
+          },
+          "folder": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.100}",
+            "$type": "color"
+          },
+          "paper": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.50}",
+            "$type": "color"
+          }
+        },
+        "border": {
+          "paper": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.200}",
+            "$type": "color"
+          },
+          "selection": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
+            "$type": "color"
+          }
+        },
+        "radius": {
+          "control": {
+            "$value": {
+              "value": 8,
+              "unit": "px"
+            },
+            "$type": "dimension"
+          },
+          "paper": {
+            "$value": {
+              "value": 8,
+              "unit": "px"
+            },
+            "$type": "dimension"
+          },
+          "surface": {
+            "$value": {
+              "value": 12,
+              "unit": "px"
+            },
+            "$type": "dimension"
+          }
+        },
+        "space": {
+          "surface": {
+            "$value": {
+              "value": 24,
+              "unit": "px"
+            },
+            "$type": "dimension"
+          }
+        },
+        "text": {
+          "accent": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
+            "$type": "color"
+          },
+          "on-accent": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.50}",
+            "$type": "color"
+          },
+          "primary": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.900}",
+            "$type": "color"
+          },
+          "secondary": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.600}",
+            "$type": "color"
+          }
+        }
+      }
+    },
+    "Lienzo": {
+      "style": {
+        "bg": {
+          "accent": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
+            "$type": "color"
+          },
+          "canvas": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.50}",
+            "$type": "color"
+          },
+          "canvas-dot": {
+            "$value": "{Primitives-colors.Light.color.palette.paper.dot}",
+            "$type": "color"
+          },
+          "control": {
+            "$value": "{Primitives-colors.Light.color.palette.paper.50}",
+            "$type": "color"
+          },
+          "folder": {
+            "$value": "{Primitives-colors.Light.color.palette.paper.100}",
+            "$type": "color"
+          },
+          "paper": {
+            "$value": "{Primitives-colors.Light.color.palette.paper.50}",
+            "$type": "color"
+          }
+        },
+        "border": {
+          "paper": {
+            "$value": "{Primitives-colors.Light.color.palette.paper.edge}",
+            "$type": "color"
+          },
+          "selection": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
+            "$type": "color"
+          }
+        },
+        "radius": {
+          "control": {
+            "$value": {
+              "value": 12,
+              "unit": "px"
+            },
+            "$type": "dimension"
+          },
+          "paper": {
+            "$value": {
+              "value": 4,
+              "unit": "px"
+            },
+            "$type": "dimension"
+          },
+          "surface": {
+            "$value": {
+              "value": 18,
+              "unit": "px"
+            },
+            "$type": "dimension"
+          }
+        },
+        "space": {
+          "surface": {
+            "$value": {
+              "value": 32,
+              "unit": "px"
+            },
+            "$type": "dimension"
+          }
+        },
+        "text": {
+          "accent": {
+            "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
+            "$type": "color"
+          },
+          "on-accent": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.50}",
+            "$type": "color"
+          },
+          "primary": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.900}",
+            "$type": "color"
+          },
+          "secondary": {
+            "$value": "{Primitives-colors.Light.color.palette.neutral.600}",
+            "$type": "color"
+          }
+        }
+      }
+    }
+  }
+}

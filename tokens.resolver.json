@@ -1,0 +1,77 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "name": "Benjamín Abud design system",
+  "version": "2025.10",
+  "description": "How themes, styles and viewports combine. The base set is tokens.json with the override groups emptied out. scripts/build-tokens.mjs emits the same combinations as CSS: base at :root, dark under prefers-color-scheme and [data-theme=dark], Lienzo under [data-style=lienzo], tablet and desktop under min-width media queries (layout.breakpoint.min-width).",
+  "sets": {
+    "base": {
+      "description": "Light theme, Clásico style, Mobile viewport.",
+      "sources": [
+        {
+          "$ref": "tokens.json",
+          "darkTheme": {},
+          "lienzoStyle": {},
+          "tabletViewport": {},
+          "desktopViewport": {}
+        }
+      ]
+    }
+  },
+  "modifiers": {
+    "theme": {
+      "description": "Figma modes Light / Dark (Primitives colors + Semantic Tokens).",
+      "contexts": {
+        "light": [],
+        "dark": [
+          {
+            "$ref": "tokens.json#/darkTheme"
+          }
+        ]
+      },
+      "default": "light"
+    },
+    "style": {
+      "description": "Figma Style collection modes Clásico / Lienzo.",
+      "contexts": {
+        "clasico": [],
+        "lienzo": [
+          {
+            "$ref": "tokens.json#/lienzoStyle"
+          }
+        ]
+      },
+      "default": "clasico"
+    },
+    "viewport": {
+      "description": "Figma Layout modes Mobile / Tablet / Desktop.",
+      "contexts": {
+        "mobile": [],
+        "tablet": [
+          {
+            "$ref": "tokens.json#/tabletViewport"
+          }
+        ],
+        "desktop": [
+          {
+            "$ref": "tokens.json#/desktopViewport"
+          }
+        ]
+      },
+      "default": "mobile"
+    }
+  },
+  "resolutionOrder": [
+    {
+      "$ref": "#/sets/base"
+    },
+    {
+      "$ref": "#/modifiers/theme"
+    },
+    {
+      "$ref": "#/modifiers/style"
+    },
+    {
+      "$ref": "#/modifiers/viewport"
+    }
+  ]
+}

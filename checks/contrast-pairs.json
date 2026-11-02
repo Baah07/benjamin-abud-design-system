@@ -1,0 +1,24 @@
+{
+  "$description": "Foreground/background pairs that ship together, checked against WCAG 2.2 in every theme × style combination. 4.5 = SC 1.4.3 text; 3 = SC 1.4.11 non-text (borders, focus ring, UI parts). Pairs come from the roles named in the Figma token descriptions.",
+  "pairs": [
+    { "fg": "text.on-surface", "bg": "bg.surface.default", "min": 4.5, "use": "body text on page" },
+    { "fg": "text.on-surface", "bg": "bg.surface.container", "min": 4.5, "use": "body text on container" },
+    { "fg": "text.on-surface-variant", "bg": "bg.surface.default", "min": 4.5, "use": "secondary text on page" },
+    { "fg": "text.on-surface-variant", "bg": "bg.surface.container", "min": 4.5, "use": "secondary text on container" },
+    { "fg": "text.primary", "bg": "bg.surface.default", "min": 4.5, "use": "link / accent text on page" },
+    { "fg": "text.on-primary", "bg": "bg.fill.primary", "min": 4.5, "use": "Button primary label" },
+    { "fg": "text.on-primary", "bg": "bg.fill.primary-hover", "min": 4.5, "use": "Button primary label (hover)" },
+    { "fg": "text.on-primary", "bg": "bg.fill.primary-pressed", "min": 4.5, "use": "Button primary label (pressed)" },
+    { "fg": "text.on-primary-container", "bg": "bg.fill.secondary", "min": 4.5, "use": "Button secondary label" },
+    { "fg": "text.error", "bg": "bg.surface.default", "min": 4.5, "use": "Input error message" },
+    { "fg": "border.focus-ring", "bg": "bg.surface.default", "min": 3, "use": "focus ring" },
+    { "fg": "border.outline", "bg": "bg.surface.default", "min": 3, "use": "Input border" },
+    { "fg": "border.primary", "bg": "bg.surface.default", "min": 3, "use": "Button secondary border" },
+    { "fg": "style.text.primary", "bg": "style.bg.paper", "min": 4.5, "use": "Lienzo paper text" },
+    { "fg": "style.text.secondary", "bg": "style.bg.paper", "min": 4.5, "use": "Lienzo paper secondary text" },
+    { "fg": "style.text.secondary", "bg": "style.bg.folder", "min": 4.5, "use": "Folder description" },
+    { "fg": "style.text.accent", "bg": "style.bg.paper", "min": 4.5, "use": "Folder CTA" },
+    { "fg": "style.text.on-accent", "bg": "style.bg.accent", "min": 4.5, "use": "Filter chip selected / dock active" },
+    { "fg": "style.border.selection", "bg": "style.bg.canvas", "min": 3, "use": "Folder selected frame" }
+  ]
+}

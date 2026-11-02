@@ -1,0 +1,770 @@
+{
+  "light · clásico": [
+    {
+      "fg": "text.on-surface",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "body text on page",
+      "ratio": 15.96,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "text.on-surface",
+      "bg": "bg.surface.container",
+      "min": 4.5,
+      "use": "body text on container",
+      "ratio": 14.08,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#e7e7ea"
+    },
+    {
+      "fg": "text.on-surface-variant",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "secondary text on page",
+      "ratio": 6.02,
+      "pass": true,
+      "fgHex": "#5d5d61",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "text.on-surface-variant",
+      "bg": "bg.surface.container",
+      "min": 4.5,
+      "use": "secondary text on container",
+      "ratio": 5.31,
+      "pass": true,
+      "fgHex": "#5d5d61",
+      "bgHex": "#e7e7ea"
+    },
+    {
+      "fg": "text.primary",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "link / accent text on page",
+      "ratio": 6.87,
+      "pass": true,
+      "fgHex": "#4038db",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary",
+      "min": 4.5,
+      "use": "Button primary label",
+      "ratio": 7.48,
+      "pass": true,
+      "fgHex": "#ffffff",
+      "bgHex": "#4038db"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary-hover",
+      "min": 4.5,
+      "use": "Button primary label (hover)",
+      "ratio": 11.27,
+      "pass": true,
+      "fgHex": "#ffffff",
+      "bgHex": "#2119b4"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary-pressed",
+      "min": 4.5,
+      "use": "Button primary label (pressed)",
+      "ratio": 15.45,
+      "pass": true,
+      "fgHex": "#ffffff",
+      "bgHex": "#070087"
+    },
+    {
+      "fg": "text.on-primary-container",
+      "bg": "bg.fill.secondary",
+      "min": 4.5,
+      "use": "Button secondary label",
+      "ratio": 8.7,
+      "pass": true,
+      "fgHex": "#2119b4",
+      "bgHex": "#e1dfff"
+    },
+    {
+      "fg": "text.error",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "Input error message",
+      "ratio": 15.96,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "border.focus-ring",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "focus ring",
+      "ratio": 15.96,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "border.outline",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "Input border",
+      "ratio": 3.93,
+      "pass": true,
+      "fgHex": "#7a7a7e",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "border.primary",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "Button secondary border",
+      "ratio": 6.87,
+      "pass": true,
+      "fgHex": "#4038db",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "style.text.primary",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Lienzo paper text",
+      "ratio": 15.96,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "style.text.secondary",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Lienzo paper secondary text",
+      "ratio": 6.02,
+      "pass": true,
+      "fgHex": "#5d5d61",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "style.text.secondary",
+      "bg": "style.bg.folder",
+      "min": 4.5,
+      "use": "Folder description",
+      "ratio": 5.31,
+      "pass": true,
+      "fgHex": "#5d5d61",
+      "bgHex": "#e7e7ea"
+    },
+    {
+      "fg": "style.text.accent",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Folder CTA",
+      "ratio": 6.87,
+      "pass": true,
+      "fgHex": "#4038db",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "style.text.on-accent",
+      "bg": "style.bg.accent",
+      "min": 4.5,
+      "use": "Filter chip selected / dock active",
+      "ratio": 6.87,
+      "pass": true,
+      "fgHex": "#f5f5f7",
+      "bgHex": "#4038db"
+    },
+    {
+      "fg": "style.border.selection",
+      "bg": "style.bg.canvas",
+      "min": 3,
+      "use": "Folder selected frame",
+      "ratio": 6.87,
+      "pass": true,
+      "fgHex": "#4038db",
+      "bgHex": "#f5f5f7"
+    }
+  ],
+  "dark · clásico": [
+    {
+      "fg": "text.on-surface",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "body text on page",
+      "ratio": 18.49,
+      "pass": true,
+      "fgHex": "#f5f5f7",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "text.on-surface",
+      "bg": "bg.surface.container",
+      "min": 4.5,
+      "use": "body text on container",
+      "ratio": 15.96,
+      "pass": true,
+      "fgHex": "#f5f5f7",
+      "bgHex": "#1a1a1c"
+    },
+    {
+      "fg": "text.on-surface-variant",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "secondary text on page",
+      "ratio": 10.06,
+      "pass": true,
+      "fgHex": "#b7b7ba",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "text.on-surface-variant",
+      "bg": "bg.surface.container",
+      "min": 4.5,
+      "use": "secondary text on container",
+      "ratio": 8.69,
+      "pass": true,
+      "fgHex": "#b7b7ba",
+      "bgHex": "#1a1a1c"
+    },
+    {
+      "fg": "text.primary",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "link / accent text on page",
+      "ratio": 9.05,
+      "pass": true,
+      "fgHex": "#a9a4ff",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary",
+      "min": 4.5,
+      "use": "Button primary label",
+      "ratio": 8.11,
+      "pass": true,
+      "fgHex": "#05005d",
+      "bgHex": "#a9a4ff"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary-hover",
+      "min": 4.5,
+      "use": "Button primary label (hover)",
+      "ratio": 8.11,
+      "pass": true,
+      "fgHex": "#05005d",
+      "bgHex": "#a9a4ff"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary-pressed",
+      "min": 4.5,
+      "use": "Button primary label (pressed)",
+      "ratio": 8.11,
+      "pass": true,
+      "fgHex": "#05005d",
+      "bgHex": "#a9a4ff"
+    },
+    {
+      "fg": "text.on-primary-container",
+      "bg": "bg.fill.secondary",
+      "min": 4.5,
+      "use": "Button secondary label",
+      "ratio": 13.61,
+      "pass": true,
+      "fgHex": "#f0efff",
+      "bgHex": "#070087"
+    },
+    {
+      "fg": "text.error",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "Input error message",
+      "ratio": 18.49,
+      "pass": true,
+      "fgHex": "#f5f5f7",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "border.focus-ring",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "focus ring",
+      "ratio": 1.16,
+      "pass": false,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "border.outline",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "Input border",
+      "ratio": 4.71,
+      "pass": true,
+      "fgHex": "#7a7a7e",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "border.primary",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "Button secondary border",
+      "ratio": 1.79,
+      "pass": false,
+      "fgHex": "#2119b4",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "style.text.primary",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Lienzo paper text",
+      "ratio": 16.32,
+      "pass": true,
+      "fgHex": "#e7e7ea",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "style.text.secondary",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Lienzo paper secondary text",
+      "ratio": 7.01,
+      "pass": true,
+      "fgHex": "#98989c",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "style.text.secondary",
+      "bg": "style.bg.folder",
+      "min": 4.5,
+      "use": "Folder description",
+      "ratio": 6.05,
+      "pass": true,
+      "fgHex": "#98989c",
+      "bgHex": "#1a1a1c"
+    },
+    {
+      "fg": "style.text.accent",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Folder CTA",
+      "ratio": 6.34,
+      "pass": true,
+      "fgHex": "#8781ff",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "style.text.on-accent",
+      "bg": "style.bg.accent",
+      "min": 4.5,
+      "use": "Filter chip selected / dock active",
+      "ratio": 6.34,
+      "pass": true,
+      "fgHex": "#070708",
+      "bgHex": "#8781ff"
+    },
+    {
+      "fg": "style.border.selection",
+      "bg": "style.bg.canvas",
+      "min": 3,
+      "use": "Folder selected frame",
+      "ratio": 6.34,
+      "pass": true,
+      "fgHex": "#8781ff",
+      "bgHex": "#070708"
+    }
+  ],
+  "light · lienzo": [
+    {
+      "fg": "text.on-surface",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "body text on page",
+      "ratio": 15.96,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "text.on-surface",
+      "bg": "bg.surface.container",
+      "min": 4.5,
+      "use": "body text on container",
+      "ratio": 14.08,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#e7e7ea"
+    },
+    {
+      "fg": "text.on-surface-variant",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "secondary text on page",
+      "ratio": 6.02,
+      "pass": true,
+      "fgHex": "#5d5d61",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "text.on-surface-variant",
+      "bg": "bg.surface.container",
+      "min": 4.5,
+      "use": "secondary text on container",
+      "ratio": 5.31,
+      "pass": true,
+      "fgHex": "#5d5d61",
+      "bgHex": "#e7e7ea"
+    },
+    {
+      "fg": "text.primary",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "link / accent text on page",
+      "ratio": 6.87,
+      "pass": true,
+      "fgHex": "#4038db",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary",
+      "min": 4.5,
+      "use": "Button primary label",
+      "ratio": 7.48,
+      "pass": true,
+      "fgHex": "#ffffff",
+      "bgHex": "#4038db"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary-hover",
+      "min": 4.5,
+      "use": "Button primary label (hover)",
+      "ratio": 11.27,
+      "pass": true,
+      "fgHex": "#ffffff",
+      "bgHex": "#2119b4"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary-pressed",
+      "min": 4.5,
+      "use": "Button primary label (pressed)",
+      "ratio": 15.45,
+      "pass": true,
+      "fgHex": "#ffffff",
+      "bgHex": "#070087"
+    },
+    {
+      "fg": "text.on-primary-container",
+      "bg": "bg.fill.secondary",
+      "min": 4.5,
+      "use": "Button secondary label",
+      "ratio": 8.7,
+      "pass": true,
+      "fgHex": "#2119b4",
+      "bgHex": "#e1dfff"
+    },
+    {
+      "fg": "text.error",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "Input error message",
+      "ratio": 15.96,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "border.focus-ring",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "focus ring",
+      "ratio": 15.96,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "border.outline",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "Input border",
+      "ratio": 3.93,
+      "pass": true,
+      "fgHex": "#7a7a7e",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "border.primary",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "Button secondary border",
+      "ratio": 6.87,
+      "pass": true,
+      "fgHex": "#4038db",
+      "bgHex": "#f5f5f7"
+    },
+    {
+      "fg": "style.text.primary",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Lienzo paper text",
+      "ratio": 16.8,
+      "pass": true,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#fbfbfc"
+    },
+    {
+      "fg": "style.text.secondary",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Lienzo paper secondary text",
+      "ratio": 6.34,
+      "pass": true,
+      "fgHex": "#5d5d61",
+      "bgHex": "#fbfbfc"
+    },
+    {
+      "fg": "style.text.secondary",
+      "bg": "style.bg.folder",
+      "min": 4.5,
+      "use": "Folder description",
+      "ratio": 5.66,
+      "pass": true,
+      "fgHex": "#5d5d61",
+      "bgHex": "#eeeef0"
+    },
+    {
+      "fg": "style.text.accent",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Folder CTA",
+      "ratio": 7.24,
+      "pass": true,
+      "fgHex": "#4038db",
+      "bgHex": "#fbfbfc"
+    },
+    {
+      "fg": "style.text.on-accent",
+      "bg": "style.bg.accent",
+      "min": 4.5,
+      "use": "Filter chip selected / dock active",
+      "ratio": 6.87,
+      "pass": true,
+      "fgHex": "#f5f5f7",
+      "bgHex": "#4038db"
+    },
+    {
+      "fg": "style.border.selection",
+      "bg": "style.bg.canvas",
+      "min": 3,
+      "use": "Folder selected frame",
+      "ratio": 6.87,
+      "pass": true,
+      "fgHex": "#4038db",
+      "bgHex": "#f5f5f7"
+    }
+  ],
+  "dark · lienzo": [
+    {
+      "fg": "text.on-surface",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "body text on page",
+      "ratio": 18.49,
+      "pass": true,
+      "fgHex": "#f5f5f7",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "text.on-surface",
+      "bg": "bg.surface.container",
+      "min": 4.5,
+      "use": "body text on container",
+      "ratio": 15.96,
+      "pass": true,
+      "fgHex": "#f5f5f7",
+      "bgHex": "#1a1a1c"
+    },
+    {
+      "fg": "text.on-surface-variant",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "secondary text on page",
+      "ratio": 10.06,
+      "pass": true,
+      "fgHex": "#b7b7ba",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "text.on-surface-variant",
+      "bg": "bg.surface.container",
+      "min": 4.5,
+      "use": "secondary text on container",
+      "ratio": 8.69,
+      "pass": true,
+      "fgHex": "#b7b7ba",
+      "bgHex": "#1a1a1c"
+    },
+    {
+      "fg": "text.primary",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "link / accent text on page",
+      "ratio": 9.05,
+      "pass": true,
+      "fgHex": "#a9a4ff",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary",
+      "min": 4.5,
+      "use": "Button primary label",
+      "ratio": 8.11,
+      "pass": true,
+      "fgHex": "#05005d",
+      "bgHex": "#a9a4ff"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary-hover",
+      "min": 4.5,
+      "use": "Button primary label (hover)",
+      "ratio": 8.11,
+      "pass": true,
+      "fgHex": "#05005d",
+      "bgHex": "#a9a4ff"
+    },
+    {
+      "fg": "text.on-primary",
+      "bg": "bg.fill.primary-pressed",
+      "min": 4.5,
+      "use": "Button primary label (pressed)",
+      "ratio": 8.11,
+      "pass": true,
+      "fgHex": "#05005d",
+      "bgHex": "#a9a4ff"
+    },
+    {
+      "fg": "text.on-primary-container",
+      "bg": "bg.fill.secondary",
+      "min": 4.5,
+      "use": "Button secondary label",
+      "ratio": 13.61,
+      "pass": true,
+      "fgHex": "#f0efff",
+      "bgHex": "#070087"
+    },
+    {
+      "fg": "text.error",
+      "bg": "bg.surface.default",
+      "min": 4.5,
+      "use": "Input error message",
+      "ratio": 18.49,
+      "pass": true,
+      "fgHex": "#f5f5f7",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "border.focus-ring",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "focus ring",
+      "ratio": 1.16,
+      "pass": false,
+      "fgHex": "#1a1a1c",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "border.outline",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "Input border",
+      "ratio": 4.71,
+      "pass": true,
+      "fgHex": "#7a7a7e",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "border.primary",
+      "bg": "bg.surface.default",
+      "min": 3,
+      "use": "Button secondary border",
+      "ratio": 1.79,
+      "pass": false,
+      "fgHex": "#2119b4",
+      "bgHex": "#070708"
+    },
+    {
+      "fg": "style.text.primary",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Lienzo paper text",
+      "ratio": 14.91,
+      "pass": true,
+      "fgHex": "#e7e7ea",
+      "bgHex": "#141416"
+    },
+    {
+      "fg": "style.text.secondary",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Lienzo paper secondary text",
+      "ratio": 6.4,
+      "pass": true,
+      "fgHex": "#98989c",
+      "bgHex": "#141416"
+    },
+    {
+      "fg": "style.text.secondary",
+      "bg": "style.bg.folder",
+      "min": 4.5,
+      "use": "Folder description",
+      "ratio": 5.79,
+      "pass": true,
+      "fgHex": "#98989c",
+      "bgHex": "#1e1e21"
+    },
+    {
+      "fg": "style.text.accent",
+      "bg": "style.bg.paper",
+      "min": 4.5,
+      "use": "Folder CTA",
+      "ratio": 5.79,
+      "pass": true,
+      "fgHex": "#8781ff",
+      "bgHex": "#141416"
+    },
+    {
+      "fg": "style.text.on-accent",
+      "bg": "style.bg.accent",
+      "min": 4.5,
+      "use": "Filter chip selected / dock active",
+      "ratio": 6.34,
+      "pass": true,
+      "fgHex": "#070708",
+      "bgHex": "#8781ff"
+    },
+    {
+      "fg": "style.border.selection",
+      "bg": "style.bg.canvas",
+      "min": 3,
+      "use": "Folder selected frame",
+      "ratio": 6.34,
+      "pass": true,
+      "fgHex": "#8781ff",
+      "bgHex": "#070708"
+    }
+  ]
+}

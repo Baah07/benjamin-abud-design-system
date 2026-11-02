@@ -1,0 +1,21 @@
+{
+  "$description": "Variables that exist in Figma (read via Plugin API on 2026-11-02) but are missing from their collection's variable list, so Token Exporter skips them. Without them, these aliases break: text/on-primary (Light) and layout/grid/columns. Remove an entry once the variable is fixed in Figma and shows up in the export.",
+  "$retype": [
+    { "pattern": "font.line-height.*", "to": "dimension", "unit": "px", "why": "Token Exporter emits these FLOAT variables as unitless numbers, but in Figma they are pixel line heights (text styles use 112px, 104px, …). Unitless in CSS would mean a multiplier." }
+  ],
+  "Primitives-colors": {
+    "Light": {
+      "color": { "palette": { "white": { "$type": "color", "$value": { "colorSpace": "srgb", "components": [1, 1, 1], "hex": "#ffffff" } } } }
+    },
+    "Dark": {
+      "color": { "palette": { "white": { "$type": "color", "$value": { "colorSpace": "srgb", "components": [1, 1, 1], "hex": "#ffffff" } } } }
+    }
+  },
+  "Dimension": {
+    "count": {
+      "4": { "$type": "number", "$value": 4, "$description": "Cantidad (sin unidad)." },
+      "6": { "$type": "number", "$value": 6, "$description": "Cantidad (sin unidad)." },
+      "12": { "$type": "number", "$value": 12, "$description": "Cantidad (sin unidad)." }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@benjamin-abud/design-system",
+  "version": "1.0.0",
+  "description": "Benjamín Abud's design system: DTCG tokens exported from Figma, built with Style Dictionary into CSS Color 4 custom properties, with WCAG contrast, axe-core and Lighthouse checks.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tokens.css": "./tokens.css",
+    "./tokens.json": "./tokens.json",
+    "./tokens.resolver.json": "./tokens.resolver.json",
+    "./tokens.js": "./tokens.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "normalize": "node scripts/normalize.mjs",
+    "build:tokens": "node scripts/build-tokens.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
+    "build": "npm run normalize && npm run build:tokens && npm run build:pages",
+    "validate": "node scripts/validate-dtcg.mjs && node scripts/contrast-pairs.mjs",
+    "audit:axe": "node scripts/audit-axe.mjs",
+    "audit:lighthouse": "node scripts/audit-lighthouse.mjs",
+    "audit": "npm run audit:axe && npm run audit:lighthouse"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "axe-core": "^4.14.0",
+    "chrome-launcher": "^1.2.2",
+    "colorjs.io": "^0.7.1",
+    "lighthouse": "^13.6.0",
+    "playwright-core": "^1.64.1",
+    "style-dictionary": "^5.7.1"
+  }
+}
