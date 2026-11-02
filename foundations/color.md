@@ -83,10 +83,10 @@ Contrast for every shipped pair is checked by [`scripts/contrast-pairs.mjs`](../
 | `--text-on-surface-variant` | `{color.palette.neutral.600}` | #5d5d61 | #b7b7ba | On Surface Variant · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/600 (Primitives Light). Dark → neutral/700 (Primitives Dark). Usar el mismo modo en ambas colecciones. |
 | `--text-primary` | `{color.palette.indigo.600}` | #4038db | #a9a4ff |  |
 | `--border-error` | `{color.palette.neutral.500}` | #7a7a7e | #7a7a7e | Validación: color de la paleta vigente; acompañar de mensaje explícito. No depende del color para comunicar error. |
-| `--border-focus-ring` | `{color.palette.neutral.900}` | #1a1a1c | #1a1a1c | Anillo de foco compartido por Button y Link. Conserva los valores anteriores en Light y Dark. |
+| `--border-focus-ring` | `{color.palette.neutral.900}` | #1a1a1c | #e7e7ea | Anillo de foco compartido por Button y Link. Light → neutral/900. Dark → neutral/900 (Primitives Dark): 16.3:1 sobre bg/surface/default, WCAG 2.2 SC 1.4.11. Antes neutral/100 en Dark (1.16:1). |
 | `--border-outline` | `{color.palette.neutral.500}` | #7a7a7e | #7a7a7e | Outline · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/500 (Primitives Light). Dark → neutral/500 (Primitives Dark). Usar el mismo modo en ambas colecciones. |
 | `--border-outline-variant` | `{color.palette.neutral.200}` | #d4d4d7 | #b7b7ba | Outline Variant · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/200 (Primitives Light). Dark → neutral/300 (Primitives Dark). Usar el mismo modo en ambas colecciones. |
-| `--border-primary` | `{color.palette.indigo.600}` | #4038db | #2119b4 |  |
+| `--border-primary` | `{color.palette.indigo.600}` | #4038db | #8781ff | Borde de Button secondary. Light → indigo/600. Dark → indigo/600 (Primitives Dark): 6.3:1 sobre bg/surface/default, WCAG 2.2 SC 1.4.11. Antes indigo/300 en Dark (1.79:1). |
 | `--border-primary-hover` | `{color.palette.indigo.700}` | #2119b4 | #a9a4ff |  |
 | `--border-primary-pressed` | `{color.palette.indigo.800}` | #070087 | #cac7ff |  |
 

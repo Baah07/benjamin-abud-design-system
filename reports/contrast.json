@@ -297,9 +297,9 @@
       "bg": "bg.surface.default",
       "min": 3,
       "use": "focus ring",
-      "ratio": 1.16,
-      "pass": false,
-      "fgHex": "#1a1a1c",
+      "ratio": 16.32,
+      "pass": true,
+      "fgHex": "#e7e7ea",
       "bgHex": "#070708"
     },
     {
@@ -317,9 +317,9 @@
       "bg": "bg.surface.default",
       "min": 3,
       "use": "Button secondary border",
-      "ratio": 1.79,
-      "pass": false,
-      "fgHex": "#2119b4",
+      "ratio": 6.34,
+      "pass": true,
+      "fgHex": "#8781ff",
       "bgHex": "#070708"
     },
     {
@@ -681,9 +681,9 @@
       "bg": "bg.surface.default",
       "min": 3,
       "use": "focus ring",
-      "ratio": 1.16,
-      "pass": false,
-      "fgHex": "#1a1a1c",
+      "ratio": 16.32,
+      "pass": true,
+      "fgHex": "#e7e7ea",
       "bgHex": "#070708"
     },
     {
@@ -701,9 +701,9 @@
       "bg": "bg.surface.default",
       "min": 3,
       "use": "Button secondary border",
-      "ratio": 1.79,
-      "pass": false,
-      "fgHex": "#2119b4",
+      "ratio": 6.34,
+      "pass": true,
+      "fgHex": "#8781ff",
       "bgHex": "#070708"
     },
     {

@@ -1319,7 +1319,7 @@
         "focus-ring": {
           "$value": "{Primitives-colors.Light.color.palette.neutral.900}",
           "$type": "color",
-          "$description": "Anillo de foco compartido por Button y Link. Conserva los valores anteriores en Light y Dark."
+          "$description": "Anillo de foco compartido por Button y Link. Light → neutral/900. Dark → neutral/900 (Primitives Dark): 16.3:1 sobre bg/surface/default, WCAG 2.2 SC 1.4.11. Antes neutral/100 en Dark (1.16:1)."
         },
         "outline": {
           "$value": "{Primitives-colors.Light.color.palette.neutral.500}",
@@ -1333,7 +1333,8 @@
         },
         "primary": {
           "$value": "{Primitives-colors.Light.color.palette.indigo.600}",
-          "$type": "color"
+          "$type": "color",
+          "$description": "Borde de Button secondary. Light → indigo/600. Dark → indigo/600 (Primitives Dark): 6.3:1 sobre bg/surface/default, WCAG 2.2 SC 1.4.11. Antes indigo/300 en Dark (1.79:1)."
         },
         "primary-hover": {
           "$value": "{Primitives-colors.Light.color.palette.indigo.700}",
@@ -1445,9 +1446,9 @@
           "$description": "Validación: color de la paleta vigente; acompañar de mensaje explícito. No depende del color para comunicar error."
         },
         "focus-ring": {
-          "$value": "{Primitives-colors.Dark.color.palette.neutral.100}",
+          "$value": "{Primitives-colors.Dark.color.palette.neutral.900}",
           "$type": "color",
-          "$description": "Anillo de foco compartido por Button y Link. Conserva los valores anteriores en Light y Dark."
+          "$description": "Anillo de foco compartido por Button y Link. Light → neutral/900. Dark → neutral/900 (Primitives Dark): 16.3:1 sobre bg/surface/default, WCAG 2.2 SC 1.4.11. Antes neutral/100 en Dark (1.16:1)."
         },
         "outline": {
           "$value": "{Primitives-colors.Dark.color.palette.neutral.500}",
@@ -1460,8 +1461,9 @@
           "$description": "Outline Variant · Frame Tonal palettes · Light Theme · Dark Theme. Light → neutral/200 (Primitives Light). Dark → neutral/300 (Primitives Dark). Usar el mismo modo en ambas colecciones."
         },
         "primary": {
-          "$value": "{Primitives-colors.Dark.color.palette.indigo.300}",
-          "$type": "color"
+          "$value": "{Primitives-colors.Dark.color.palette.indigo.600}",
+          "$type": "color",
+          "$description": "Borde de Button secondary. Light → indigo/600. Dark → indigo/600 (Primitives Dark): 6.3:1 sobre bg/surface/default, WCAG 2.2 SC 1.4.11. Antes indigo/300 en Dark (1.79:1)."
         },
         "primary-hover": {
           "$value": "{Primitives-colors.Dark.color.palette.indigo.dark-source.700}",
