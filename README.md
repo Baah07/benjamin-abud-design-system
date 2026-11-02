@@ -39,7 +39,6 @@ Text and effect styles are not variables, so the exporter skips them; they live 
 
 ## Known issues
 
-- **Dark mode focus ring and secondary border fail WCAG 1.4.11** (`border.focus-ring` 1.16:1, `border.primary` 1.79:1 on `bg.surface.default`). The fix belongs in Figma (Semantic Tokens → Dark), then re-export. Until then `npm run validate` fails on purpose.
 - Axiforma is a commercial font and is not bundled; renders fall back to `sans-serif` unless the site provides it.
 
 ## License
