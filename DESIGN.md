@@ -1,0 +1,358 @@
+---
+# The blocks between "# DESIGN:<name>:start" and "# DESIGN:<name>:end" are GENERATED from tokens.json
+# and figma/components.json by scripts/build-docs.mjs. Do not edit them by hand: change Figma,
+# re-export with Token Exporter and run `npm run build`. Everything else in this file is hand-authored
+# and may only state facts that come from Figma, tokens.json or the audit reports.
+version: 1.0.0
+name: Benjamín Abud Design System
+description: >
+  El design system detrás del portfolio de Benjamín Abud. Un acento índigo, una escala neutra, dos
+  familias (Axiforma y Inter), dos temas (claro y oscuro) y dos estilos (Clásico y Lienzo), todo
+  exportado de Figma como tokens DTCG.
+about: >
+  Fuente: archivo de Figma FvaEDyROUUsM8ntHj8C9f8 (02 Design System). Tokens exportados con Token
+  Exporter, compilados con Style Dictionary a CSS Color 4 (oklch). Sitio en vivo:
+  https://benjaabud.framer.website/sistema
+# DESIGN:colors:start
+colors:
+  bg-fill-primary: "#4038db" # --bg-fill-primary
+  bg-fill-primary-hover: "#2119b4" # --bg-fill-primary-hover
+  bg-fill-primary-pressed: "#070087" # --bg-fill-primary-pressed
+  bg-fill-secondary: "#e1dfff" # --bg-fill-secondary
+  bg-surface-container: "#e7e7ea" # --bg-surface-container
+  bg-surface-container-high: "#d4d4d7" # --bg-surface-container-high
+  bg-surface-default: "#f5f5f7" # --bg-surface-default
+  bg-surface-inverse: "#2d2d30" # --bg-surface-inverse
+  bg-surface-white: "#2d2d30" # --bg-surface-white
+  text-error: "#1a1a1c" # --text-error
+  text-inverse-primary: "#a9a4ff" # --text-inverse-primary
+  text-on-primary: "#ffffff" # --text-on-primary
+  text-on-primary-container: "#2119b4" # --text-on-primary-container
+  text-on-primary-container-pressed: "#070087" # --text-on-primary-container-pressed
+  text-on-surface: "#1a1a1c" # --text-on-surface
+  text-on-surface-variant: "#5d5d61" # --text-on-surface-variant
+  text-primary: "#4038db" # --text-primary
+  border-error: "#7a7a7e" # --border-error
+  border-focus-ring: "#1a1a1c" # --border-focus-ring
+  border-outline: "#7a7a7e" # --border-outline
+  border-outline-variant: "#d4d4d7" # --border-outline-variant
+  border-primary: "#4038db" # --border-primary
+  border-primary-hover: "#2119b4" # --border-primary-hover
+  border-primary-pressed: "#070087" # --border-primary-pressed
+  style-bg-accent: "#4038db" # --style-bg-accent
+  style-bg-canvas: "#f5f5f7" # --style-bg-canvas
+  style-bg-canvas-dot: "#f5f5f7" # --style-bg-canvas-dot
+  style-bg-control: "#e7e7ea" # --style-bg-control
+  style-bg-folder: "#e7e7ea" # --style-bg-folder
+  style-bg-paper: "#f5f5f7" # --style-bg-paper
+  style-border-paper: "#d4d4d7" # --style-border-paper
+  style-border-selection: "#4038db" # --style-border-selection
+  style-text-accent: "#4038db" # --style-text-accent
+  style-text-on-accent: "#f5f5f7" # --style-text-on-accent
+  style-text-primary: "#1a1a1c" # --style-text-primary
+  style-text-secondary: "#5d5d61" # --style-text-secondary
+colorsDark:
+  bg-fill-primary: "#a9a4ff" # --bg-fill-primary en data-theme="dark"
+  bg-fill-primary-hover: "#a9a4ff" # --bg-fill-primary-hover en data-theme="dark"
+  bg-fill-primary-pressed: "#a9a4ff" # --bg-fill-primary-pressed en data-theme="dark"
+  bg-fill-secondary: "#070087" # --bg-fill-secondary en data-theme="dark"
+  bg-surface-container: "#1a1a1c" # --bg-surface-container en data-theme="dark"
+  bg-surface-container-high: "#2d2d30" # --bg-surface-container-high en data-theme="dark"
+  bg-surface-default: "#070708" # --bg-surface-default en data-theme="dark"
+  bg-surface-inverse: "#e7e7ea" # --bg-surface-inverse en data-theme="dark"
+  bg-surface-white: "#e7e7ea" # --bg-surface-white en data-theme="dark"
+  text-error: "#f5f5f7" # --text-error en data-theme="dark"
+  text-inverse-primary: "#4038db" # --text-inverse-primary en data-theme="dark"
+  text-on-primary: "#05005d" # --text-on-primary en data-theme="dark"
+  text-on-primary-container: "#f0efff" # --text-on-primary-container en data-theme="dark"
+  text-on-primary-container-pressed: "#f0efff" # --text-on-primary-container-pressed en data-theme="dark"
+  text-on-surface: "#f5f5f7" # --text-on-surface en data-theme="dark"
+  text-on-surface-variant: "#b7b7ba" # --text-on-surface-variant en data-theme="dark"
+  text-primary: "#a9a4ff" # --text-primary en data-theme="dark"
+  border-focus-ring: "#e7e7ea" # --border-focus-ring en data-theme="dark"
+  border-outline-variant: "#b7b7ba" # --border-outline-variant en data-theme="dark"
+  border-primary: "#8781ff" # --border-primary en data-theme="dark"
+  border-primary-hover: "#a9a4ff" # --border-primary-hover en data-theme="dark"
+  border-primary-pressed: "#cac7ff" # --border-primary-pressed en data-theme="dark"
+  style-bg-accent: "#8781ff" # --style-bg-accent en data-theme="dark"
+  style-bg-canvas: "#070708" # --style-bg-canvas en data-theme="dark"
+  style-bg-canvas-dot: "#070708" # --style-bg-canvas-dot en data-theme="dark"
+  style-bg-control: "#1a1a1c" # --style-bg-control en data-theme="dark"
+  style-bg-folder: "#1a1a1c" # --style-bg-folder en data-theme="dark"
+  style-bg-paper: "#070708" # --style-bg-paper en data-theme="dark"
+  style-border-paper: "#2d2d30" # --style-border-paper en data-theme="dark"
+  style-border-selection: "#8781ff" # --style-border-selection en data-theme="dark"
+  style-text-accent: "#8781ff" # --style-text-accent en data-theme="dark"
+  style-text-on-accent: "#070708" # --style-text-on-accent en data-theme="dark"
+  style-text-primary: "#e7e7ea" # --style-text-primary en data-theme="dark"
+  style-text-secondary: "#98989c" # --style-text-secondary en data-theme="dark"
+# DESIGN:colors:end
+# DESIGN:type-families:start
+typography:
+  families:
+    display: Axiforma # --font-family-axiforma
+    body: Inter # --font-family-inter
+# DESIGN:type-families:end
+# DESIGN:type-styles:start
+display-01: { family: Axiforma, size: 96px, weight: 800, lineHeight: 112px } # --typography-display-01
+  display-02: { family: Axiforma, size: 88px, weight: 800, lineHeight: 104px } # --typography-display-02
+  display-03: { family: Axiforma, size: 80px, weight: 700, lineHeight: 96px } # --typography-display-03
+  display-04: { family: Axiforma, size: 72px, weight: 700, lineHeight: 88px } # --typography-display-04
+  display-05: { family: Axiforma, size: 64px, weight: 600, lineHeight: 80px } # --typography-display-05
+  display-06: { family: Axiforma, size: 56px, weight: 500, lineHeight: 72px } # --typography-display-06
+  heading-3xl: { family: Axiforma, size: 48px, weight: 600, lineHeight: 56px } # --typography-heading-3xl
+  heading-2xl: { family: Axiforma, size: 40px, weight: 600, lineHeight: 48px } # --typography-heading-2xl
+  heading-xl: { family: Axiforma, size: 32px, weight: 600, lineHeight: 40px } # --typography-heading-xl
+  heading-lg: { family: Axiforma, size: 24px, weight: 600, lineHeight: 32px } # --typography-heading-lg
+  heading-subtitle-md: { family: Inter, size: 20px, weight: 500, lineHeight: 28px } # --typography-heading-subtitle-md
+  heading-subtitle-sm: { family: Inter, size: 16px, weight: 500, lineHeight: 24px } # --typography-heading-subtitle-sm
+  body-lg: { family: Inter, size: 20px, weight: 400, lineHeight: 28px } # --typography-body-lg
+  body-md: { family: Inter, size: 16px, weight: 400, lineHeight: 24px } # --typography-body-md
+  body-md-emphasized: { family: Inter, size: 16px, weight: 700, lineHeight: 24px } # --typography-body-md-emphasized
+  body-sm: { family: Inter, size: 14px, weight: 400, lineHeight: 24px } # --typography-body-sm
+  body-sm-emphasized: { family: Inter, size: 14px, weight: 700, lineHeight: 24px } # --typography-body-sm-emphasized
+  body-button-md: { family: Inter, size: 16px, weight: 700, lineHeight: 24px } # --typography-body-button-md
+  body-button-sm: { family: Inter, size: 14px, weight: 700, lineHeight: 24px } # --typography-body-button-sm
+  body-label-md: { family: Inter, size: 14px, weight: 700, lineHeight: 24px } # --typography-body-label-md
+  body-label-md-emphasized: { family: Inter, size: 14px, weight: 900, lineHeight: 24px } # --typography-body-label-md-emphasized
+  body-caption: { family: Inter, size: 12px, weight: 700, lineHeight: 20px } # --typography-body-caption
+  body-caption-emphasized: { family: Inter, size: 12px, weight: 900, lineHeight: 20px } # --typography-body-caption-emphasized
+# DESIGN:type-styles:end
+# DESIGN:rounded:start
+rounded:
+  none: 0px # --radius-none
+  sm: 4px # --radius-sm
+  md: 8px # --radius-md
+  lg: 12px # --radius-lg
+  xl: 16px # --radius-xl
+  full: 9999px # --radius-full
+# DESIGN:rounded:end
+# DESIGN:spacing:start
+spacing:
+  s0: 0px # --space-0
+  s1: 4px # --space-1
+  s2: 8px # --space-2
+  s3: 12px # --space-3
+  s4: 16px # --space-4
+  s6: 24px # --space-6
+  s8: 32px # --space-8
+  s9: 36px # --space-9
+  s12: 48px # --space-12
+  s16: 64px # --space-16
+  s24: 96px # --space-24
+  s32: 128px # --space-32
+  s48: 192px # --space-48
+  s64: 256px # --space-64
+  s96: 384px # --space-96
+  s128: 512px # --space-128
+  s160: 640px # --space-160
+  s192: 768px # --space-192
+# DESIGN:spacing:end
+# DESIGN:structure:start
+structure:
+  focus-ring: "#1a1a1c" # --border-focus-ring (oscuro: #e7e7ea)
+  breakpoint-mobile: 320px # --layout-breakpoint-min-width
+  breakpoint-tablet: 600px # --layout-breakpoint-min-width
+  breakpoint-desktop: 1136px # --layout-breakpoint-min-width
+  grid-margin: [16px, 32px, 60px] # --layout-grid-margin mobile/tablet/desktop
+# DESIGN:structure:end
+# DESIGN:components:start
+components:
+  button: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=246-420", tokens: [bg.fill.primary, bg.fill.primary-hover, bg.fill.primary-pressed, bg.fill.secondary, bg.surface.container, bg.surface.default, border.focus-ring, border.primary, border.primary-hover, border.primary-pressed, font.family.inter, font.letter-spacing.0, font.line-height.24, font.size.14, font.size.16, font.weight.bold, radius.lg, radius.md, space.2, space.3, space.4, space.6, text.on-primary, text.on-primary-container, text.on-primary-container-pressed, text.on-surface, text.primary, typography.body.button-md, typography.body.button-sm, elevation.low.shadow-1, elevation.low.shadow-2] }
+  link: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=275-179", tokens: [border.focus-ring, border.outline, font.family.inter, font.letter-spacing.0, font.line-height.24, font.size.14, font.size.16, font.weight.bold, size.4, space.2, space.3, space.4, text.primary, typography.body.button-md, typography.body.button-sm] }
+  input-field: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=315-18", tokens: [bg.surface.container, bg.surface.default, border.error, border.outline, border.outline-variant, border.primary, font.family.inter, font.letter-spacing.0, font.line-height.24, font.size.14, font.weight.bold, font.weight.regular, radius.md, space.1, space.2, space.3, text.error, text.on-surface, text.on-surface-variant, typography.body.label-md, typography.body.sm] }
+  toggle: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1138-53", tokens: [bg.fill.primary, bg.fill.primary-hover, bg.fill.primary-pressed, bg.surface.container-high, border.focus-ring, border.outline, radius.full, size.20, text.on-primary, text.on-surface-variant] }
+  checkbox: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1139-78", tokens: [bg.fill.primary, bg.fill.primary-hover, bg.fill.primary-pressed, bg.surface.container, bg.surface.default, border.focus-ring, border.outline, radius.sm, text.on-primary] }
+  radio-button: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1139-217", tokens: [bg.fill.primary, bg.fill.primary-hover, bg.fill.primary-pressed, bg.surface.container, bg.surface.default, border.focus-ring, border.outline, radius.full] }
+  slider: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1139-376", tokens: [bg.fill.primary, bg.fill.primary-hover, bg.fill.primary-pressed, bg.surface.container-high, bg.surface.default, border.focus-ring, font.family.inter, font.letter-spacing.0, font.line-height.20, font.size.12, font.weight.bold, radius.full, size.8, text.on-surface-variant, typography.body.caption] }
+  table-cell: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1145-242", tokens: [size.12, size.16, size.20, text.on-surface] }
+  table-cell-title: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1145-379", tokens: [size.12, size.16, size.20, text.on-surface-variant] }
+  token-preview: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1163-16", tokens: [bg.fill.primary, border.outline-variant, radius.sm, text.on-surface, text.on-surface-variant] }
+  filter-chip: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1188-243", tokens: [style.bg.folder, style.bg.paper, style.border.paper, style.radius.control, style.text.primary, style.text.secondary, elevation.paper.shadow-1] }
+  dock-item: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1188-255", tokens: [style.bg.accent, style.bg.paper, style.border.paper, style.radius.control, style.text.on-accent, style.text.primary, elevation.paper.shadow-1, elevation.paper.shadow-2] }
+  dot-grid: { level: atom, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1188-659", tokens: [style.bg.canvas, style.bg.canvas-dot] }
+  menu: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1010-3302", tokens: [bg.surface.container, bg.surface.default, border.outline-variant, radius.lg, space.1, space.2, space.3] }
+  choice: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1023-4406", tokens: [bg.fill.primary, color.palette.playground.neutral.base, color.palette.playground.neutral.dark, color.palette.playground.neutral.light, font.family.inter, font.weight.regular, size.12, size.24, text.on-primary, text.on-surface, text.primary] }
+  accordion: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=462-690", tokens: [bg.surface.default, font.family.inter, font.letter-spacing.0, font.line-height.24, font.size.14, font.weight.regular, radius.lg, space.2, space.3, text.on-surface, typography.body.sm] }
+  card: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=299-77", tokens: [bg.surface.container, bg.surface.container-high, border.focus-ring, border.outline-variant, border.primary, font.family.inter, font.letter-spacing.0, font.line-height.24, font.line-height.28, font.line-height.32, font.size.14, font.size.16, font.size.20, font.size.24, font.weight.regular, radius.lg, radius.md, size.32, size.36, space.2, space.4, space.8, text.on-surface, typography.body.lg, typography.body.md, typography.body.sm] }
+  navigation-card: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=557-1271", tokens: [bg.surface.container, radius.md, space.2, space.4] }
+  bottom-sheet: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1064-3", tokens: [color.palette.white, radius.sm, size.0] }
+  table-list: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1146-1058", tokens: [bg.surface.default, border.outline-variant, size.12, size.16, size.20, size.4, size.8] }
+  table-header: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1147-72", tokens: [bg.surface.default, border.outline-variant, size.12, size.16, size.20] }
+  folder: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-39", tokens: [style.bg.folder, style.bg.paper, style.border.paper, style.border.selection, style.radius.paper, style.text.primary, style.text.secondary, elevation.paper.shadow-1, elevation.paper.shadow-2] }
+  paper-note: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-41", tokens: [style.bg.paper, style.border.paper, style.radius.paper, style.text.primary, style.text.secondary, elevation.paper.shadow-2] }
+  zoom-control: { level: molecule, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-48", tokens: [style.bg.paper, style.border.paper, style.radius.control, style.text.primary, elevation.paper.shadow-1] }
+  header: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=333-235", tokens: [bg.fill.primary, bg.fill.secondary, bg.surface.container, border.outline-variant, font.family.inter, font.letter-spacing.0, font.line-height.24, font.size.16, font.weight.medium, layout.grid.margin, radius.md, space.2, space.3, space.4, space.6, text.on-surface, typography.heading.subtitle-sm] }
+  panel-content: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=462-691", tokens: [bg.fill.primary, border.outline-variant, border.primary, font.family.inter, font.letter-spacing.0, font.line-height.24, font.size.14, font.weight.bold, radius.md, radius.xl, size.0, space.2, space.3, space.6, text.on-surface, typography.body.label-md] }
+  inspector: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=462-1152", tokens: [border.outline, radius.full, radius.none, radius.xl, size.32, space.2, space.4, space.6] }
+  system-personalize: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=868-1259", tokens: [border.primary, radius.md, size.0, size.24, space.2, space.4] }
+  system-component-detail: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=868-1484", tokens: [color.palette.white, size.0, size.16, size.24, size.4, size.8] }
+  system-mobile-sheet: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=868-1751", tokens: [color.palette.white, size.0, size.16, size.24, size.32] }
+  table: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1166-446", tokens: [bg.surface.default, border.outline-variant, size.16] }
+  dock-nav: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-173", tokens: [style.bg.accent, style.bg.paper, style.border.paper, style.radius.control, style.radius.surface, elevation.paper.shadow-1, elevation.paper.shadow-2, elevation.paper.shadow-3] }
+  canvas-toolbar: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-175", tokens: [style.bg.paper, style.border.paper, style.radius.control, elevation.paper.shadow-1] }
+  case-study-modal: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1190-2", tokens: [bg.fill.primary, radius.md, space.2, space.3, space.6, style.bg.accent, style.bg.folder, style.bg.paper, style.border.paper, style.radius.control, style.radius.surface, style.text.primary, style.text.secondary, elevation.paper.shadow-1, elevation.paper.shadow-2, elevation.paper.shadow-3] }
+  envelope-contact: { level: organism, figma: "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1190-97", tokens: [bg.fill.primary, border.primary, radius.md, space.2, space.3, space.6, style.bg.folder, style.bg.paper, style.border.paper, style.text.accent, style.text.primary, style.text.secondary, elevation.paper.shadow-2, elevation.paper.shadow-3] }
+# DESIGN:components:end
+---
+
+# Benjamín Abud Portfolio: contrato de marca
+
+Este archivo le da a un agente de IA, o a cualquier persona que construya para el portfolio, todo lo necesario para hacerlo en marca sin abrir el resto del repo: los valores resueltos arriba, las reglas abajo. Los bloques de valores se generan desde `tokens.json` y nunca se desincronizan con Figma.
+
+## Usar el CSS publicado
+
+Linkeá los tokens; no copies valores. Cargá primero las fuentes y después `tokens.css`.
+
+<!-- DESIGN:links:start -->
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/Baah07/benjamin-abud-design-system@main/tokens.css" rel="stylesheet">
+```
+<!-- DESIGN:links:end -->
+
+Tema y estilo son atributos en `<html>`: `data-theme="light|dark"` (por defecto sigue `prefers-color-scheme`) y `data-style="lienzo"` para la piel Lienzo. Los componentes viven en Figma; esta es la lista completa, con su página y su nodo:
+
+<!-- DESIGN:component-list:start -->
+**Átomos**
+
+| Componente | Para qué sirve |
+|---|---|
+| [Button](components/button.md) | C01 Button. |
+| [Link](components/link.md) | Enlaces de navegación. |
+| [Input Field](components/input-field.md) | Campo completo: Label + instancia C07 / Input + ayuda o error. |
+| [Toggle](components/toggle.md) | Reusable Toggle with portfolio foundations and Phosphor. |
+| [Checkbox](components/checkbox.md) | Reusable Checkbox with portfolio foundations and Phosphor. |
+| [Radio button](components/radio-button.md) | Reusable Radio_button with portfolio foundations and Phosphor. |
+| [Slider](components/slider.md) | Reusable Slider with portfolio foundations and Phosphor. |
+| [Table cell](components/table-cell.md) | Reusable Table_cell with portfolio foundations and Phosphor. |
+| [Table cell title](components/table-cell-title.md) | Reusable Table-cell-title with portfolio foundations and Phosphor. |
+| [Token preview](components/token-preview.md) | Reusable Token preview with portfolio foundations and Phosphor. |
+| [Filter chip](components/filter-chip.md) | Lienzo · Filtro de categorías del canvas (Todos / Experiencias / Componentes). |
+| [Dock item](components/dock-item.md) | Lienzo · Ítem del dock inferior (Proyectos / Sobre mí / Sistema / Contacto). |
+| [Dot grid](components/dot-grid.md) | Lienzo · Fondo del canvas (grilla de puntos cada 24px). |
+
+**Moléculas**
+
+| Componente | Para qué sirve |
+|---|---|
+| [Menu](components/menu.md) | Molecule. |
+| [Choice](components/choice.md) | TODO: sin descripción en Figma. |
+| [Accordeon](components/accordion.md) | S02 · Pieza nativa reutilizable. |
+| [Card](components/card.md) | C03: tarjeta con imagen de fondo, título y descripción. |
+| [Navigation card](components/navigation-card.md) | Navegación principal de Home: Inicio, Sobre mí, Proyectos y Contacto. |
+| [Bottom sheet](components/bottom-sheet.md) | Contenedor vacío basado en la referencia de Framer guardada el 26/10/2026. |
+| [Table list](components/table-list.md) | Reusable Table_list with portfolio foundations and Phosphor. |
+| [Table header](components/table-header.md) | Reusable Table header with portfolio foundations and Phosphor. |
+| [Folder](components/folder.md) | Lienzo · Carpeta de proyecto. |
+| [Paper note](components/paper-note.md) | Lienzo · Nota de papel para títulos de sección en el canvas (Hola / Proyectos). |
+| [Zoom control](components/zoom-control.md) | Lienzo · Control de zoom del canvas (esquina inferior izquierda). |
+
+**Organismos**
+
+| Componente | Para qué sirve |
+|---|---|
+| [Header](components/header.md) | Organism. |
+| [Panel content](components/panel-content.md) | Organism example made of shared atoms and molecules. |
+| [Inspector](components/inspector.md) | S02 · Pieza nativa reutilizable. |
+| [System · Personalize](components/system-personalize.md) | Pieza editable del sistema. |
+| [System · Component detail](components/system-component-detail.md) | Pieza editable del sistema. |
+| [System · Mobile sheet](components/system-mobile-sheet.md) | Plantilla móvil común. |
+| [Table](components/table.md) | Reusable Table with portfolio foundations and Phosphor. |
+| [Dock nav](components/dock-nav.md) | Lienzo · Navegación principal flotante (bottom center). |
+| [Canvas toolbar](components/canvas-toolbar.md) | Lienzo · Herramientas del canvas (bottom-left): zoom + ordenar carpetas en grilla. |
+| [Case study modal](components/case-study-modal.md) | Lienzo · Vista de caso de estudio que se abre desde una Folder. |
+| [Envelope contact](components/envelope-contact.md) | Lienzo · Sección Contacto: carta saliendo de un sobre. |
+<!-- DESIGN:component-list:end -->
+
+## Visión general
+
+Un sistema chico a propósito: un acento índigo (`#4038DB`, `color.palette.indigo.600`), una escala neutra de 50 a 950, Axiforma para titulares e Inter para todo lo demás, y un modelo de tres niveles (primitivos → roles semánticos → componentes de Figma). Los componentes se organizan por Atomic Design: átomos, moléculas y organismos.
+
+### Características clave
+
+- **Dos temas.** Claro y oscuro son modos de Figma (`Light` / `Dark`) en Primitives colors y Semantic Tokens; los roles no cambian de nombre, cambia el primitivo al que apuntan.
+- **Dos estilos.** Clásico y Lienzo son modos de la colección Style. Lienzo es papel sobre un lienzo de puntos: superficies `paper`, carpetas, sombras suaves de varias capas y radios distintos.
+- **Tres viewports.** Mobile, Tablet y Desktop son modos de la colección Layout (márgenes, columnas, gutter y breakpoints).
+- **Base de 4 px.** Espaciado y radios salen de la escala `size.*`.
+
+## Roles de color
+
+El color siempre se pide por rol, nunca por primitivo. Los roles semánticos (`bg.*`, `text.*`, `border.*`) apuntan a la paleta y cambian de primitivo entre claro y oscuro; los tokens `style.*` son los roles de la piel Clásico/Lienzo.
+
+- **Superficies:** `bg.surface.default` es la página; `bg.surface.container` y `bg.surface.container-high` son los escalones encima.
+- **Acento:** `bg.fill.primary` (índigo 600) para la acción principal, con `-hover` y `-pressed`. `bg.fill.secondary` es el contenedor suave del acento.
+- **Texto:** `text.on-surface` para el cuerpo, `text.on-surface-variant` para lo secundario, `text.primary` para enlaces y acentos, `text.on-primary` sobre el relleno de acento.
+- **Bordes:** `border.outline` para campos, `border.outline-variant` para divisores, `border.primary` para el botón secundario, `border.focus-ring` para el foco.
+- **Error:** `text.error` y `border.error` no dependen del color; Figma pide acompañarlos siempre de un mensaje explícito.
+
+El violeta de marca original, `color.palette.brand.base` (`#645BFF`), es identidad, no texto: da 4.30:1 sobre `bg.surface.default` y no llega a AA. Por eso `text.primary` usa índigo 600 (6.87:1).
+
+Los colores `color.palette.playground.*` son muestras del Playground de Framer; Figma los marca como "No rol semántico ni tema global aprobado". No los uses en interfaz.
+
+## Reglas tipográficas
+
+- **Axiforma** para display (`typography.display.*`, 56 a 96 px) y titulares (`typography.heading.3xl` a `.lg`).
+- **Inter** para subtítulos, cuerpo, botones, labels y captions (`typography.heading.subtitle-*`, `typography.body.*`).
+- Usá los estilos compuestos (`font: var(--typography-…)`), no armes tamaños sueltos.
+- El título de la nota de papel (Paper note) usa `typography.heading.xl`, según su descripción en Figma.
+- Axiforma es una fuente comercial y no se distribuye en este repo; el sitio la carga por su cuenta.
+
+## Estilos de componentes
+
+Cada componente toma solo tokens del sistema; la sección **Tokens** de cada página lista exactamente qué variables y estilos tiene enlazados en Figma.
+
+- **Button:** variantes Primary, Secondary y Tertiary; tamaños MD y SM; iconos opcionales antes y después del label.
+- **Link:** MD 56 px y SM 40 px, subrayado opcional.
+- **Input Field:** label, ayuda o error; estados de teclado y de solo lectura. En web siempre necesita nombre accesible, aunque el label se oculte en Figma.
+- **Card:** imagen de fondo, título y descripción; Informative o Interactive. Interactive es botón si abre panel y enlace si navega, sin acciones anidadas.
+- **Lienzo:** Folder (carpeta con rotación de ±3° aplicada en la instancia), Paper note (rotación de +2° a +4°), Dock nav (flota abajo al centro, fondo paper al 70% con blur), Canvas toolbar, Envelope contact y Case study modal.
+
+## Principios de layout
+
+- Grilla de 4 columnas en mobile, 6 en tablet y 12 en desktop (`layout.grid.columns`).
+- Margen por lado de 16, 32 y 60 px (`layout.grid.margin`), que también es el padding horizontal del contenedor.
+- Gutter de 12, 20 y 24 px (`layout.grid.gutter`).
+- El espaciado entre elementos sale de `space.*` (múltiplos de 4 px).
+
+## Profundidad y elevación
+
+- La profundidad viene primero de los escalones de superficie (`bg.surface.default` → `container` → `container-high`) y de los bordes.
+- Sombras: `elevation.low.*` y `elevation.medium.*` y `elevation.high.*` para la interfaz clásica; `elevation.paper.shadow-1..3` son las sombras suaves de varias capas del estilo Lienzo.
+- Radios: `radius.none` a `radius.full`; en Lienzo, `style.radius.surface`, `style.radius.control` y `style.radius.paper` cambian de valor con el estilo.
+
+## Do's and Don'ts
+
+- **Hacé:** pedí color por rol (`bg`, `text`, `border`, `style`) y no por primitivo.
+- **Hacé:** acompañá todo error con un mensaje explícito; el color solo no comunica error.
+- **Hacé:** mostrá el foco con `border.focus-ring`; nunca lo saques sin reemplazo.
+- **Hacé:** respetá `prefers-reduced-motion`: la apertura del caso de estudio no se desplaza con movimiento reducido.
+- **No:** uses `color.palette.playground.*` ni `color.palette.brand.base` como color de texto.
+- **No:** anides acciones dentro de una Card interactiva.
+- **No:** rotes Folder ni Paper note en el componente; la rotación va en la instancia.
+
+## Voz y tono
+
+> TODO: la voz del portfolio todavía no está escrita como regla. Hasta que exista, seguí el tono de los textos actuales del sitio.
+
+## Comportamiento responsive
+
+- Mobile desde 320 px, Tablet desde 600 px y Desktop desde 1136 px (`layout.breakpoint.min-width`).
+- `tokens.css` es mobile-first: los valores de Tablet y Desktop entran con `@media (min-width)`.
+- En mobile, el panel del Sistema se presenta como Bottom sheet (Inspector, Presentation = Bottom sheet).
+
+## Guía para agentes
+
+- Antes de escribir interfaz para el portfolio, leé [AGENTS.md](AGENTS.md) y este archivo.
+- Linkeá `tokens.css`; usá solo `var(--…)` que existan ahí.
+- Para un componente, abrí su página en [components/](COMPONENTS.md): props, variantes, estados y los tokens exactos que usa en Figma.
+- Revisá el resultado en claro y oscuro, y en Clásico y Lienzo, y verificá contraste WCAG 2.2 AA.
+
+## Brechas conocidas
+
+- **Sin capa CSS de componentes todavía.** Los componentes existen en Figma; la implementación en código (Storybook) está pendiente.
+- **Variables fuera del sistema.** Algunos componentes enlazan variables que no están en las colecciones exportadas; cada página las lista en "Variables fuera del sistema".
+- **Movimiento e iconos sin tokens.** Duraciones, curvas y tamaños de icono todavía no son variables de Figma.
+- **Voz y tono sin escribir.**

@@ -1,0 +1,13 @@
+{
+  "name": "benjamin-abud-design-system",
+  "description": "Construí en marca para el portfolio de Benjamín Abud: tokens DTCG de Figma, reglas de roles y contraste WCAG 2.2 AA.",
+  "author": {
+    "name": "Benjamín Abud",
+    "email": "bandresabudh@gmail.com",
+    "url": "https://benjaabud.framer.website"
+  },
+  "homepage": "https://benjaabud.framer.website/sistema",
+  "repository": "https://github.com/Baah07/benjamin-abud-design-system",
+  "license": "MIT",
+  "keywords": ["design-system", "design-tokens", "dtcg", "figma", "accessibility"]
+}

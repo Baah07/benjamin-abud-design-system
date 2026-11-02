@@ -1,0 +1,1532 @@
+{
+  "name": "Design System de Benjamín Abud",
+  "description": "Los componentes del sistema como datos: props de Figma, variantes, valores por defecto y los tokens que lee cada uno.",
+  "stylesheets": [
+    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap",
+    "https://cdn.jsdelivr.net/gh/Baah07/benjamin-abud-design-system@main/tokens.css"
+  ],
+  "rules": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/AGENTS.md",
+  "values": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/DESIGN.md",
+  "pages": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/COMPONENTS.md",
+  "components": [
+    {
+      "name": "Átomos",
+      "level": "atom",
+      "items": [
+        {
+          "name": "Button",
+          "slug": "button",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=246-420",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/button.md",
+          "description": "C01 Button. Label, Variant, Size y State conservados. Show leading icon / Show trailing icon: false por defecto. Leading icon / Trailing icon: instance swap independientes dentro del auto layout, antes/después de Label. El glifo predeterminado hereda los colores semánticos del texto; iconos alternativos conservan su contrato cromático. Ampliación solicitada para S01 Header el 2026-10-26; sin nuevas variantes ni tokens.",
+          "variants": 24,
+          "defaultVariant": "Variant=Primary, Size=MD, State=Default",
+          "props": [
+            {
+              "name": "Label",
+              "type": "TEXT",
+              "default": "Continuar"
+            },
+            {
+              "name": "Show trailing icon",
+              "type": "BOOLEAN",
+              "default": false
+            },
+            {
+              "name": "Trailing icon",
+              "type": "INSTANCE_SWAP",
+              "default": null
+            },
+            {
+              "name": "Show leading icon",
+              "type": "BOOLEAN",
+              "default": false
+            },
+            {
+              "name": "Leading icon",
+              "type": "INSTANCE_SWAP",
+              "default": null
+            },
+            {
+              "name": "Variant",
+              "type": "VARIANT",
+              "values": [
+                "Primary",
+                "Secondary",
+                "Tertiary"
+              ]
+            },
+            {
+              "name": "Size",
+              "type": "VARIANT",
+              "values": [
+                "MD",
+                "SM"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Hover",
+                "Pressed",
+                "Focus"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--bg-fill-primary-hover",
+            "--bg-fill-primary-pressed",
+            "--bg-fill-secondary",
+            "--bg-surface-container",
+            "--bg-surface-default",
+            "--border-focus-ring",
+            "--border-primary",
+            "--border-primary-hover",
+            "--border-primary-pressed",
+            "--font-family-inter",
+            "--font-letter-spacing-0",
+            "--font-line-height-24",
+            "--font-size-14",
+            "--font-size-16",
+            "--font-weight-bold",
+            "--radius-lg",
+            "--radius-md",
+            "--space-2",
+            "--space-3",
+            "--space-4",
+            "--space-6",
+            "--text-on-primary",
+            "--text-on-primary-container",
+            "--text-on-primary-container-pressed",
+            "--text-on-surface",
+            "--text-primary",
+            "--typography-body-button-md",
+            "--typography-body-button-sm",
+            "--elevation-low-shadow-1",
+            "--elevation-low-shadow-2"
+          ],
+          "outsideSystem": [
+            "color/compat/aliases/compat/indigo/700"
+          ]
+        },
+        {
+          "name": "Link",
+          "slug": "link",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=275-179",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/link.md",
+          "description": "Enlaces de navegación. MD 56 px y SM 40 px. Colores y tipografía de foundations. Texto e iconos configurables.",
+          "variants": 10,
+          "defaultVariant": "Size=MD, State=Default",
+          "props": [
+            {
+              "name": "Show underline",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Leading icon",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Label",
+              "type": "TEXT",
+              "default": "Continuar"
+            },
+            {
+              "name": "Trailing icon",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Size",
+              "type": "VARIANT",
+              "values": [
+                "MD",
+                "SM"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Hover",
+                "Pressed",
+                "Disabled",
+                "Focus"
+              ]
+            }
+          ],
+          "reads": [
+            "--border-focus-ring",
+            "--border-outline",
+            "--font-family-inter",
+            "--font-letter-spacing-0",
+            "--font-line-height-24",
+            "--font-size-14",
+            "--font-size-16",
+            "--font-weight-bold",
+            "--size-4",
+            "--space-2",
+            "--space-3",
+            "--space-4",
+            "--text-primary",
+            "--typography-body-button-md",
+            "--typography-body-button-sm"
+          ],
+          "outsideSystem": [
+            "color/compat/aliases/compat/indigo/700",
+            "color/compat/aliases/compat/indigo/800"
+          ]
+        },
+        {
+          "name": "Input Field",
+          "slug": "input-field",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=315-18",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/input-field.md",
+          "description": "Campo completo: Label + instancia C07 / Input + ayuda o error. Mostrar etiqueta es opcional en Figma; en web siempre requiere nombre accesible. Editá el Input anidado para icono intercambiable, prefijo, sufijo y contenido Empty/Filled. Conserva estados de teclado y solo lectura. Foundations del portfolio; sin colores externos.",
+          "variants": 16,
+          "defaultVariant": "Size=MD, State=Default",
+          "props": [
+            {
+              "name": "Label",
+              "type": "TEXT",
+              "default": "Correo electrónico"
+            },
+            {
+              "name": "Helper",
+              "type": "TEXT",
+              "default": "Usaremos este correo para responderte."
+            },
+            {
+              "name": "Error message",
+              "type": "TEXT",
+              "default": "Ingresá un correo válido, por ejemplo nombre@dominio.com."
+            },
+            {
+              "name": "Required",
+              "type": "BOOLEAN",
+              "default": false
+            },
+            {
+              "name": "Show helper",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Show label",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Size",
+              "type": "VARIANT",
+              "values": [
+                "MD",
+                "SM"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Hover",
+                "Focus",
+                "Error",
+                "Error focus",
+                "Disabled",
+                "Read-only",
+                "Read-only focus"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-surface-container",
+            "--bg-surface-default",
+            "--border-error",
+            "--border-outline",
+            "--border-outline-variant",
+            "--border-primary",
+            "--font-family-inter",
+            "--font-letter-spacing-0",
+            "--font-line-height-24",
+            "--font-size-14",
+            "--font-weight-bold",
+            "--font-weight-regular",
+            "--radius-md",
+            "--space-1",
+            "--space-2",
+            "--space-3",
+            "--text-error",
+            "--text-on-surface",
+            "--text-on-surface-variant",
+            "--typography-body-label-md",
+            "--typography-body-sm"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Toggle",
+          "slug": "toggle",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1138-53",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/toggle.md",
+          "description": "Reusable Toggle with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 10,
+          "defaultVariant": "Value=Off, State=Default",
+          "props": [
+            {
+              "name": "Value",
+              "type": "VARIANT",
+              "values": [
+                "Off",
+                "On"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Hover",
+                "Pressed",
+                "Focus",
+                "Disabled"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--bg-fill-primary-hover",
+            "--bg-fill-primary-pressed",
+            "--bg-surface-container-high",
+            "--border-focus-ring",
+            "--border-outline",
+            "--radius-full",
+            "--size-20",
+            "--text-on-primary",
+            "--text-on-surface-variant"
+          ],
+          "outsideSystem": [
+            "icons/sm"
+          ]
+        },
+        {
+          "name": "Checkbox",
+          "slug": "checkbox",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1139-78",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/checkbox.md",
+          "description": "Reusable Checkbox with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 15,
+          "defaultVariant": "Value=Off, State=Default",
+          "props": [
+            {
+              "name": "Value",
+              "type": "VARIANT",
+              "values": [
+                "Off",
+                "On",
+                "Mixed"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Hover",
+                "Pressed",
+                "Focus",
+                "Disabled"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--bg-fill-primary-hover",
+            "--bg-fill-primary-pressed",
+            "--bg-surface-container",
+            "--bg-surface-default",
+            "--border-focus-ring",
+            "--border-outline",
+            "--radius-sm",
+            "--text-on-primary"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Radio button",
+          "slug": "radio-button",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1139-217",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/radio-button.md",
+          "description": "Reusable Radio_button with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 10,
+          "defaultVariant": "Value=Off, State=Default",
+          "props": [
+            {
+              "name": "Value",
+              "type": "VARIANT",
+              "values": [
+                "Off",
+                "On"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Hover",
+                "Pressed",
+                "Focus",
+                "Disabled"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--bg-fill-primary-hover",
+            "--bg-fill-primary-pressed",
+            "--bg-surface-container",
+            "--bg-surface-default",
+            "--border-focus-ring",
+            "--border-outline",
+            "--radius-full"
+          ],
+          "outsideSystem": [
+            "icons/sm"
+          ]
+        },
+        {
+          "name": "Slider",
+          "slug": "slider",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1139-376",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/slider.md",
+          "description": "Reusable Slider with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 15,
+          "defaultVariant": "Value=0, State=Default",
+          "props": [
+            {
+              "name": "Value label 0",
+              "type": "TEXT",
+              "default": "0%"
+            },
+            {
+              "name": "Value label 50",
+              "type": "TEXT",
+              "default": "50%"
+            },
+            {
+              "name": "Value label 100",
+              "type": "TEXT",
+              "default": "100%"
+            },
+            {
+              "name": "Value",
+              "type": "VARIANT",
+              "values": [
+                "0",
+                "50",
+                "100"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Hover",
+                "Pressed",
+                "Focus",
+                "Disabled"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--bg-fill-primary-hover",
+            "--bg-fill-primary-pressed",
+            "--bg-surface-container-high",
+            "--bg-surface-default",
+            "--border-focus-ring",
+            "--font-family-inter",
+            "--font-letter-spacing-0",
+            "--font-line-height-20",
+            "--font-size-12",
+            "--font-weight-bold",
+            "--radius-full",
+            "--size-8",
+            "--text-on-surface-variant",
+            "--typography-body-caption"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Table cell",
+          "slug": "table-cell",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1145-242",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/table-cell.md",
+          "description": "Reusable Table_cell with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 9,
+          "defaultVariant": "Role=Preview, Layout=Desktop",
+          "props": [
+            {
+              "name": "Preview",
+              "type": "INSTANCE_SWAP",
+              "default": null
+            },
+            {
+              "name": "Content",
+              "type": "TEXT",
+              "default": "Contenido"
+            },
+            {
+              "name": "Role",
+              "type": "VARIANT",
+              "values": [
+                "Preview",
+                "Code",
+                "Text"
+              ]
+            },
+            {
+              "name": "Layout",
+              "type": "VARIANT",
+              "values": [
+                "Desktop",
+                "Tablet",
+                "Mobile"
+              ]
+            }
+          ],
+          "reads": [
+            "--size-12",
+            "--size-16",
+            "--size-20",
+            "--text-on-surface"
+          ],
+          "outsideSystem": [
+            "documentation/table/body",
+            "documentation/table/code"
+          ]
+        },
+        {
+          "name": "Table cell title",
+          "slug": "table-cell-title",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1145-379",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/table-cell-title.md",
+          "description": "Reusable Table-cell-title with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 3,
+          "defaultVariant": "Layout=Desktop",
+          "props": [
+            {
+              "name": "Label",
+              "type": "TEXT",
+              "default": "Etiqueta"
+            },
+            {
+              "name": "Layout",
+              "type": "VARIANT",
+              "values": [
+                "Desktop",
+                "Tablet",
+                "Mobile"
+              ]
+            }
+          ],
+          "reads": [
+            "--size-12",
+            "--size-16",
+            "--size-20",
+            "--text-on-surface-variant"
+          ],
+          "outsideSystem": [
+            "documentation/table/label"
+          ]
+        },
+        {
+          "name": "Token preview",
+          "slug": "token-preview",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1163-16",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/token-preview.md",
+          "description": "Reusable Token preview with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 5,
+          "defaultVariant": "Type=Color",
+          "props": [
+            {
+              "name": "Fallback",
+              "type": "TEXT",
+              "default": "—"
+            },
+            {
+              "name": "Type",
+              "type": "VARIANT",
+              "values": [
+                "Color",
+                "Typography",
+                "Bar",
+                "Corner",
+                "Text"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--border-outline-variant",
+            "--radius-sm",
+            "--text-on-surface",
+            "--text-on-surface-variant"
+          ],
+          "outsideSystem": [
+            "documentation/table/label"
+          ]
+        },
+        {
+          "name": "Filter chip",
+          "slug": "filter-chip",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1188-243",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/filter-chip.md",
+          "description": "Lienzo · Filtro de categorías del canvas (Todos / Experiencias / Componentes). Bindeado a colección Style: cambia de piel con modo Clásico/Lienzo.",
+          "variants": 2,
+          "defaultVariant": "State=Default",
+          "props": [
+            {
+              "name": "Label",
+              "type": "TEXT",
+              "default": "Experiencias"
+            },
+            {
+              "name": "Icon",
+              "type": "INSTANCE_SWAP",
+              "default": null
+            },
+            {
+              "name": "Show icon",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Selected"
+              ]
+            }
+          ],
+          "reads": [
+            "--style-bg-folder",
+            "--style-bg-paper",
+            "--style-border-paper",
+            "--style-radius-control",
+            "--style-text-primary",
+            "--style-text-secondary",
+            "--elevation-paper-shadow-1"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Dock item",
+          "slug": "dock-item",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1188-255",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/dock-item.md",
+          "description": "Lienzo · Ítem del dock inferior (Proyectos / Sobre mí / Sistema / Contacto). Active = sección actual.",
+          "variants": 2,
+          "defaultVariant": "State=Default",
+          "props": [
+            {
+              "name": "Label",
+              "type": "TEXT",
+              "default": "Proyectos"
+            },
+            {
+              "name": "Icon",
+              "type": "INSTANCE_SWAP",
+              "default": null
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Active"
+              ]
+            }
+          ],
+          "reads": [
+            "--style-bg-accent",
+            "--style-bg-paper",
+            "--style-border-paper",
+            "--style-radius-control",
+            "--style-text-on-accent",
+            "--style-text-primary",
+            "--elevation-paper-shadow-1",
+            "--elevation-paper-shadow-2"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Dot grid",
+          "slug": "dot-grid",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1188-659",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/dot-grid.md",
+          "description": "Lienzo · Fondo del canvas (grilla de puntos cada 24px). En modo Clásico los puntos se funden con el fondo.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [],
+          "reads": [
+            "--style-bg-canvas",
+            "--style-bg-canvas-dot"
+          ],
+          "outsideSystem": []
+        }
+      ]
+    },
+    {
+      "name": "Moléculas",
+      "level": "molecule",
+      "items": [
+        {
+          "name": "Menu",
+          "slug": "menu",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1010-3302",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/menu.md",
+          "description": "Molecule. Options is a native content slot: add/remove linked Dropdown / Option instances. Labels and visual selection are configured on each option. No value-specific variants or prototype actions.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [],
+          "reads": [
+            "--bg-surface-container",
+            "--bg-surface-default",
+            "--border-outline-variant",
+            "--radius-lg",
+            "--space-1",
+            "--space-2",
+            "--space-3"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Choice",
+          "slug": "choice",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1023-4406",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/choice.md",
+          "description": "",
+          "variants": 5,
+          "defaultVariant": "state=default",
+          "props": [
+            {
+              "name": "state",
+              "type": "VARIANT",
+              "values": [
+                "default",
+                "hjover",
+                "selected-focus"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Selected",
+                "Focus"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--color-palette-playground-neutral-base",
+            "--color-palette-playground-neutral-dark",
+            "--color-palette-playground-neutral-light",
+            "--font-family-inter",
+            "--font-weight-regular",
+            "--size-12",
+            "--size-24",
+            "--text-on-primary",
+            "--text-on-surface",
+            "--text-primary"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Accordeon",
+          "slug": "accordion",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=462-690",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/accordion.md",
+          "description": "S02 · Pieza nativa reutilizable. Instancias anidadas y variables del sistema. Geometría local del wireframe; no API web.",
+          "variants": 2,
+          "defaultVariant": "State=Closed",
+          "props": [
+            {
+              "name": "Title",
+              "type": "TEXT",
+              "default": "Documentación"
+            },
+            {
+              "name": "Content",
+              "type": "TEXT",
+              "default": "Heading XL · 32 / 40 · Semibold. Usar en títulos principales; verificar jerarquía y reflujo."
+            },
+            {
+              "name": "Show icon left",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Show Icon right",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Show Divider",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Closed",
+                "Open"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-surface-default",
+            "--font-family-inter",
+            "--font-letter-spacing-0",
+            "--font-line-height-24",
+            "--font-size-14",
+            "--font-weight-regular",
+            "--radius-lg",
+            "--space-2",
+            "--space-3",
+            "--text-on-surface",
+            "--typography-body-sm"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Card",
+          "slug": "card",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=299-77",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/card.md",
+          "description": "C03: tarjeta con imagen de fondo, título y descripción. Fuente: capturas del usuario y Framer Home/Case Notion. Framer tiene placeholders sin imagen, título y descripción ocultos; aquí visibles por pedido. Hover/Pressed propuestos (borde, sin escala). La apertura de caso corresponde a C04: override withExpandingCaseSheet, entrada 0.8 s cubic-bezier(0.87,0,0.13,1); sin desplazamiento con reduced motion. No se implementa el panel C04 en esta familia. Interactive: botón si abre panel, enlace si navega; sin acciones anidadas. Focus documenta focus-visible; Figma no certifica tabulación DOM. Actualización: hover con imagen al 105%, tres adelantos sobre el borde superior y Smart Animate 300 ms ease-out. La geometría del contenedor y sus textos no cambia.",
+          "variants": 10,
+          "defaultVariant": "Size=Desktop, Type=Informative, State=Default",
+          "props": [
+            {
+              "name": "Title",
+              "type": "TEXT",
+              "default": "Titulo"
+            },
+            {
+              "name": "Description",
+              "type": "TEXT",
+              "default": "Vestibulum curae ipsum velit cursus faucibus luctus ultrices orci cubilia in accumsan."
+            },
+            {
+              "name": "Show description",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Protect text over image",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Size",
+              "type": "VARIANT",
+              "values": [
+                "Desktop",
+                "Mobile"
+              ]
+            },
+            {
+              "name": "Type",
+              "type": "VARIANT",
+              "values": [
+                "Informative",
+                "Interactive"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Hover",
+                "Pressed",
+                "Focus"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-surface-container",
+            "--bg-surface-container-high",
+            "--border-focus-ring",
+            "--border-outline-variant",
+            "--border-primary",
+            "--font-family-inter",
+            "--font-letter-spacing-0",
+            "--font-line-height-24",
+            "--font-line-height-28",
+            "--font-line-height-32",
+            "--font-size-14",
+            "--font-size-16",
+            "--font-size-20",
+            "--font-size-24",
+            "--font-weight-regular",
+            "--radius-lg",
+            "--radius-md",
+            "--size-32",
+            "--size-36",
+            "--space-2",
+            "--space-4",
+            "--space-8",
+            "--text-on-surface",
+            "--typography-body-lg",
+            "--typography-body-md",
+            "--typography-body-sm"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Navigation card",
+          "slug": "navigation-card",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=557-1271",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/navigation-card.md",
+          "description": "Navegación principal de Home: Inicio, Sobre mí, Proyectos y Contacto. Cuatro instancias de Navigation item; Inicio activo.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [],
+          "reads": [
+            "--bg-surface-container",
+            "--radius-md",
+            "--space-2",
+            "--space-4"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Bottom sheet",
+          "slug": "bottom-sheet",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1064-3",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/bottom-sheet.md",
+          "description": "Contenedor vacío basado en la referencia de Framer guardada el 26/10/2026. Superficie blanca, radios superiores 22 px y base recta. Redimensionar ancho y alto según contexto. Content es un slot vacío para insertar instancias; Show handle controla el tirador. Sin título, cierre, paneles, controles ni prototipos. Los 22 px preservan la geometría específica de la referencia; colores y espacios usan variables existentes.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [
+            {
+              "name": "Show handle",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Content",
+              "type": "SLOT",
+              "default": null
+            }
+          ],
+          "reads": [
+            "--color-palette-white",
+            "--radius-sm",
+            "--size-0"
+          ],
+          "outsideSystem": [
+            "handle"
+          ]
+        },
+        {
+          "name": "Table list",
+          "slug": "table-list",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1146-1058",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/table-list.md",
+          "description": "Reusable Table_list with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 9,
+          "defaultVariant": "Schema=Tokens, Layout=Desktop, State=Default",
+          "props": [
+            {
+              "name": "Schema",
+              "type": "VARIANT",
+              "values": [
+                "Tokens",
+                "Typography"
+              ]
+            },
+            {
+              "name": "Layout",
+              "type": "VARIANT",
+              "values": [
+                "Desktop",
+                "Tablet",
+                "Mobile"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Selected"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-surface-default",
+            "--border-outline-variant",
+            "--size-12",
+            "--size-16",
+            "--size-20",
+            "--size-4",
+            "--size-8"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Table header",
+          "slug": "table-header",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1147-72",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/table-header.md",
+          "description": "Reusable Table header with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 4,
+          "defaultVariant": "Schema=Tokens, Layout=Desktop",
+          "props": [
+            {
+              "name": "Schema",
+              "type": "VARIANT",
+              "values": [
+                "Tokens",
+                "Typography"
+              ]
+            },
+            {
+              "name": "Layout",
+              "type": "VARIANT",
+              "values": [
+                "Desktop",
+                "Tablet"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-surface-default",
+            "--border-outline-variant",
+            "--size-12",
+            "--size-16",
+            "--size-20"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Folder",
+          "slug": "folder",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-39",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/folder.md",
+          "description": "Lienzo · Carpeta de proyecto. Reemplazá el contenido de \"Preview\" (screens del proyecto) y \"Logo\". Rotación (±3°) se aplica en la instancia. Selected = foco/drag en el canvas.",
+          "variants": 2,
+          "defaultVariant": "State=Default",
+          "props": [
+            {
+              "name": "Title",
+              "type": "TEXT",
+              "default": "Notion Mobile"
+            },
+            {
+              "name": "Description",
+              "type": "TEXT",
+              "default": "Productividad para equipos."
+            },
+            {
+              "name": "Show description",
+              "type": "BOOLEAN",
+              "default": false
+            },
+            {
+              "name": "CTA",
+              "type": "TEXT",
+              "default": "Ver proyecto"
+            },
+            {
+              "name": "State",
+              "type": "VARIANT",
+              "values": [
+                "Default",
+                "Selected"
+              ]
+            }
+          ],
+          "reads": [
+            "--style-bg-folder",
+            "--style-bg-paper",
+            "--style-border-paper",
+            "--style-border-selection",
+            "--style-radius-paper",
+            "--style-text-primary",
+            "--style-text-secondary",
+            "--elevation-paper-shadow-1",
+            "--elevation-paper-shadow-2"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Paper note",
+          "slug": "paper-note",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-41",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/paper-note.md",
+          "description": "Lienzo · Nota de papel para títulos de sección en el canvas (Hola / Proyectos). Rotar +2° a +4° en la instancia. Título: aplicar typography/heading/xl (Axiforma) en archivo local.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [
+            {
+              "name": "Title",
+              "type": "TEXT",
+              "default": "Hola, soy Benja."
+            },
+            {
+              "name": "Subtitle",
+              "type": "TEXT",
+              "default": "Diseño interfaces y sistemas."
+            }
+          ],
+          "reads": [
+            "--style-bg-paper",
+            "--style-border-paper",
+            "--style-radius-paper",
+            "--style-text-primary",
+            "--style-text-secondary",
+            "--elevation-paper-shadow-2"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Zoom control",
+          "slug": "zoom-control",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-48",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/zoom-control.md",
+          "description": "Lienzo · Control de zoom del canvas (esquina inferior izquierda). Acompañar con Filter chip \"Ordenar\" + icono list.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [
+            {
+              "name": "Zoom",
+              "type": "TEXT",
+              "default": "100%"
+            }
+          ],
+          "reads": [
+            "--style-bg-paper",
+            "--style-border-paper",
+            "--style-radius-control",
+            "--style-text-primary",
+            "--elevation-paper-shadow-1"
+          ],
+          "outsideSystem": []
+        }
+      ]
+    },
+    {
+      "name": "Organismos",
+      "level": "organism",
+      "items": [
+        {
+          "name": "Header",
+          "slug": "header",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=333-235",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/header.md",
+          "description": "Organism. Static visual structures by Viewport and Menu. Shared Logo, Button, Link, navigation cards and controls. Configure exposed nested properties. No prototype actions or duplicate Motion variants.",
+          "variants": 6,
+          "defaultVariant": "Viewport=Desktop, Menu=Closed",
+          "props": [
+            {
+              "name": "Show CTA",
+              "type": "BOOLEAN",
+              "default": true
+            },
+            {
+              "name": "Viewport",
+              "type": "VARIANT",
+              "values": [
+                "Desktop",
+                "Tablet",
+                "Mobile"
+              ]
+            },
+            {
+              "name": "Menu",
+              "type": "VARIANT",
+              "values": [
+                "Closed",
+                "Open"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--bg-fill-secondary",
+            "--bg-surface-container",
+            "--border-outline-variant",
+            "--font-family-inter",
+            "--font-letter-spacing-0",
+            "--font-line-height-24",
+            "--font-size-16",
+            "--font-weight-medium",
+            "--layout-grid-margin",
+            "--radius-md",
+            "--space-2",
+            "--space-3",
+            "--space-4",
+            "--space-6",
+            "--text-on-surface",
+            "--typography-heading-subtitle-sm"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Panel content",
+          "slug": "panel-content",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=462-691",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/panel-content.md",
+          "description": "Organism example made of shared atoms and molecules. Text is editable sample content. No role-specific masters or runtime state. Exposed nested properties configure each piece.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [
+            {
+              "name": "Subtitle",
+              "type": "TEXT",
+              "default": "Lorem ipsum"
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--border-outline-variant",
+            "--border-primary",
+            "--font-family-inter",
+            "--font-letter-spacing-0",
+            "--font-line-height-24",
+            "--font-size-14",
+            "--font-weight-bold",
+            "--radius-md",
+            "--radius-xl",
+            "--size-0",
+            "--space-2",
+            "--space-3",
+            "--space-6",
+            "--text-on-surface",
+            "--typography-body-label-md"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Inspector",
+          "slug": "inspector",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=462-1152",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/inspector.md",
+          "description": "S02 · Pieza nativa reutilizable. Instancias anidadas y variables del sistema. Geometría local del wireframe; no API web.",
+          "variants": 4,
+          "defaultVariant": "Presentation=Sidebar, View=Overview",
+          "props": [
+            {
+              "name": "Presentation",
+              "type": "VARIANT",
+              "values": [
+                "Sidebar",
+                "Bottom sheet"
+              ]
+            },
+            {
+              "name": "View",
+              "type": "VARIANT",
+              "values": [
+                "Overview",
+                "Detail"
+              ]
+            }
+          ],
+          "reads": [
+            "--border-outline",
+            "--radius-full",
+            "--radius-none",
+            "--radius-xl",
+            "--size-32",
+            "--space-2",
+            "--space-4",
+            "--space-6"
+          ],
+          "outsideSystem": [
+            "s02/surface/panel"
+          ]
+        },
+        {
+          "name": "System · Personalize",
+          "slug": "system-personalize",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=868-1259",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/system-personalize.md",
+          "description": "Pieza editable del sistema. Sin acciones de prototipo. Fuente: Framer reviewPreview1 / reviewPreview2, 26 octubre 2026.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [],
+          "reads": [
+            "--border-primary",
+            "--radius-md",
+            "--size-0",
+            "--size-24",
+            "--space-2",
+            "--space-4"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "System · Component detail",
+          "slug": "system-component-detail",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=868-1484",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/system-component-detail.md",
+          "description": "Pieza editable del sistema. Sin acciones de prototipo. Fuente: Framer reviewPreview1 / reviewPreview2, 26 octubre 2026.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [
+            {
+              "name": "Title",
+              "type": "TEXT",
+              "default": "Project Card"
+            },
+            {
+              "name": "Description",
+              "type": "TEXT",
+              "default": "Componente para presentar proyectos del portafolio."
+            },
+            {
+              "name": "Preview",
+              "type": "INSTANCE_SWAP",
+              "default": null
+            },
+            {
+              "name": "Sections",
+              "type": "SLOT",
+              "default": null
+            }
+          ],
+          "reads": [
+            "--color-palette-white",
+            "--size-0",
+            "--size-16",
+            "--size-24",
+            "--size-4",
+            "--size-8"
+          ],
+          "outsideSystem": [
+            "button",
+            "divider",
+            "ink",
+            "muted"
+          ]
+        },
+        {
+          "name": "System · Mobile sheet",
+          "slug": "system-mobile-sheet",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=868-1751",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/system-mobile-sheet.md",
+          "description": "Plantilla móvil común. Body es un slot: Personalize content (418 px total) o Component browser (756 px total). 386 px de ancho de referencia. El mismo contenido puede insertarse en sidebar. Sin prototipos ni variantes por selección.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [
+            {
+              "name": "Body",
+              "type": "SLOT",
+              "default": null
+            }
+          ],
+          "reads": [
+            "--color-palette-white",
+            "--size-0",
+            "--size-16",
+            "--size-24",
+            "--size-32"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Table",
+          "slug": "table",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1166-446",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/table.md",
+          "description": "Reusable Table with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
+          "variants": 6,
+          "defaultVariant": "Schema=Tokens, Layout=Desktop",
+          "props": [
+            {
+              "name": "Rows",
+              "type": "SLOT",
+              "default": null
+            },
+            {
+              "name": "Schema",
+              "type": "VARIANT",
+              "values": [
+                "Tokens",
+                "Typography"
+              ]
+            },
+            {
+              "name": "Layout",
+              "type": "VARIANT",
+              "values": [
+                "Desktop",
+                "Tablet",
+                "Mobile"
+              ]
+            }
+          ],
+          "reads": [
+            "--bg-surface-default",
+            "--border-outline-variant",
+            "--size-16"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Dock nav",
+          "slug": "dock-nav",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-173",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/dock-nav.md",
+          "description": "Lienzo · Navegación principal flotante (bottom center). Active = sección actual. Fondo paper 70% + background blur.",
+          "variants": 4,
+          "defaultVariant": "Active=Proyectos",
+          "props": [
+            {
+              "name": "Active",
+              "type": "VARIANT",
+              "values": [
+                "Proyectos",
+                "Sobre mí",
+                "Sistema",
+                "Contacto"
+              ]
+            }
+          ],
+          "reads": [
+            "--style-bg-accent",
+            "--style-bg-paper",
+            "--style-border-paper",
+            "--style-radius-control",
+            "--style-radius-surface",
+            "--elevation-paper-shadow-1",
+            "--elevation-paper-shadow-2",
+            "--elevation-paper-shadow-3"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Canvas toolbar",
+          "slug": "canvas-toolbar",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-175",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/canvas-toolbar.md",
+          "description": "Lienzo · Herramientas del canvas (bottom-left): zoom + ordenar carpetas en grilla.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [],
+          "reads": [
+            "--style-bg-paper",
+            "--style-border-paper",
+            "--style-radius-control",
+            "--elevation-paper-shadow-1"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Case study modal",
+          "slug": "case-study-modal",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1190-2",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/case-study-modal.md",
+          "description": "Lienzo · Vista de caso de estudio que se abre desde una Folder. Reemplazá \"Media\" con screens reales. Tabs: Contexto / Problema / Propuesta / Aprendizajes.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [
+            {
+              "name": "Project",
+              "type": "TEXT",
+              "default": "Notion Mobile"
+            },
+            {
+              "name": "Title",
+              "type": "TEXT",
+              "default": "Menos es más"
+            },
+            {
+              "name": "Lead",
+              "type": "TEXT",
+              "default": "Uso Notion todos los días en desktop. También tenía la app instalada en el teléfono, pero casi nunca la usaba."
+            },
+            {
+              "name": "Next project",
+              "type": "TEXT",
+              "default": "Mercado Libre"
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--radius-md",
+            "--space-2",
+            "--space-3",
+            "--space-6",
+            "--style-bg-accent",
+            "--style-bg-folder",
+            "--style-bg-paper",
+            "--style-border-paper",
+            "--style-radius-control",
+            "--style-radius-surface",
+            "--style-text-primary",
+            "--style-text-secondary",
+            "--elevation-paper-shadow-1",
+            "--elevation-paper-shadow-2",
+            "--elevation-paper-shadow-3"
+          ],
+          "outsideSystem": []
+        },
+        {
+          "name": "Envelope contact",
+          "slug": "envelope-contact",
+          "figma": "https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1190-97",
+          "page": "https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components/envelope-contact.md",
+          "description": "Lienzo · Sección Contacto: carta saliendo de un sobre. Email copiable (icono copy), CTA mailto + LinkedIn.",
+          "variants": 1,
+          "defaultVariant": null,
+          "props": [
+            {
+              "name": "Email",
+              "type": "TEXT",
+              "default": "bandresabudh@gmail.com"
+            },
+            {
+              "name": "Title",
+              "type": "TEXT",
+              "default": "Hablemos de tu próximo proyecto."
+            }
+          ],
+          "reads": [
+            "--bg-fill-primary",
+            "--border-primary",
+            "--radius-md",
+            "--space-2",
+            "--space-3",
+            "--space-6",
+            "--style-bg-folder",
+            "--style-bg-paper",
+            "--style-border-paper",
+            "--style-text-accent",
+            "--style-text-primary",
+            "--style-text-secondary",
+            "--elevation-paper-shadow-2",
+            "--elevation-paper-shadow-3"
+          ],
+          "outsideSystem": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,122 +1,1698 @@
 {
-  "$description": "Component inventory read from Figma file FvaEDyROUUsM8ntHj8C9f8 via Plugin API on 2026-11-02. Level follows the file's page sections (Components → atoms, first ---- → molecules, second --- → organisms). description and props are verbatim from Figma.",
+  "$description": "Component inventory read from Figma file FvaEDyROUUsM8ntHj8C9f8 via Plugin API on 2026-11-02. Level follows the file's page sections (Components → atoms, first ---- → molecules, second --- → organisms). description and props are verbatim from Figma. variables/textStyles/effectStyles: everything bound inside the component (Plugin API boundVariables, textStyleId, effectStyleId), read 2026-11-02. defaultVariant: the set default.",
   "fileKey": "FvaEDyROUUsM8ntHj8C9f8",
   "components": [
-    { "slug": "button", "name": "Button", "level": "atom", "pageId": "5:10", "id": "246:420", "variants": 24,
-      "related": ["Segmented", "button_icon", "Segmented control", "Segment option", "S01 / Sound control", "S01 / Menu trigger"],
+    {
+      "slug": "button",
+      "name": "Button",
+      "level": "atom",
+      "pageId": "5:10",
+      "id": "246:420",
+      "variants": 24,
+      "related": [
+        "Segmented",
+        "button_icon",
+        "Segmented control",
+        "Segment option",
+        "S01 / Sound control",
+        "S01 / Menu trigger"
+      ],
       "description": "C01 Button. Label, Variant, Size y State conservados. Show leading icon / Show trailing icon: false por defecto. Leading icon / Trailing icon: instance swap independientes dentro del auto layout, antes/después de Label. El glifo predeterminado hereda los colores semánticos del texto; iconos alternativos conservan su contrato cromático. Ampliación solicitada para S01 Header el 2026-10-26; sin nuevas variantes ni tokens.",
-      "props": [["Label","TEXT","Continuar"],["Show trailing icon","BOOLEAN",false],["Trailing icon","INSTANCE_SWAP",null],["Show leading icon","BOOLEAN",false],["Leading icon","INSTANCE_SWAP",null],["Variant","VARIANT",["Primary","Secondary","Tertiary"]],["Size","VARIANT",["MD","SM"]],["State","VARIANT",["Default","Hover","Pressed","Focus"]]] },
-    { "slug": "link", "name": "Link", "level": "atom", "pageId": "246:490", "id": "275:179", "variants": 10, "related": [],
+      "props": [
+        [
+          "Label",
+          "TEXT",
+          "Continuar"
+        ],
+        [
+          "Show trailing icon",
+          "BOOLEAN",
+          false
+        ],
+        [
+          "Trailing icon",
+          "INSTANCE_SWAP",
+          null
+        ],
+        [
+          "Show leading icon",
+          "BOOLEAN",
+          false
+        ],
+        [
+          "Leading icon",
+          "INSTANCE_SWAP",
+          null
+        ],
+        [
+          "Variant",
+          "VARIANT",
+          [
+            "Primary",
+            "Secondary",
+            "Tertiary"
+          ]
+        ],
+        [
+          "Size",
+          "VARIANT",
+          [
+            "MD",
+            "SM"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focus"
+          ]
+        ]
+      ],
+      "defaultVariant": "Variant=Primary, Size=MD, State=Default",
+      "variables": [
+        "bg/fill/primary",
+        "bg/fill/primary-hover",
+        "bg/fill/primary-pressed",
+        "bg/fill/secondary",
+        "bg/surface/container",
+        "bg/surface/default",
+        "border/focus-ring",
+        "border/primary",
+        "border/primary-hover",
+        "border/primary-pressed",
+        "color/compat/aliases/compat/indigo/700",
+        "font/family/inter",
+        "font/letter-spacing/0",
+        "font/line-height/24",
+        "font/size/14",
+        "font/size/16",
+        "font/weight/bold",
+        "radius/lg",
+        "radius/md",
+        "space/2",
+        "space/3",
+        "space/4",
+        "space/6",
+        "text/on-primary",
+        "text/on-primary-container",
+        "text/on-primary-container-pressed",
+        "text/on-surface",
+        "text/primary"
+      ],
+      "textStyles": [
+        "typography/body/button-md",
+        "typography/body/button-sm"
+      ],
+      "effectStyles": [
+        "elevation/low/shadow-1",
+        "elevation/low/shadow-2"
+      ]
+    },
+    {
+      "slug": "link",
+      "name": "Link",
+      "level": "atom",
+      "pageId": "246:490",
+      "id": "275:179",
+      "variants": 10,
+      "related": [],
       "description": "Enlaces de navegación. MD 56 px y SM 40 px. Colores y tipografía de foundations. Texto e iconos configurables.",
-      "props": [["Show underline","BOOLEAN",true],["Leading icon","BOOLEAN",true],["Label","TEXT","Continuar"],["Trailing icon","BOOLEAN",true],["Size","VARIANT",["MD","SM"]],["State","VARIANT",["Default","Hover","Pressed","Disabled","Focus"]]] },
-    { "slug": "input-field", "name": "Input Field", "level": "atom", "pageId": "314:2", "id": "315:18", "variants": 16, "related": ["Property row", "Setting row"],
+      "props": [
+        [
+          "Show underline",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Leading icon",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Label",
+          "TEXT",
+          "Continuar"
+        ],
+        [
+          "Trailing icon",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Size",
+          "VARIANT",
+          [
+            "MD",
+            "SM"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Disabled",
+            "Focus"
+          ]
+        ]
+      ],
+      "defaultVariant": "Size=MD, State=Default",
+      "variables": [
+        "border/focus-ring",
+        "border/outline",
+        "color/compat/aliases/compat/indigo/700",
+        "color/compat/aliases/compat/indigo/800",
+        "font/family/inter",
+        "font/letter-spacing/0",
+        "font/line-height/24",
+        "font/size/14",
+        "font/size/16",
+        "font/weight/bold",
+        "size/4",
+        "space/2",
+        "space/3",
+        "space/4",
+        "text/primary"
+      ],
+      "textStyles": [
+        "typography/body/button-md",
+        "typography/body/button-sm"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "input-field",
+      "name": "Input Field",
+      "level": "atom",
+      "pageId": "314:2",
+      "id": "315:18",
+      "variants": 16,
+      "related": [
+        "Property row",
+        "Setting row"
+      ],
       "description": "Campo completo: Label + instancia C07 / Input + ayuda o error. Mostrar etiqueta es opcional en Figma; en web siempre requiere nombre accesible. Editá el Input anidado para icono intercambiable, prefijo, sufijo y contenido Empty/Filled. Conserva estados de teclado y solo lectura. Foundations del portfolio; sin colores externos.",
-      "props": [["Label","TEXT","Correo electrónico"],["Helper","TEXT","Usaremos este correo para responderte."],["Error message","TEXT","Ingresá un correo válido, por ejemplo nombre@dominio.com."],["Required","BOOLEAN",false],["Show helper","BOOLEAN",true],["Show label","BOOLEAN",true],["Size","VARIANT",["MD","SM"]],["State","VARIANT",["Default","Hover","Focus","Error","Error focus","Disabled","Read-only","Read-only focus"]]] },
-    { "slug": "toggle", "name": "Toggle", "level": "atom", "pageId": "1138:2", "id": "1138:53", "variants": 10, "related": [],
+      "props": [
+        [
+          "Label",
+          "TEXT",
+          "Correo electrónico"
+        ],
+        [
+          "Helper",
+          "TEXT",
+          "Usaremos este correo para responderte."
+        ],
+        [
+          "Error message",
+          "TEXT",
+          "Ingresá un correo válido, por ejemplo nombre@dominio.com."
+        ],
+        [
+          "Required",
+          "BOOLEAN",
+          false
+        ],
+        [
+          "Show helper",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Show label",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Size",
+          "VARIANT",
+          [
+            "MD",
+            "SM"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Hover",
+            "Focus",
+            "Error",
+            "Error focus",
+            "Disabled",
+            "Read-only",
+            "Read-only focus"
+          ]
+        ]
+      ],
+      "defaultVariant": "Size=MD, State=Default",
+      "variables": [
+        "bg/surface/container",
+        "bg/surface/default",
+        "border/error",
+        "border/outline",
+        "border/outline-variant",
+        "border/primary",
+        "font/family/inter",
+        "font/letter-spacing/0",
+        "font/line-height/24",
+        "font/size/14",
+        "font/weight/bold",
+        "font/weight/regular",
+        "radius/md",
+        "space/1",
+        "space/2",
+        "space/3",
+        "text/error",
+        "text/on-surface",
+        "text/on-surface-variant"
+      ],
+      "textStyles": [
+        "typography/body/label-md",
+        "typography/body/sm"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "toggle",
+      "name": "Toggle",
+      "level": "atom",
+      "pageId": "1138:2",
+      "id": "1138:53",
+      "variants": 10,
+      "related": [],
       "description": "Reusable Toggle with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Value","VARIANT",["Off","On"]],["State","VARIANT",["Default","Hover","Pressed","Focus","Disabled"]]] },
-    { "slug": "checkbox", "name": "Checkbox", "level": "atom", "pageId": "1139:2", "id": "1139:78", "variants": 15, "related": [],
+      "props": [
+        [
+          "Value",
+          "VARIANT",
+          [
+            "Off",
+            "On"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focus",
+            "Disabled"
+          ]
+        ]
+      ],
+      "defaultVariant": "Value=Off, State=Default",
+      "variables": [
+        "bg/fill/primary",
+        "bg/fill/primary-hover",
+        "bg/fill/primary-pressed",
+        "bg/surface/container-high",
+        "border/focus-ring",
+        "border/outline",
+        "icons/sm",
+        "radius/full",
+        "size/20",
+        "text/on-primary",
+        "text/on-surface-variant"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "level": "atom",
+      "pageId": "1139:2",
+      "id": "1139:78",
+      "variants": 15,
+      "related": [],
       "description": "Reusable Checkbox with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Value","VARIANT",["Off","On","Mixed"]],["State","VARIANT",["Default","Hover","Pressed","Focus","Disabled"]]] },
-    { "slug": "radio-button", "name": "Radio button", "level": "atom", "pageId": "1139:181", "id": "1139:217", "variants": 10, "related": [],
+      "props": [
+        [
+          "Value",
+          "VARIANT",
+          [
+            "Off",
+            "On",
+            "Mixed"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focus",
+            "Disabled"
+          ]
+        ]
+      ],
+      "defaultVariant": "Value=Off, State=Default",
+      "variables": [
+        "bg/fill/primary",
+        "bg/fill/primary-hover",
+        "bg/fill/primary-pressed",
+        "bg/surface/container",
+        "bg/surface/default",
+        "border/focus-ring",
+        "border/outline",
+        "radius/sm",
+        "text/on-primary"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "radio-button",
+      "name": "Radio button",
+      "level": "atom",
+      "pageId": "1139:181",
+      "id": "1139:217",
+      "variants": 10,
+      "related": [],
       "description": "Reusable Radio_button with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Value","VARIANT",["Off","On"]],["State","VARIANT",["Default","Hover","Pressed","Focus","Disabled"]]] },
-    { "slug": "slider", "name": "Slider", "level": "atom", "pageId": "1139:282", "id": "1139:376", "variants": 15, "related": [],
+      "props": [
+        [
+          "Value",
+          "VARIANT",
+          [
+            "Off",
+            "On"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focus",
+            "Disabled"
+          ]
+        ]
+      ],
+      "defaultVariant": "Value=Off, State=Default",
+      "variables": [
+        "bg/fill/primary",
+        "bg/fill/primary-hover",
+        "bg/fill/primary-pressed",
+        "bg/surface/container",
+        "bg/surface/default",
+        "border/focus-ring",
+        "border/outline",
+        "icons/sm",
+        "radius/full"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "slider",
+      "name": "Slider",
+      "level": "atom",
+      "pageId": "1139:282",
+      "id": "1139:376",
+      "variants": 15,
+      "related": [],
       "description": "Reusable Slider with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Value label 0","TEXT","0%"],["Value label 50","TEXT","50%"],["Value label 100","TEXT","100%"],["Value","VARIANT",["0","50","100"]],["State","VARIANT",["Default","Hover","Pressed","Focus","Disabled"]]] },
-    { "slug": "table-cell", "name": "Table cell", "level": "atom", "pageId": "1145:153", "id": "1145:242", "variants": 9, "related": [],
+      "props": [
+        [
+          "Value label 0",
+          "TEXT",
+          "0%"
+        ],
+        [
+          "Value label 50",
+          "TEXT",
+          "50%"
+        ],
+        [
+          "Value label 100",
+          "TEXT",
+          "100%"
+        ],
+        [
+          "Value",
+          "VARIANT",
+          [
+            "0",
+            "50",
+            "100"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focus",
+            "Disabled"
+          ]
+        ]
+      ],
+      "defaultVariant": "Value=0, State=Default",
+      "variables": [
+        "bg/fill/primary",
+        "bg/fill/primary-hover",
+        "bg/fill/primary-pressed",
+        "bg/surface/container-high",
+        "bg/surface/default",
+        "border/focus-ring",
+        "font/family/inter",
+        "font/letter-spacing/0",
+        "font/line-height/20",
+        "font/size/12",
+        "font/weight/bold",
+        "radius/full",
+        "size/8",
+        "text/on-surface-variant"
+      ],
+      "textStyles": [
+        "typography/body/caption"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "table-cell",
+      "name": "Table cell",
+      "level": "atom",
+      "pageId": "1145:153",
+      "id": "1145:242",
+      "variants": 9,
+      "related": [],
       "description": "Reusable Table_cell with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Preview","INSTANCE_SWAP",null],["Content","TEXT","Contenido"],["Role","VARIANT",["Preview","Code","Text"]],["Layout","VARIANT",["Desktop","Tablet","Mobile"]]] },
-    { "slug": "table-cell-title", "name": "Table cell title", "level": "atom", "pageId": "1145:348", "id": "1145:379", "variants": 3, "related": [],
+      "props": [
+        [
+          "Preview",
+          "INSTANCE_SWAP",
+          null
+        ],
+        [
+          "Content",
+          "TEXT",
+          "Contenido"
+        ],
+        [
+          "Role",
+          "VARIANT",
+          [
+            "Preview",
+            "Code",
+            "Text"
+          ]
+        ],
+        [
+          "Layout",
+          "VARIANT",
+          [
+            "Desktop",
+            "Tablet",
+            "Mobile"
+          ]
+        ]
+      ],
+      "defaultVariant": "Role=Preview, Layout=Desktop",
+      "variables": [
+        "size/12",
+        "size/16",
+        "size/20",
+        "text/on-surface"
+      ],
+      "textStyles": [
+        "documentation/table/body",
+        "documentation/table/code"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "table-cell-title",
+      "name": "Table cell title",
+      "level": "atom",
+      "pageId": "1145:348",
+      "id": "1145:379",
+      "variants": 3,
+      "related": [],
       "description": "Reusable Table-cell-title with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Label","TEXT","Etiqueta"],["Layout","VARIANT",["Desktop","Tablet","Mobile"]]] },
-    { "slug": "token-preview", "name": "Token preview", "level": "atom", "pageId": "1163:5", "id": "1163:16", "variants": 5, "related": [],
+      "props": [
+        [
+          "Label",
+          "TEXT",
+          "Etiqueta"
+        ],
+        [
+          "Layout",
+          "VARIANT",
+          [
+            "Desktop",
+            "Tablet",
+            "Mobile"
+          ]
+        ]
+      ],
+      "defaultVariant": "Layout=Desktop",
+      "variables": [
+        "size/12",
+        "size/16",
+        "size/20",
+        "text/on-surface-variant"
+      ],
+      "textStyles": [
+        "documentation/table/label"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "token-preview",
+      "name": "Token preview",
+      "level": "atom",
+      "pageId": "1163:5",
+      "id": "1163:16",
+      "variants": 5,
+      "related": [],
       "description": "Reusable Token preview with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Fallback","TEXT","—"],["Type","VARIANT",["Color","Typography","Bar","Corner","Text"]]] },
-    { "slug": "filter-chip", "name": "Filter chip", "level": "atom", "pageId": "1188:2", "id": "1188:243", "variants": 2, "related": [],
+      "props": [
+        [
+          "Fallback",
+          "TEXT",
+          "—"
+        ],
+        [
+          "Type",
+          "VARIANT",
+          [
+            "Color",
+            "Typography",
+            "Bar",
+            "Corner",
+            "Text"
+          ]
+        ]
+      ],
+      "defaultVariant": "Type=Color",
+      "variables": [
+        "bg/fill/primary",
+        "border/outline-variant",
+        "radius/sm",
+        "text/on-surface",
+        "text/on-surface-variant"
+      ],
+      "textStyles": [
+        "documentation/table/label"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "filter-chip",
+      "name": "Filter chip",
+      "level": "atom",
+      "pageId": "1188:2",
+      "id": "1188:243",
+      "variants": 2,
+      "related": [],
       "description": "Lienzo · Filtro de categorías del canvas (Todos / Experiencias / Componentes). Bindeado a colección Style: cambia de piel con modo Clásico/Lienzo.",
-      "props": [["Label","TEXT","Experiencias"],["Icon","INSTANCE_SWAP",null],["Show icon","BOOLEAN",true],["State","VARIANT",["Default","Selected"]]] },
-    { "slug": "dock-item", "name": "Dock item", "level": "atom", "pageId": "1188:3", "id": "1188:255", "variants": 2, "related": [],
+      "props": [
+        [
+          "Label",
+          "TEXT",
+          "Experiencias"
+        ],
+        [
+          "Icon",
+          "INSTANCE_SWAP",
+          null
+        ],
+        [
+          "Show icon",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Selected"
+          ]
+        ]
+      ],
+      "defaultVariant": "State=Default",
+      "variables": [
+        "style/bg/folder",
+        "style/bg/paper",
+        "style/border/paper",
+        "style/radius/control",
+        "style/text/primary",
+        "style/text/secondary"
+      ],
+      "textStyles": [],
+      "effectStyles": [
+        "elevation/paper/shadow-1"
+      ]
+    },
+    {
+      "slug": "dock-item",
+      "name": "Dock item",
+      "level": "atom",
+      "pageId": "1188:3",
+      "id": "1188:255",
+      "variants": 2,
+      "related": [],
       "description": "Lienzo · Ítem del dock inferior (Proyectos / Sobre mí / Sistema / Contacto). Active = sección actual.",
-      "props": [["Label","TEXT","Proyectos"],["Icon","INSTANCE_SWAP",null],["State","VARIANT",["Default","Active"]]] },
-    { "slug": "dot-grid", "name": "Dot grid", "level": "atom", "pageId": "1188:4", "id": "1188:659", "variants": 1, "related": [],
+      "props": [
+        [
+          "Label",
+          "TEXT",
+          "Proyectos"
+        ],
+        [
+          "Icon",
+          "INSTANCE_SWAP",
+          null
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Active"
+          ]
+        ]
+      ],
+      "defaultVariant": "State=Default",
+      "variables": [
+        "style/bg/accent",
+        "style/bg/paper",
+        "style/border/paper",
+        "style/radius/control",
+        "style/text/on-accent",
+        "style/text/primary"
+      ],
+      "textStyles": [],
+      "effectStyles": [
+        "elevation/paper/shadow-1",
+        "elevation/paper/shadow-2"
+      ]
+    },
+    {
+      "slug": "dot-grid",
+      "name": "Dot grid",
+      "level": "atom",
+      "pageId": "1188:4",
+      "id": "1188:659",
+      "variants": 1,
+      "related": [],
       "description": "Lienzo · Fondo del canvas (grilla de puntos cada 24px). En modo Clásico los puntos se funden con el fondo.",
-      "props": [] },
-    { "slug": "menu", "name": "Menu", "level": "molecule", "pageId": "474:5093", "id": "1010:3302", "variants": 1, "related": ["Dropdown", "Menu Item", "field"],
+      "props": [],
+      "defaultVariant": null,
+      "variables": [
+        "style/bg/canvas",
+        "style/bg/canvas-dot"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "menu",
+      "name": "Menu",
+      "level": "molecule",
+      "pageId": "474:5093",
+      "id": "1010:3302",
+      "variants": 1,
+      "related": [
+        "Dropdown",
+        "Menu Item",
+        "field"
+      ],
       "description": "Molecule. Options is a native content slot: add/remove linked Dropdown / Option instances. Labels and visual selection are configured on each option. No value-specific variants or prototype actions.",
-      "props": [] },
-    { "slug": "choice", "name": "Choice", "level": "molecule", "pageId": "908:1385", "id": "1023:4406", "variants": 5, "related": ["Choice Item", "Choice group"],
+      "props": [],
+      "defaultVariant": null,
+      "variables": [
+        "bg/surface/container",
+        "bg/surface/default",
+        "border/outline-variant",
+        "radius/lg",
+        "space/1",
+        "space/2",
+        "space/3"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "choice",
+      "name": "Choice",
+      "level": "molecule",
+      "pageId": "908:1385",
+      "id": "1023:4406",
+      "variants": 5,
+      "related": [
+        "Choice Item",
+        "Choice group"
+      ],
       "description": "",
-      "props": [["state","VARIANT",["default","hjover","selected-focus"]],["State","VARIANT",["Selected","Focus"]]] },
-    { "slug": "accordion", "name": "Accordeon", "level": "molecule", "pageId": "908:1394", "id": "462:690", "variants": 2, "related": [],
+      "props": [
+        [
+          "state",
+          "VARIANT",
+          [
+            "default",
+            "hjover",
+            "selected-focus"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Selected",
+            "Focus"
+          ]
+        ]
+      ],
+      "defaultVariant": "state=default",
+      "variables": [
+        "bg/fill/primary",
+        "color/palette/playground/neutral/base",
+        "color/palette/playground/neutral/dark",
+        "color/palette/playground/neutral/light",
+        "font/family/inter",
+        "font/weight/regular",
+        "size/12",
+        "size/24",
+        "text/on-primary",
+        "text/on-surface",
+        "text/primary"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "accordion",
+      "name": "Accordeon",
+      "level": "molecule",
+      "pageId": "908:1394",
+      "id": "462:690",
+      "variants": 2,
+      "related": [],
       "description": "S02 · Pieza nativa reutilizable. Instancias anidadas y variables del sistema. Geometría local del wireframe; no API web.",
-      "props": [["Title","TEXT","Documentación"],["Content","TEXT","Heading XL · 32 / 40 · Semibold. Usar en títulos principales; verificar jerarquía y reflujo."],["Show icon left","BOOLEAN",true],["Show Icon right","BOOLEAN",true],["Show Divider","BOOLEAN",true],["State","VARIANT",["Closed","Open"]]] },
-    { "slug": "card", "name": "Card", "level": "molecule", "pageId": "298:2", "id": "299:77", "variants": 10, "related": ["Card / Summary", "Usage row", "Token value", "Type specimen"],
+      "props": [
+        [
+          "Title",
+          "TEXT",
+          "Documentación"
+        ],
+        [
+          "Content",
+          "TEXT",
+          "Heading XL · 32 / 40 · Semibold. Usar en títulos principales; verificar jerarquía y reflujo."
+        ],
+        [
+          "Show icon left",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Show Icon right",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Show Divider",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Closed",
+            "Open"
+          ]
+        ]
+      ],
+      "defaultVariant": "State=Closed",
+      "variables": [
+        "bg/surface/default",
+        "font/family/inter",
+        "font/letter-spacing/0",
+        "font/line-height/24",
+        "font/size/14",
+        "font/weight/regular",
+        "radius/lg",
+        "space/2",
+        "space/3",
+        "text/on-surface"
+      ],
+      "textStyles": [
+        "typography/body/sm"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "card",
+      "name": "Card",
+      "level": "molecule",
+      "pageId": "298:2",
+      "id": "299:77",
+      "variants": 10,
+      "related": [
+        "Card / Summary",
+        "Usage row",
+        "Token value",
+        "Type specimen"
+      ],
       "description": "C03: tarjeta con imagen de fondo, título y descripción. Fuente: capturas del usuario y Framer Home/Case Notion. Framer tiene placeholders sin imagen, título y descripción ocultos; aquí visibles por pedido. Hover/Pressed propuestos (borde, sin escala). La apertura de caso corresponde a C04: override withExpandingCaseSheet, entrada 0.8 s cubic-bezier(0.87,0,0.13,1); sin desplazamiento con reduced motion. No se implementa el panel C04 en esta familia. Interactive: botón si abre panel, enlace si navega; sin acciones anidadas. Focus documenta focus-visible; Figma no certifica tabulación DOM. Actualización: hover con imagen al 105%, tres adelantos sobre el borde superior y Smart Animate 300 ms ease-out. La geometría del contenedor y sus textos no cambia.",
-      "props": [["Title","TEXT","Titulo"],["Description","TEXT","Vestibulum curae ipsum velit cursus faucibus luctus ultrices orci cubilia in accumsan."],["Show description","BOOLEAN",true],["Protect text over image","BOOLEAN",true],["Size","VARIANT",["Desktop","Mobile"]],["Type","VARIANT",["Informative","Interactive"]],["State","VARIANT",["Default","Hover","Pressed","Focus"]]] },
-    { "slug": "navigation-card", "name": "Navigation card", "level": "molecule", "pageId": "908:1400", "id": "557:1271", "variants": 1, "related": ["Navigation item", "Contact card", "S01 / System card", "Rail item"],
+      "props": [
+        [
+          "Title",
+          "TEXT",
+          "Titulo"
+        ],
+        [
+          "Description",
+          "TEXT",
+          "Vestibulum curae ipsum velit cursus faucibus luctus ultrices orci cubilia in accumsan."
+        ],
+        [
+          "Show description",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Protect text over image",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Size",
+          "VARIANT",
+          [
+            "Desktop",
+            "Mobile"
+          ]
+        ],
+        [
+          "Type",
+          "VARIANT",
+          [
+            "Informative",
+            "Interactive"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focus"
+          ]
+        ]
+      ],
+      "defaultVariant": "Size=Desktop, Type=Informative, State=Default",
+      "variables": [
+        "bg/surface/container",
+        "bg/surface/container-high",
+        "border/focus-ring",
+        "border/outline-variant",
+        "border/primary",
+        "font/family/inter",
+        "font/letter-spacing/0",
+        "font/line-height/24",
+        "font/line-height/28",
+        "font/line-height/32",
+        "font/size/14",
+        "font/size/16",
+        "font/size/20",
+        "font/size/24",
+        "font/weight/regular",
+        "radius/lg",
+        "radius/md",
+        "size/32",
+        "size/36",
+        "space/2",
+        "space/4",
+        "space/8",
+        "text/on-surface"
+      ],
+      "textStyles": [
+        "typography/body/lg",
+        "typography/body/md",
+        "typography/body/sm"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "navigation-card",
+      "name": "Navigation card",
+      "level": "molecule",
+      "pageId": "908:1400",
+      "id": "557:1271",
+      "variants": 1,
+      "related": [
+        "Navigation item",
+        "Contact card",
+        "S01 / System card",
+        "Rail item"
+      ],
       "description": "Navegación principal de Home: Inicio, Sobre mí, Proyectos y Contacto. Cuatro instancias de Navigation item; Inicio activo.",
-      "props": [] },
-    { "slug": "bottom-sheet", "name": "Bottom sheet", "level": "molecule", "pageId": "1064:2", "id": "1064:3", "variants": 1, "related": [],
+      "props": [],
+      "defaultVariant": null,
+      "variables": [
+        "bg/surface/container",
+        "radius/md",
+        "space/2",
+        "space/4"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "bottom-sheet",
+      "name": "Bottom sheet",
+      "level": "molecule",
+      "pageId": "1064:2",
+      "id": "1064:3",
+      "variants": 1,
+      "related": [],
       "description": "Contenedor vacío basado en la referencia de Framer guardada el 26/10/2026. Superficie blanca, radios superiores 22 px y base recta. Redimensionar ancho y alto según contexto. Content es un slot vacío para insertar instancias; Show handle controla el tirador. Sin título, cierre, paneles, controles ni prototipos. Los 22 px preservan la geometría específica de la referencia; colores y espacios usan variables existentes.",
-      "props": [["Show handle","BOOLEAN",true],["Content","SLOT",null]] },
-    { "slug": "table-list", "name": "Table list", "level": "molecule", "pageId": "1146:89", "id": "1146:1058", "variants": 9, "related": [],
+      "props": [
+        [
+          "Show handle",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Content",
+          "SLOT",
+          null
+        ]
+      ],
+      "defaultVariant": null,
+      "variables": [
+        "color/palette/white",
+        "handle",
+        "radius/sm",
+        "size/0"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "table-list",
+      "name": "Table list",
+      "level": "molecule",
+      "pageId": "1146:89",
+      "id": "1146:1058",
+      "variants": 9,
+      "related": [],
       "description": "Reusable Table_list with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Schema","VARIANT",["Tokens","Typography"]],["Layout","VARIANT",["Desktop","Tablet","Mobile"]],["State","VARIANT",["Default","Selected"]]] },
-    { "slug": "table-header", "name": "Table header", "level": "molecule", "pageId": "1147:34", "id": "1147:72", "variants": 4, "related": [],
+      "props": [
+        [
+          "Schema",
+          "VARIANT",
+          [
+            "Tokens",
+            "Typography"
+          ]
+        ],
+        [
+          "Layout",
+          "VARIANT",
+          [
+            "Desktop",
+            "Tablet",
+            "Mobile"
+          ]
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Selected"
+          ]
+        ]
+      ],
+      "defaultVariant": "Schema=Tokens, Layout=Desktop, State=Default",
+      "variables": [
+        "bg/surface/default",
+        "border/outline-variant",
+        "size/12",
+        "size/16",
+        "size/20",
+        "size/4",
+        "size/8"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "table-header",
+      "name": "Table header",
+      "level": "molecule",
+      "pageId": "1147:34",
+      "id": "1147:72",
+      "variants": 4,
+      "related": [],
       "description": "Reusable Table header with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Schema","VARIANT",["Tokens","Typography"]],["Layout","VARIANT",["Desktop","Tablet"]]] },
-    { "slug": "folder", "name": "Folder", "level": "molecule", "pageId": "1188:5", "id": "1189:39", "variants": 2, "related": [],
+      "props": [
+        [
+          "Schema",
+          "VARIANT",
+          [
+            "Tokens",
+            "Typography"
+          ]
+        ],
+        [
+          "Layout",
+          "VARIANT",
+          [
+            "Desktop",
+            "Tablet"
+          ]
+        ]
+      ],
+      "defaultVariant": "Schema=Tokens, Layout=Desktop",
+      "variables": [
+        "bg/surface/default",
+        "border/outline-variant",
+        "size/12",
+        "size/16",
+        "size/20"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "folder",
+      "name": "Folder",
+      "level": "molecule",
+      "pageId": "1188:5",
+      "id": "1189:39",
+      "variants": 2,
+      "related": [],
       "description": "Lienzo · Carpeta de proyecto. Reemplazá el contenido de \"Preview\" (screens del proyecto) y \"Logo\". Rotación (±3°) se aplica en la instancia. Selected = foco/drag en el canvas.",
-      "props": [["Title","TEXT","Notion Mobile"],["Description","TEXT","Productividad para equipos."],["Show description","BOOLEAN",false],["CTA","TEXT","Ver proyecto"],["State","VARIANT",["Default","Selected"]]] },
-    { "slug": "paper-note", "name": "Paper note", "level": "molecule", "pageId": "1188:6", "id": "1189:41", "variants": 1, "related": [],
+      "props": [
+        [
+          "Title",
+          "TEXT",
+          "Notion Mobile"
+        ],
+        [
+          "Description",
+          "TEXT",
+          "Productividad para equipos."
+        ],
+        [
+          "Show description",
+          "BOOLEAN",
+          false
+        ],
+        [
+          "CTA",
+          "TEXT",
+          "Ver proyecto"
+        ],
+        [
+          "State",
+          "VARIANT",
+          [
+            "Default",
+            "Selected"
+          ]
+        ]
+      ],
+      "defaultVariant": "State=Default",
+      "variables": [
+        "style/bg/folder",
+        "style/bg/paper",
+        "style/border/paper",
+        "style/border/selection",
+        "style/radius/paper",
+        "style/text/primary",
+        "style/text/secondary"
+      ],
+      "textStyles": [],
+      "effectStyles": [
+        "elevation/paper/shadow-1",
+        "elevation/paper/shadow-2"
+      ]
+    },
+    {
+      "slug": "paper-note",
+      "name": "Paper note",
+      "level": "molecule",
+      "pageId": "1188:6",
+      "id": "1189:41",
+      "variants": 1,
+      "related": [],
       "description": "Lienzo · Nota de papel para títulos de sección en el canvas (Hola / Proyectos). Rotar +2° a +4° en la instancia. Título: aplicar typography/heading/xl (Axiforma) en archivo local.",
-      "props": [["Title","TEXT","Hola, soy Benja."],["Subtitle","TEXT","Diseño interfaces y sistemas."]] },
-    { "slug": "zoom-control", "name": "Zoom control", "level": "molecule", "pageId": "1188:7", "id": "1189:48", "variants": 1, "related": [],
+      "props": [
+        [
+          "Title",
+          "TEXT",
+          "Hola, soy Benja."
+        ],
+        [
+          "Subtitle",
+          "TEXT",
+          "Diseño interfaces y sistemas."
+        ]
+      ],
+      "defaultVariant": null,
+      "variables": [
+        "style/bg/paper",
+        "style/border/paper",
+        "style/radius/paper",
+        "style/text/primary",
+        "style/text/secondary"
+      ],
+      "textStyles": [],
+      "effectStyles": [
+        "elevation/paper/shadow-2"
+      ]
+    },
+    {
+      "slug": "zoom-control",
+      "name": "Zoom control",
+      "level": "molecule",
+      "pageId": "1188:7",
+      "id": "1189:48",
+      "variants": 1,
+      "related": [],
       "description": "Lienzo · Control de zoom del canvas (esquina inferior izquierda). Acompañar con Filter chip \"Ordenar\" + icono list.",
-      "props": [["Zoom","TEXT","100%"]] },
-    { "slug": "header", "name": "Header", "level": "organism", "pageId": "333:231", "id": "333:235", "variants": 6, "related": [],
+      "props": [
+        [
+          "Zoom",
+          "TEXT",
+          "100%"
+        ]
+      ],
+      "defaultVariant": null,
+      "variables": [
+        "style/bg/paper",
+        "style/border/paper",
+        "style/radius/control",
+        "style/text/primary"
+      ],
+      "textStyles": [],
+      "effectStyles": [
+        "elevation/paper/shadow-1"
+      ]
+    },
+    {
+      "slug": "header",
+      "name": "Header",
+      "level": "organism",
+      "pageId": "333:231",
+      "id": "333:235",
+      "variants": 6,
+      "related": [],
       "description": "Organism. Static visual structures by Viewport and Menu. Shared Logo, Button, Link, navigation cards and controls. Configure exposed nested properties. No prototype actions or duplicate Motion variants.",
-      "props": [["Show CTA","BOOLEAN",true],["Viewport","VARIANT",["Desktop","Tablet","Mobile"]],["Menu","VARIANT",["Closed","Open"]]] },
-    { "slug": "panel-content", "name": "Panel content", "level": "organism", "pageId": "908:1404", "id": "462:691", "variants": 1, "related": ["Panel content / Detail", "Panel header", "System / Header"],
+      "props": [
+        [
+          "Show CTA",
+          "BOOLEAN",
+          true
+        ],
+        [
+          "Viewport",
+          "VARIANT",
+          [
+            "Desktop",
+            "Tablet",
+            "Mobile"
+          ]
+        ],
+        [
+          "Menu",
+          "VARIANT",
+          [
+            "Closed",
+            "Open"
+          ]
+        ]
+      ],
+      "defaultVariant": "Viewport=Desktop, Menu=Closed",
+      "variables": [
+        "bg/fill/primary",
+        "bg/fill/secondary",
+        "bg/surface/container",
+        "border/outline-variant",
+        "font/family/inter",
+        "font/letter-spacing/0",
+        "font/line-height/24",
+        "font/size/16",
+        "font/weight/medium",
+        "layout/grid/margin",
+        "radius/md",
+        "space/2",
+        "space/3",
+        "space/4",
+        "space/6",
+        "text/on-surface"
+      ],
+      "textStyles": [
+        "typography/heading/subtitle-sm"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "panel-content",
+      "name": "Panel content",
+      "level": "organism",
+      "pageId": "908:1404",
+      "id": "462:691",
+      "variants": 1,
+      "related": [
+        "Panel content / Detail",
+        "Panel header",
+        "System / Header"
+      ],
       "description": "Organism example made of shared atoms and molecules. Text is editable sample content. No role-specific masters or runtime state. Exposed nested properties configure each piece.",
-      "props": [["Subtitle","TEXT","Lorem ipsum"]] },
-    { "slug": "inspector", "name": "Inspector", "level": "organism", "pageId": "354:2", "id": "462:1152", "variants": 4, "related": [],
+      "props": [
+        [
+          "Subtitle",
+          "TEXT",
+          "Lorem ipsum"
+        ]
+      ],
+      "defaultVariant": null,
+      "variables": [
+        "bg/fill/primary",
+        "border/outline-variant",
+        "border/primary",
+        "font/family/inter",
+        "font/letter-spacing/0",
+        "font/line-height/24",
+        "font/size/14",
+        "font/weight/bold",
+        "radius/md",
+        "radius/xl",
+        "size/0",
+        "space/2",
+        "space/3",
+        "space/6",
+        "text/on-surface"
+      ],
+      "textStyles": [
+        "typography/body/label-md"
+      ],
+      "effectStyles": []
+    },
+    {
+      "slug": "inspector",
+      "name": "Inspector",
+      "level": "organism",
+      "pageId": "354:2",
+      "id": "462:1152",
+      "variants": 4,
+      "related": [],
       "description": "S02 · Pieza nativa reutilizable. Instancias anidadas y variables del sistema. Geometría local del wireframe; no API web.",
-      "props": [["Presentation","VARIANT",["Sidebar","Bottom sheet"]],["View","VARIANT",["Overview","Detail"]]] },
-    { "slug": "system-personalize", "name": "System · Personalize", "level": "organism", "pageId": "908:1406", "id": "868:1259", "variants": 1, "related": [],
+      "props": [
+        [
+          "Presentation",
+          "VARIANT",
+          [
+            "Sidebar",
+            "Bottom sheet"
+          ]
+        ],
+        [
+          "View",
+          "VARIANT",
+          [
+            "Overview",
+            "Detail"
+          ]
+        ]
+      ],
+      "defaultVariant": "Presentation=Sidebar, View=Overview",
+      "variables": [
+        "border/outline",
+        "radius/full",
+        "radius/none",
+        "radius/xl",
+        "s02/surface/panel",
+        "size/32",
+        "space/2",
+        "space/4",
+        "space/6"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "system-personalize",
+      "name": "System · Personalize",
+      "level": "organism",
+      "pageId": "908:1406",
+      "id": "868:1259",
+      "variants": 1,
+      "related": [],
       "description": "Pieza editable del sistema. Sin acciones de prototipo. Fuente: Framer reviewPreview1 / reviewPreview2, 26 octubre 2026.",
-      "props": [] },
-    { "slug": "system-component-detail", "name": "System · Component detail", "level": "organism", "pageId": "908:1407", "id": "868:1484", "variants": 1, "related": [],
+      "props": [],
+      "defaultVariant": null,
+      "variables": [
+        "border/primary",
+        "radius/md",
+        "size/0",
+        "size/24",
+        "space/2",
+        "space/4"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "system-component-detail",
+      "name": "System · Component detail",
+      "level": "organism",
+      "pageId": "908:1407",
+      "id": "868:1484",
+      "variants": 1,
+      "related": [],
       "description": "Pieza editable del sistema. Sin acciones de prototipo. Fuente: Framer reviewPreview1 / reviewPreview2, 26 octubre 2026.",
-      "props": [["Title","TEXT","Project Card"],["Description","TEXT","Componente para presentar proyectos del portafolio."],["Preview","INSTANCE_SWAP",null],["Sections","SLOT",null]] },
-    { "slug": "system-mobile-sheet", "name": "System · Mobile sheet", "level": "organism", "pageId": "404:2", "id": "868:1751", "variants": 1, "related": [],
+      "props": [
+        [
+          "Title",
+          "TEXT",
+          "Project Card"
+        ],
+        [
+          "Description",
+          "TEXT",
+          "Componente para presentar proyectos del portafolio."
+        ],
+        [
+          "Preview",
+          "INSTANCE_SWAP",
+          null
+        ],
+        [
+          "Sections",
+          "SLOT",
+          null
+        ]
+      ],
+      "defaultVariant": null,
+      "variables": [
+        "button",
+        "color/palette/white",
+        "divider",
+        "ink",
+        "muted",
+        "size/0",
+        "size/16",
+        "size/24",
+        "size/4",
+        "size/8"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "system-mobile-sheet",
+      "name": "System · Mobile sheet",
+      "level": "organism",
+      "pageId": "404:2",
+      "id": "868:1751",
+      "variants": 1,
+      "related": [],
       "description": "Plantilla móvil común. Body es un slot: Personalize content (418 px total) o Component browser (756 px total). 386 px de ancho de referencia. El mismo contenido puede insertarse en sidebar. Sin prototipos ni variantes por selección.",
-      "props": [["Body","SLOT",null]] },
-    { "slug": "table", "name": "Table", "level": "organism", "pageId": "1166:2", "id": "1166:446", "variants": 6, "related": [],
+      "props": [
+        [
+          "Body",
+          "SLOT",
+          null
+        ]
+      ],
+      "defaultVariant": null,
+      "variables": [
+        "color/palette/white",
+        "size/0",
+        "size/16",
+        "size/24",
+        "size/32"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "table",
+      "name": "Table",
+      "level": "organism",
+      "pageId": "1166:2",
+      "id": "1166:446",
+      "variants": 6,
+      "related": [],
       "description": "Reusable Table with portfolio foundations and Phosphor. Design only; no interactive prototype or production behavior claimed.",
-      "props": [["Rows","SLOT",null],["Schema","VARIANT",["Tokens","Typography"]],["Layout","VARIANT",["Desktop","Tablet","Mobile"]]] },
-    { "slug": "dock-nav", "name": "Dock nav", "level": "organism", "pageId": "1188:8", "id": "1189:173", "variants": 4, "related": [],
+      "props": [
+        [
+          "Rows",
+          "SLOT",
+          null
+        ],
+        [
+          "Schema",
+          "VARIANT",
+          [
+            "Tokens",
+            "Typography"
+          ]
+        ],
+        [
+          "Layout",
+          "VARIANT",
+          [
+            "Desktop",
+            "Tablet",
+            "Mobile"
+          ]
+        ]
+      ],
+      "defaultVariant": "Schema=Tokens, Layout=Desktop",
+      "variables": [
+        "bg/surface/default",
+        "border/outline-variant",
+        "size/16"
+      ],
+      "textStyles": [],
+      "effectStyles": []
+    },
+    {
+      "slug": "dock-nav",
+      "name": "Dock nav",
+      "level": "organism",
+      "pageId": "1188:8",
+      "id": "1189:173",
+      "variants": 4,
+      "related": [],
       "description": "Lienzo · Navegación principal flotante (bottom center). Active = sección actual. Fondo paper 70% + background blur.",
-      "props": [["Active","VARIANT",["Proyectos","Sobre mí","Sistema","Contacto"]]] },
-    { "slug": "canvas-toolbar", "name": "Canvas toolbar", "level": "organism", "pageId": "1188:9", "id": "1189:175", "variants": 1, "related": ["Canvas header"],
+      "props": [
+        [
+          "Active",
+          "VARIANT",
+          [
+            "Proyectos",
+            "Sobre mí",
+            "Sistema",
+            "Contacto"
+          ]
+        ]
+      ],
+      "defaultVariant": "Active=Proyectos",
+      "variables": [
+        "style/bg/accent",
+        "style/bg/paper",
+        "style/border/paper",
+        "style/radius/control",
+        "style/radius/surface"
+      ],
+      "textStyles": [],
+      "effectStyles": [
+        "elevation/paper/shadow-1",
+        "elevation/paper/shadow-2",
+        "elevation/paper/shadow-3"
+      ]
+    },
+    {
+      "slug": "canvas-toolbar",
+      "name": "Canvas toolbar",
+      "level": "organism",
+      "pageId": "1188:9",
+      "id": "1189:175",
+      "variants": 1,
+      "related": [
+        "Canvas header"
+      ],
       "description": "Lienzo · Herramientas del canvas (bottom-left): zoom + ordenar carpetas en grilla.",
-      "props": [] },
-    { "slug": "case-study-modal", "name": "Case study modal", "level": "organism", "pageId": "1188:10", "id": "1190:2", "variants": 1, "related": [],
+      "props": [],
+      "defaultVariant": null,
+      "variables": [
+        "style/bg/paper",
+        "style/border/paper",
+        "style/radius/control"
+      ],
+      "textStyles": [],
+      "effectStyles": [
+        "elevation/paper/shadow-1"
+      ]
+    },
+    {
+      "slug": "case-study-modal",
+      "name": "Case study modal",
+      "level": "organism",
+      "pageId": "1188:10",
+      "id": "1190:2",
+      "variants": 1,
+      "related": [],
       "description": "Lienzo · Vista de caso de estudio que se abre desde una Folder. Reemplazá \"Media\" con screens reales. Tabs: Contexto / Problema / Propuesta / Aprendizajes.",
-      "props": [["Project","TEXT","Notion Mobile"],["Title","TEXT","Menos es más"],["Lead","TEXT","Uso Notion todos los días en desktop. También tenía la app instalada en el teléfono, pero casi nunca la usaba."],["Next project","TEXT","Mercado Libre"]] },
-    { "slug": "envelope-contact", "name": "Envelope contact", "level": "organism", "pageId": "1188:11", "id": "1190:97", "variants": 1, "related": [],
+      "props": [
+        [
+          "Project",
+          "TEXT",
+          "Notion Mobile"
+        ],
+        [
+          "Title",
+          "TEXT",
+          "Menos es más"
+        ],
+        [
+          "Lead",
+          "TEXT",
+          "Uso Notion todos los días en desktop. También tenía la app instalada en el teléfono, pero casi nunca la usaba."
+        ],
+        [
+          "Next project",
+          "TEXT",
+          "Mercado Libre"
+        ]
+      ],
+      "defaultVariant": null,
+      "variables": [
+        "bg/fill/primary",
+        "radius/md",
+        "space/2",
+        "space/3",
+        "space/6",
+        "style/bg/accent",
+        "style/bg/folder",
+        "style/bg/paper",
+        "style/border/paper",
+        "style/radius/control",
+        "style/radius/surface",
+        "style/text/primary",
+        "style/text/secondary"
+      ],
+      "textStyles": [],
+      "effectStyles": [
+        "elevation/paper/shadow-1",
+        "elevation/paper/shadow-2",
+        "elevation/paper/shadow-3"
+      ]
+    },
+    {
+      "slug": "envelope-contact",
+      "name": "Envelope contact",
+      "level": "organism",
+      "pageId": "1188:11",
+      "id": "1190:97",
+      "variants": 1,
+      "related": [],
       "description": "Lienzo · Sección Contacto: carta saliendo de un sobre. Email copiable (icono copy), CTA mailto + LinkedIn.",
-      "props": [["Email","TEXT","bandresabudh@gmail.com"],["Title","TEXT","Hablemos de tu próximo proyecto."]] }
+      "props": [
+        [
+          "Email",
+          "TEXT",
+          "bandresabudh@gmail.com"
+        ],
+        [
+          "Title",
+          "TEXT",
+          "Hablemos de tu próximo proyecto."
+        ]
+      ],
+      "defaultVariant": null,
+      "variables": [
+        "bg/fill/primary",
+        "border/primary",
+        "radius/md",
+        "space/2",
+        "space/3",
+        "space/6",
+        "style/bg/folder",
+        "style/bg/paper",
+        "style/border/paper",
+        "style/text/accent",
+        "style/text/primary",
+        "style/text/secondary"
+      ],
+      "textStyles": [],
+      "effectStyles": [
+        "elevation/paper/shadow-2",
+        "elevation/paper/shadow-3"
+      ]
+    }
   ],
   "foundations": [
-    { "slug": "color", "name": "Colors", "pageId": "5:5" },
-    { "slug": "typography", "name": "Typography", "pageId": "6:465" },
-    { "slug": "spacing", "name": "Spacing", "pageId": "6:836" },
-    { "slug": "layout-grid", "name": "Layout Grid", "pageId": "6:1547" },
-    { "slug": "elevation", "name": "Elevations", "pageId": "6:2115" },
-    { "slug": "icons", "name": "Icon library", "pageId": "11:1357" },
-    { "slug": "motion", "name": "Motions", "pageId": "11:1432" },
-    { "slug": "logo", "name": "Logo", "pageId": "11:1358" }
+    {
+      "slug": "color",
+      "name": "Colors",
+      "pageId": "5:5"
+    },
+    {
+      "slug": "typography",
+      "name": "Typography",
+      "pageId": "6:465"
+    },
+    {
+      "slug": "spacing",
+      "name": "Spacing",
+      "pageId": "6:836"
+    },
+    {
+      "slug": "layout-grid",
+      "name": "Layout Grid",
+      "pageId": "6:1547"
+    },
+    {
+      "slug": "elevation",
+      "name": "Elevations",
+      "pageId": "6:2115"
+    },
+    {
+      "slug": "icons",
+      "name": "Icon library",
+      "pageId": "11:1357"
+    },
+    {
+      "slug": "motion",
+      "name": "Motions",
+      "pageId": "11:1432"
+    },
+    {
+      "slug": "logo",
+      "name": "Logo",
+      "pageId": "11:1358"
+    }
   ]
 }

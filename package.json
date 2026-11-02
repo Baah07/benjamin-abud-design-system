@@ -1,24 +1,47 @@
 {
   "name": "@benjamin-abud/design-system",
   "version": "1.0.0",
-  "description": "Benjamín Abud's design system: DTCG tokens exported from Figma, built with Style Dictionary into CSS Color 4 custom properties, with WCAG contrast, axe-core and Lighthouse checks.",
+  "description": "Design System de Benjamín Abud: tokens DTCG exportados de Figma, compilados con Style Dictionary a custom properties CSS Color 4, con contraste WCAG, axe-core y Lighthouse. No está publicado en npm: linkeá tokens.css o cloná el repo.",
   "license": "MIT",
   "private": true,
+  "author": "Benjamín Abud <bandresabudh@gmail.com> (https://benjaabud.framer.website)",
+  "homepage": "https://benjaabud.framer.website/sistema",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baah07/benjamin-abud-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Baah07/benjamin-abud-design-system/issues"
+  },
+  "keywords": ["design-system", "design-tokens", "dtcg", "style-dictionary", "figma", "oklch", "wcag", "accessibility"],
   "type": "module",
+  "sideEffects": ["*.css"],
+  "main": "./tokens.js",
+  "module": "./tokens.js",
+  "types": "./tokens.d.ts",
   "exports": {
+    ".": {
+      "types": "./tokens.d.ts",
+      "import": "./tokens.js",
+      "default": "./tokens.js"
+    },
+    "./css": "./tokens.css",
     "./tokens.css": "./tokens.css",
     "./tokens.json": "./tokens.json",
     "./tokens.resolver.json": "./tokens.resolver.json",
-    "./tokens.js": "./tokens.js"
+    "./components-api.json": "./components-api.json",
+    "./package.json": "./package.json"
   },
+  "files": ["tokens.js", "tokens.d.ts", "tokens.css", "tokens.json", "tokens.resolver.json", "components-api.json", "DESIGN.md"],
   "scripts": {
-    "test": "node --test",
+    "test": "node --test \"test/*.test.mjs\"",
     "normalize": "node scripts/normalize.mjs",
     "build:tokens": "node scripts/build-tokens.mjs",
-    "build:pages": "node scripts/build-pages.mjs",
+    "build:docs": "node scripts/build-docs.mjs",
     "build:site": "node scripts/build-site.mjs",
-    "build": "npm run normalize && npm run build:tokens && npm run build:pages && npm run build:site",
-    "validate": "node scripts/validate-dtcg.mjs && node scripts/contrast-pairs.mjs",
+    "build:assets": "node scripts/build-readme-assets.mjs",
+    "build": "npm run normalize && npm run build:tokens && npm run build:docs && npm run build:site",
+    "validate": "node scripts/validate-dtcg.mjs && node scripts/crosscheck-plugin-css.mjs && node scripts/contrast-pairs.mjs",
     "audit:axe": "node scripts/audit-axe.mjs",
     "audit:lighthouse": "node scripts/audit-lighthouse.mjs",
     "audit": "npm run audit:axe && npm run audit:lighthouse"

@@ -1,16 +1,33 @@
-# Benjamín Abud — Design System
+# Design System de Benjamín Abud
 
-> DTCG 2025.10 design tokens exported from Figma, built with Style Dictionary into CSS Color 4 (oklch) custom properties. Light/dark themes, Clásico/Lienzo styles, mobile/tablet/desktop layout. WCAG 2.2 AA contrast, axe-core and Lighthouse checked.
+> Tokens DTCG 2025.10 exportados de Figma, compilados con Style Dictionary a custom properties CSS Color 4 (oklch). Temas claro y oscuro, estilos Clásico y Lienzo, layout mobile/tablet/desktop. Contraste WCAG 2.2 AA, axe-core y Lighthouse verificados.
 
-## Tokens
-- [tokens.json](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/tokens.json): all tokens, DTCG 2025.10, with darkTheme / lienzoStyle / tabletViewport / desktopViewport overrides
-- [tokens.resolver.json](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/tokens.resolver.json): how the overrides combine
-- [tokens.css](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/tokens.css): CSS custom properties
+El design system del portfolio de Benjamín Abud. 35 componentes en Figma, 220 tokens.
 
-## Rules
-- [AGENTS.md](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/AGENTS.md): how to use the system
+## Para agentes
 
-## Docs
-- [Foundations](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/foundations/README.md)
-- [Components](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/COMPONENTS.md)
-- [Component inventory (JSON)](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/figma/components.json)
+- [AGENTS.md](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/AGENTS.md): las reglas cortas, los componentes y los nombres de tokens
+- [DESIGN.md](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/DESIGN.md): cada valor resuelto, los roles y las reglas
+- [components-api.json](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/components-api.json): los componentes como datos
+
+## Componentes y foundations
+
+- [COMPONENTS.md](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/COMPONENTS.md): todos los componentes, cada uno con su página
+- [foundations/README.md](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/foundations/README.md): todas las foundations
+- [foundations/tokens.md](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/foundations/tokens.md): cada token con su propósito
+- [foundations/checks.md](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/foundations/checks.md): cómo se verifican las reglas
+
+## Fuente
+
+- [tokens.json](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/tokens.json): todos los tokens, DTCG 2025.10
+- [tokens.resolver.json](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/tokens.resolver.json): cómo se combinan temas, estilos y viewports
+- [tokens.css](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/tokens.css): las custom properties
+- [Repositorio público](https://github.com/Baah07/benjamin-abud-design-system)
+- [Plugin de Claude Code](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/.claude-plugin/marketplace.json): `claude plugin marketplace add Baah07/benjamin-abud-design-system`
+
+## Opcional
+
+- [benjamin-abud-design-system.dsds.yaml](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/benjamin-abud-design-system.dsds.yaml): el sistema entero como Design System Doc Spec
+- [llms-full.txt](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/llms-full.txt): este índice, AGENTS.md y DESIGN.md en un archivo
+- [Sistema en vivo](https://benjaabud.framer.website/sistema): cada sección del sistema con sus valores
+- [Portfolio](https://benjaabud.framer.website): el sitio que usa este sistema
