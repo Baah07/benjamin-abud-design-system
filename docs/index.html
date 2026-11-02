@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Design System · Benjamín Abud</title>
+<meta name="description" content="Under the hood del portfolio de Benjamín Abud: tokens DTCG exportados de Figma, compilados con Style Dictionary a CSS Color 4, con contraste WCAG verificado." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%234038db'/%3E%3C/svg%3E" />
+<style>:root {--color-palette-brand-base: oklch(57.91% 0.234 278.59);--color-palette-indigo-50: oklch(95.74% 0.021 288.29);--color-palette-indigo-100: oklch(91.48% 0.043 287.8);--color-palette-indigo-200: oklch(85.1% 0.077 287.08);--color-palette-indigo-300: oklch(75.94% 0.129 285.18);--color-palette-indigo-400: oklch(66.83% 0.181 282.46);--color-palette-indigo-500: oklch(57.91% 0.234 278.59);--color-palette-indigo-600: oklch(47.17% 0.235 274.68);--color-palette-indigo-700: oklch(37.48% 0.223 270.23);--color-palette-indigo-800: oklch(28.43% 0.193 265.92);--color-palette-indigo-900: oklch(21.92% 0.148 266.96);--color-palette-indigo-950: oklch(13.74% 0.091 268.79);--color-palette-indigo-dark-source-50: oklch(13.81% 0.091 269.33);--color-palette-indigo-dark-source-100: oklch(21.9% 0.148 266.77);--color-palette-indigo-dark-source-200: oklch(28.42% 0.194 265.85);--color-palette-indigo-dark-source-300: oklch(37.47% 0.223 270.16);--color-palette-indigo-dark-source-400: oklch(47.18% 0.235 274.72);--color-palette-indigo-dark-source-600: oklch(66.85% 0.181 282.58);--color-palette-indigo-dark-source-700: oklch(75.83% 0.129 285.16);--color-palette-indigo-dark-source-800: oklch(85.08% 0.078 286.92);--color-palette-indigo-dark-source-900: oklch(91.47% 0.043 287.8);--color-palette-neutral-50: oklch(97.08% 0.003 288.66);--color-palette-neutral-100: oklch(92.89% 0.004 288.63);--color-palette-neutral-200: oklch(87.09% 0.004 288.62);--color-palette-neutral-300: oklch(78.05% 0.004 288.61);--color-palette-neutral-400: oklch(68.11% 0.006 288.55);--color-palette-neutral-500: oklch(58.1% 0.006 288.52);--color-palette-neutral-600: oklch(47.99% 0.006 288.46);--color-palette-neutral-700: oklch(39.16% 0.005 288.47);--color-palette-neutral-800: oklch(29.85% 0.005 288.37);--color-palette-neutral-900: oklch(22.01% 0.004 288.39);--color-palette-neutral-950: oklch(12.92% 0.003 288.42);--color-palette-paper-50: oklch(98.84% 0.001 286.38);--color-palette-paper-100: oklch(94.97% 0.003 286.35);--color-palette-paper-dot: oklch(86.52% 0.007 286.26);--color-palette-paper-edge: oklch(91.09% 0.005 286.29);--color-palette-playground-blue-base: oklch(54.61% 0.215 262.88);--color-palette-playground-blue-dark: oklch(33.13% 0.078 255.41);--color-palette-playground-blue-light: oklch(93.19% 0.032 255.59);--color-palette-playground-brand-dark: oklch(31.3% 0.096 287.75);--color-palette-playground-brand-light: oklch(93.21% 0.035 291);--color-palette-playground-green-base: oklch(62.71% 0.17 149.21);--color-palette-playground-green-dark: oklch(38.24% 0.065 169.08);--color-palette-playground-green-light: oklch(96.24% 0.043 156.74);--color-palette-playground-neutral-base: oklch(58.97% 0 0);--color-palette-playground-neutral-dark: oklch(34.07% 0 0);--color-palette-playground-neutral-light: oklch(93.1% 0 0);--color-palette-white: oklch(100% 0 0);--bg-surface-white: oklch(29.85% 0.005 288.37);--size-0: 0px;--size-4: 4px;--size-6: 6px;--size-8: 8px;--size-12: 12px;--size-16: 16px;--size-20: 20px;--size-24: 24px;--size-32: 32px;--size-36: 36px;--size-48: 48px;--size-60: 60px;--size-64: 64px;--size-96: 96px;--size-128: 128px;--size-192: 192px;--size-256: 256px;--size-320: 320px;--size-343: 343px;--size-375: 375px;--size-384: 384px;--size-512: 512px;--size-600: 600px;--size-640: 640px;--size-704: 704px;--size-768: 768px;--size-1024: 1024px;--size-1136: 1136px;--size-1320: 1320px;--size-1440: 1440px;--size-9999: 9999px;--space-legacy-number: 0px;--count-4: 4;--count-6: 6;--count-12: 12;--font-family-axiforma: Axiforma;--font-family-inter: Inter;--font-letter-spacing-0: 0px;--font-line-height-20: 20px;--font-line-height-24: 24px;--font-line-height-28: 28px;--font-line-height-32: 32px;--font-line-height-40: 40px;--font-line-height-48: 48px;--font-line-height-56: 56px;--font-line-height-72: 72px;--font-line-height-80: 80px;--font-line-height-88: 88px;--font-line-height-96: 96px;--font-line-height-104: 104px;--font-line-height-112: 112px;--font-size-12: 12px;--font-size-14: 14px;--font-size-16: 16px;--font-size-20: 20px;--font-size-24: 24px;--font-size-32: 32px;--font-size-40: 40px;--font-size-48: 48px;--font-size-56: 56px;--font-size-64: 64px;--font-size-72: 72px;--font-size-80: 80px;--font-size-88: 88px;--font-size-96: 96px;--font-weight-black: 900;--font-weight-bold: 700;--font-weight-extrabold: 800;--font-weight-medium: 500;--font-weight-regular: 400;--font-weight-semibold: 600;--style-radius-control: 8px;--style-radius-paper: 8px;--style-radius-surface: 12px;--style-space-surface: 24px;--typography-display-01: 800 96px/1.1667 Axiforma, sans-serif;--typography-display-02: 800 88px/1.1818 Axiforma, sans-serif;--typography-display-03: 700 80px/1.2 Axiforma, sans-serif;--typography-display-04: 700 72px/1.2222 Axiforma, sans-serif;--typography-display-05: 600 64px/1.25 Axiforma, sans-serif;--typography-display-06: 500 56px/1.2857 Axiforma, sans-serif;--typography-heading-3xl: 600 48px/1.1667 Axiforma, sans-serif;--typography-heading-2xl: 600 40px/1.2 Axiforma, sans-serif;--typography-heading-xl: 600 32px/1.25 Axiforma, sans-serif;--typography-heading-lg: 600 24px/1.3333 Axiforma, sans-serif;--typography-heading-subtitle-md: 500 20px/1.4 Inter, sans-serif;--typography-heading-subtitle-sm: 500 16px/1.5 Inter, sans-serif;--typography-body-lg: 400 20px/1.4 Inter, sans-serif;--typography-body-md: 400 16px/1.5 Inter, sans-serif;--typography-body-md-emphasized: 700 16px/1.5 Inter, sans-serif;--typography-body-sm: 400 14px/1.7143 Inter, sans-serif;--typography-body-sm-emphasized: 700 14px/1.7143 Inter, sans-serif;--typography-body-button-md: 700 16px/1.5 Inter, sans-serif;--typography-body-button-sm: 700 14px/1.7143 Inter, sans-serif;--typography-body-label-md: 700 14px/1.7143 Inter, sans-serif;--typography-body-label-md-emphasized: 900 14px/1.7143 Inter, sans-serif;--typography-body-caption: 700 12px/1.6667 Inter, sans-serif;--typography-body-caption-emphasized: 900 12px/1.6667 Inter, sans-serif;--elevation-low-shadow-1: 0px 0.175px 1.041px 0px oklch(0% 0 0 / 0.01), 0px 0.8px 2.925px 0px oklch(0% 0 0 / 0.02), 0px 2.025px 7.847px 0px oklch(0% 0 0 / 0.027), 0px 4px 18px 0px oklch(0% 0 0 / 0.04);--elevation-low-shadow-2: 0px 1px 2px 0px oklch(0% 0 0 / 0.02), 0px 4px 8px 0px oklch(0% 0 0 / 0.03), 0px 9px 16px 0px oklch(0% 0 0 / 0.035), 0px 16px 32px 0px oklch(0% 0 0 / 0.04), 0px 23px 52px 0px oklch(0% 0 0 / 0.05);--elevation-medium-shadow-3: 0px 4px 4px -2px oklch(15.47% 0.002 286.15 / 0.05), 0px 12px 16px -4px oklch(15.47% 0.002 286.15 / 0.08);--elevation-high-shadow-4: 0px 4px 4px -4px oklch(15.47% 0.002 286.15 / 0.05), 0px 16px 32px -4px oklch(15.47% 0.002 286.15 / 0.1);--elevation-high-shadow-5: 0px 16px 32px -8px oklch(15.47% 0.002 286.15 / 0.4);--elevation-paper-shadow-1: 0px 1px 1px 0px oklch(22.04% 0.02 284.66 / 0.06), 0px 2px 4px 0px oklch(22.04% 0.02 284.66 / 0.04), 0px 6px 12px -2px oklch(22.04% 0.02 284.66 / 0.05);--elevation-paper-shadow-2: 0px 1px 1px 0px oklch(22.04% 0.02 284.66 / 0.06), 0px 4px 8px -1px oklch(22.04% 0.02 284.66 / 0.05), 0px 14px 28px -6px oklch(22.04% 0.02 284.66 / 0.08), 0px 28px 48px -12px oklch(22.04% 0.02 284.66 / 0.06);--elevation-paper-shadow-3: 0px 1px 2px 0px oklch(22.04% 0.02 284.66 / 0.06), 0px 8px 16px -2px oklch(22.04% 0.02 284.66 / 0.06), 0px 24px 48px -8px oklch(22.04% 0.02 284.66 / 0.1), 0px 48px 80px -16px oklch(22.04% 0.02 284.66 / 0.08);--bg-fill-primary: var(--color-palette-indigo-600);--bg-fill-primary-hover: var(--color-palette-indigo-700);--bg-fill-primary-pressed: var(--color-palette-indigo-800);--bg-fill-secondary: var(--color-palette-indigo-100);--bg-surface-container: var(--color-palette-neutral-100);--bg-surface-container-high: var(--color-palette-neutral-200);--bg-surface-default: var(--color-palette-neutral-50);--bg-surface-inverse: var(--color-palette-neutral-800);--border-error: var(--color-palette-neutral-500);--border-focus-ring: var(--color-palette-neutral-900);--border-outline: var(--color-palette-neutral-500);--border-outline-variant: var(--color-palette-neutral-200);--border-primary: var(--color-palette-indigo-600);--border-primary-hover: var(--color-palette-indigo-700);--border-primary-pressed: var(--color-palette-indigo-800);--text-error: var(--color-palette-neutral-900);--text-inverse-primary: var(--color-palette-indigo-300);--text-on-primary: var(--color-palette-white);--text-on-primary-container: var(--color-palette-indigo-700);--text-on-primary-container-pressed: var(--color-palette-indigo-800);--text-on-surface: var(--color-palette-neutral-900);--text-on-surface-variant: var(--color-palette-neutral-600);--text-primary: var(--color-palette-indigo-600);--layout-breakpoint-min-width: var(--size-320);--layout-container-reference-width: var(--size-343);--layout-grid-columns: var(--count-4);--layout-grid-gutter: var(--size-12);--layout-grid-margin: var(--size-16);--layout-viewport-reference-width: var(--size-375);--radius-none: var(--size-0);--radius-sm: var(--size-4);--radius-md: var(--size-8);--radius-lg: var(--size-12);--radius-xl: var(--size-16);--radius-full: var(--size-9999);--space-0: var(--size-0);--space-1: var(--size-4);--space-2: var(--size-8);--space-3: var(--size-12);--space-4: var(--size-16);--space-6: var(--size-24);--space-8: var(--size-32);--space-9: var(--size-36);--space-12: var(--size-48);--space-16: var(--size-64);--space-24: var(--size-96);--space-32: var(--size-128);--space-48: var(--size-192);--space-64: var(--size-256);--space-96: var(--size-384);--space-128: var(--size-512);--space-160: var(--size-640);--space-192: var(--size-768);--style-bg-accent: var(--color-palette-indigo-600);--style-bg-canvas: var(--color-palette-neutral-50);--style-bg-canvas-dot: var(--color-palette-neutral-50);--style-bg-control: var(--color-palette-neutral-100);--style-bg-folder: var(--color-palette-neutral-100);--style-bg-paper: var(--color-palette-neutral-50);--style-border-paper: var(--color-palette-neutral-200);--style-border-selection: var(--color-palette-indigo-600);--style-text-accent: var(--color-palette-indigo-600);--style-text-on-accent: var(--color-palette-neutral-50);--style-text-primary: var(--color-palette-neutral-900);--style-text-secondary: var(--color-palette-neutral-600);}@media (prefers-color-scheme: dark) {:root:not([data-theme="light"]) {--color-palette-indigo-50: oklch(13.81% 0.091 269.33);--color-palette-indigo-100: oklch(21.9% 0.148 266.77);--color-palette-indigo-200: oklch(28.42% 0.194 265.85);--color-palette-indigo-300: oklch(37.47% 0.223 270.16);--color-palette-indigo-400: oklch(47.18% 0.235 274.72);--color-palette-indigo-600: oklch(66.85% 0.181 282.58);--color-palette-indigo-700: oklch(75.83% 0.129 285.16);--color-palette-indigo-800: oklch(85.08% 0.078 286.92);--color-palette-indigo-900: oklch(91.47% 0.043 287.8);--color-palette-indigo-950: oklch(95.74% 0.021 288.29);--color-palette-neutral-50: oklch(12.92% 0.003 288.42);--color-palette-neutral-100: oklch(22.01% 0.004 288.39);--color-palette-neutral-200: oklch(29.85% 0.005 288.37);--color-palette-neutral-300: oklch(39.16% 0.005 288.47);--color-palette-neutral-400: oklch(47.99% 0.006 288.46);--color-palette-neutral-600: oklch(68.11% 0.006 288.55);--color-palette-neutral-700: oklch(78.05% 0.004 288.61);--color-palette-neutral-800: oklch(87.09% 0.004 288.62);--color-palette-neutral-900: oklch(92.89% 0.004 288.63);--color-palette-neutral-950: oklch(97.08% 0.003 288.66);--color-palette-paper-50: oklch(19.21% 0.004 286.02);--color-palette-paper-100: oklch(23.63% 0.006 285.96);--color-palette-paper-dot: oklch(28.66% 0.007 285.93);--color-palette-paper-edge: oklch(29.47% 0.007 285.95);--bg-fill-primary: var(--color-palette-indigo-700);--bg-fill-primary-pressed: var(--color-palette-indigo-700);--bg-fill-secondary: var(--color-palette-indigo-200);--bg-surface-inverse: var(--color-palette-neutral-900);--bg-surface-white: var(--color-palette-neutral-900);--border-focus-ring: var(--color-palette-neutral-100);--border-outline-variant: var(--color-palette-neutral-700);--border-primary: var(--color-palette-indigo-300);--border-primary-hover: var(--color-palette-indigo-dark-source-700);--border-primary-pressed: var(--color-palette-indigo-dark-source-800);--text-error: var(--color-palette-neutral-950);--text-inverse-primary: var(--color-palette-indigo-400);--text-on-primary: var(--color-palette-indigo-100);--text-on-primary-container: var(--color-palette-indigo-950);--text-on-primary-container-pressed: var(--color-palette-indigo-950);--text-on-surface: var(--color-palette-neutral-950);--text-on-surface-variant: var(--color-palette-neutral-700);--text-primary: var(--color-palette-indigo-700);}}:root[data-theme="dark"] {--color-palette-indigo-50: oklch(13.81% 0.091 269.33);--color-palette-indigo-100: oklch(21.9% 0.148 266.77);--color-palette-indigo-200: oklch(28.42% 0.194 265.85);--color-palette-indigo-300: oklch(37.47% 0.223 270.16);--color-palette-indigo-400: oklch(47.18% 0.235 274.72);--color-palette-indigo-600: oklch(66.85% 0.181 282.58);--color-palette-indigo-700: oklch(75.83% 0.129 285.16);--color-palette-indigo-800: oklch(85.08% 0.078 286.92);--color-palette-indigo-900: oklch(91.47% 0.043 287.8);--color-palette-indigo-950: oklch(95.74% 0.021 288.29);--color-palette-neutral-50: oklch(12.92% 0.003 288.42);--color-palette-neutral-100: oklch(22.01% 0.004 288.39);--color-palette-neutral-200: oklch(29.85% 0.005 288.37);--color-palette-neutral-300: oklch(39.16% 0.005 288.47);--color-palette-neutral-400: oklch(47.99% 0.006 288.46);--color-palette-neutral-600: oklch(68.11% 0.006 288.55);--color-palette-neutral-700: oklch(78.05% 0.004 288.61);--color-palette-neutral-800: oklch(87.09% 0.004 288.62);--color-palette-neutral-900: oklch(92.89% 0.004 288.63);--color-palette-neutral-950: oklch(97.08% 0.003 288.66);--color-palette-paper-50: oklch(19.21% 0.004 286.02);--color-palette-paper-100: oklch(23.63% 0.006 285.96);--color-palette-paper-dot: oklch(28.66% 0.007 285.93);--color-palette-paper-edge: oklch(29.47% 0.007 285.95);--bg-fill-primary: var(--color-palette-indigo-700);--bg-fill-primary-pressed: var(--color-palette-indigo-700);--bg-fill-secondary: var(--color-palette-indigo-200);--bg-surface-inverse: var(--color-palette-neutral-900);--bg-surface-white: var(--color-palette-neutral-900);--border-focus-ring: var(--color-palette-neutral-100);--border-outline-variant: var(--color-palette-neutral-700);--border-primary: var(--color-palette-indigo-300);--border-primary-hover: var(--color-palette-indigo-dark-source-700);--border-primary-pressed: var(--color-palette-indigo-dark-source-800);--text-error: var(--color-palette-neutral-950);--text-inverse-primary: var(--color-palette-indigo-400);--text-on-primary: var(--color-palette-indigo-100);--text-on-primary-container: var(--color-palette-indigo-950);--text-on-primary-container-pressed: var(--color-palette-indigo-950);--text-on-surface: var(--color-palette-neutral-950);--text-on-surface-variant: var(--color-palette-neutral-700);--text-primary: var(--color-palette-indigo-700);}:root[data-style="lienzo"] {--style-radius-control: 12px;--style-radius-paper: 4px;--style-radius-surface: 18px;--style-space-surface: 32px;--style-bg-canvas-dot: var(--color-palette-paper-dot);--style-bg-control: var(--color-palette-paper-50);--style-bg-folder: var(--color-palette-paper-100);--style-bg-paper: var(--color-palette-paper-50);--style-border-paper: var(--color-palette-paper-edge);}@media (min-width: 600px) {:root {--layout-breakpoint-min-width: var(--size-600);--layout-container-reference-width: var(--size-704);--layout-grid-columns: var(--count-6);--layout-grid-gutter: var(--size-20);--layout-grid-margin: var(--size-32);--layout-viewport-reference-width: var(--size-768);}}@media (min-width: 1136px) {:root {--layout-breakpoint-min-width: var(--size-1136);--layout-container-reference-width: var(--size-1320);--layout-grid-columns: var(--count-12);--layout-grid-gutter: var(--size-24);--layout-grid-margin: var(--size-60);--layout-viewport-reference-width: var(--size-1440);}}</style>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg-surface-default); color: var(--text-on-surface); font: var(--typography-body-md); }
+  a { color: var(--text-primary); }
+  :focus-visible { outline: 2px solid var(--text-primary); outline-offset: 2px; }
+  .ba-skip { position: absolute; left: var(--space-4); top: calc(-1 * var(--space-16)); background: var(--bg-fill-primary); color: var(--text-on-primary); padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); }
+  .ba-skip:focus { top: var(--space-4); }
+  .ba-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  header, main, footer { max-width: var(--size-1136); margin: 0 auto; padding: var(--space-8) var(--layout-grid-margin); }
+  h1 { font: var(--typography-heading-2xl); margin: 0 0 var(--space-2); }
+  h2 { font: var(--typography-heading-xl); margin: var(--space-12) 0 var(--space-4); }
+  h3 { font: var(--typography-heading-lg); margin: var(--space-8) 0 var(--space-3); }
+  h4 { font: var(--typography-heading-subtitle-sm); margin: 0; }
+  p { margin: 0 0 var(--space-3); }
+  code { font-size: var(--font-size-14); }
+  .ba-lead { color: var(--text-on-surface-variant); font: var(--typography-body-lg); }
+  .ba-controls { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+  .ba-controls fieldset { border: 1px solid var(--border-outline); border-radius: var(--radius-lg); padding: var(--space-2) var(--space-3); display: flex; gap: var(--space-2); align-items: center; margin: 0; }
+  .ba-controls legend { font: var(--typography-body-caption); padding: 0 var(--space-1); }
+  .ba-controls button { font: var(--typography-body-button-sm); background: var(--bg-surface-container); color: var(--text-on-surface); border: 1px solid var(--border-outline); border-radius: var(--style-radius-control); padding: var(--space-1) var(--space-3); cursor: pointer; }
+  .ba-controls button[aria-pressed="true"] { background: var(--bg-fill-primary); color: var(--text-on-primary); border-color: var(--bg-fill-primary); }
+  .ba-badges { display: flex; flex-wrap: wrap; gap: var(--space-2); padding: 0; list-style: none; margin: var(--space-6) 0 0; }
+  .ba-badges li { font: var(--typography-body-caption); background: var(--bg-fill-secondary); color: var(--text-on-primary-container); border-radius: var(--radius-full); padding: var(--space-1) var(--space-3); }
+  .ba-ramp { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--size-64), 1fr)); gap: var(--space-2); margin-bottom: var(--space-4); }
+  .ba-swatch { display: grid; gap: var(--space-1); }
+  .ba-swatch__chip { display: block; height: var(--size-48); border-radius: var(--radius-md); border: 1px solid var(--border-outline-variant); }
+  .ba-roles { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--size-256), 1fr)); gap: var(--space-3); padding: 0; list-style: none; }
+  .ba-roles li { display: flex; gap: var(--space-3); align-items: center; }
+  .ba-roles .ba-swatch__chip { width: var(--size-48); flex: none; }
+  .ba-type { display: grid; gap: var(--space-4); }
+  .ba-type p { margin: 0; }
+  .ba-type small { display: block; color: var(--text-on-surface-variant); font: var(--typography-body-caption); }
+  .ba-space { display: grid; gap: var(--space-2); }
+  .ba-space div { display: flex; align-items: center; gap: var(--space-3); }
+  .ba-space span { display: block; height: var(--space-4); background: var(--bg-fill-primary); border-radius: var(--radius-sm); }
+  .ba-shadows { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--size-192), 1fr)); gap: var(--space-6); padding: 0; list-style: none; }
+  .ba-shadows li { background: var(--style-bg-paper); border-radius: var(--style-radius-surface); padding: var(--space-6) var(--space-4); }
+  .ba-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--size-256), 1fr)); gap: var(--space-4); padding: 0; list-style: none; }
+  .ba-card { background: var(--style-bg-paper); border: 1px solid var(--style-border-paper); border-radius: var(--style-radius-surface); overflow: hidden; box-shadow: var(--elevation-paper-shadow-1); }
+  .ba-card img { display: block; width: 100%; height: var(--size-192); object-fit: contain; background: var(--color-palette-white); padding: var(--space-3); }
+  .ba-card__body { padding: var(--space-4); }
+  .ba-card__body p { color: var(--text-on-surface-variant); font: var(--typography-body-sm); margin: var(--space-1) 0 0; }
+  .ba-card__links a { font: var(--typography-body-sm-emphasized); }
+  .ba-foundations { columns: 2; padding-left: var(--space-6); }
+  pre { background: var(--bg-surface-container); padding: var(--space-4); border-radius: var(--radius-lg); overflow-x: auto; font-size: var(--font-size-14); }
+  footer { color: var(--text-on-surface-variant); font: var(--typography-body-sm); }
+</style>
+</head>
+<body>
+<a class="ba-skip" href="#main">Saltar al contenido</a>
+<header>
+  <h1>Design System</h1>
+  <p class="ba-lead">Benjamín Abud · las foundations y componentes detrás del portfolio, exportados de Figma.</p>
+  <p><a href="https://github.com/Baah07/benjamin-abud-design-system">Repositorio en GitHub</a> · <a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/tokens.json">tokens.json</a> · <a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/tokens.css">tokens.css</a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/">Figma</a></p>
+  <div class="ba-controls">
+    <fieldset><legend>Tema</legend><button type="button" data-set="theme" data-value="light" aria-pressed="true">Claro</button><button type="button" data-set="theme" data-value="dark" aria-pressed="false">Oscuro</button></fieldset>
+    <fieldset><legend>Estilo</legend><button type="button" data-set="style" data-value="clasico" aria-pressed="true">Clásico</button><button type="button" data-set="style" data-value="lienzo" aria-pressed="false">Lienzo</button></fieldset>
+  </div>
+  <ul class="ba-badges" aria-label="Estándares">
+    <li>DTCG 2025.10</li><li>Style Dictionary</li><li>CSS Color 4 · oklch</li><li>WCAG 2.2 · 72/76 pares de contraste</li><li>axe-core · 0 violaciones</li><li>Lighthouse · 100 / 100 / 100 / 100</li>
+  </ul>
+</header>
+<main id="main">
+  <section id="under-the-hood" aria-labelledby="uth-title">
+    <h2 id="uth-title">Under the hood</h2>
+    <p>220 tokens en <a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/tokens.json">DTCG 2025.10</a>, exportados con Token Exporter desde Figma y compilados con Style Dictionary a custom properties <code>oklch()</code>. Los temas claro/oscuro, el estilo Clásico/Lienzo y los viewports se combinan según <a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/tokens.resolver.json">tokens.resolver.json</a>.</p>
+
+    <h3 id="uth-color">Color</h3>
+    <div class="ba-ramp" role="list" aria-label="indigo"><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-50)"></span><code>50</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-100)"></span><code>100</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-200)"></span><code>200</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-300)"></span><code>300</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-400)"></span><code>400</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-500)"></span><code>500</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-600)"></span><code>600</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-700)"></span><code>700</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-800)"></span><code>800</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-900)"></span><code>900</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-indigo-950)"></span><code>950</code></div></div>
+    <div class="ba-ramp" role="list" aria-label="neutral"><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-50)"></span><code>50</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-100)"></span><code>100</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-200)"></span><code>200</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-300)"></span><code>300</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-400)"></span><code>400</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-500)"></span><code>500</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-600)"></span><code>600</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-700)"></span><code>700</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-800)"></span><code>800</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-900)"></span><code>900</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-neutral-950)"></span><code>950</code></div></div>
+    <div class="ba-ramp" role="list" aria-label="paper"><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-paper-50)"></span><code>50</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-paper-100)"></span><code>100</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-paper-dot)"></span><code>dot</code></div><div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(--color-palette-paper-edge)"></span><code>edge</code></div></div>
+    <ul class="ba-roles"><li><span class="ba-swatch__chip" style="background: var(--bg-surface-default)"></span><code>--bg-surface-default</code></li><li><span class="ba-swatch__chip" style="background: var(--bg-surface-container)"></span><code>--bg-surface-container</code></li><li><span class="ba-swatch__chip" style="background: var(--bg-fill-primary)"></span><code>--bg-fill-primary</code></li><li><span class="ba-swatch__chip" style="background: var(--bg-fill-secondary)"></span><code>--bg-fill-secondary</code></li><li><span class="ba-swatch__chip" style="background: var(--text-on-surface)"></span><code>--text-on-surface</code></li><li><span class="ba-swatch__chip" style="background: var(--text-on-surface-variant)"></span><code>--text-on-surface-variant</code></li><li><span class="ba-swatch__chip" style="background: var(--text-primary)"></span><code>--text-primary</code></li><li><span class="ba-swatch__chip" style="background: var(--border-outline)"></span><code>--border-outline</code></li><li><span class="ba-swatch__chip" style="background: var(--style-bg-paper)"></span><code>--style-bg-paper</code></li><li><span class="ba-swatch__chip" style="background: var(--style-bg-folder)"></span><code>--style-bg-folder</code></li><li><span class="ba-swatch__chip" style="background: var(--style-bg-canvas-dot)"></span><code>--style-bg-canvas-dot</code></li><li><span class="ba-swatch__chip" style="background: var(--style-text-accent)"></span><code>--style-text-accent</code></li></ul>
+    <p><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/color.md">Color en GitHub</a> · <a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/reports/contrast.json">reporte de contraste</a></p>
+
+    <h3 id="uth-type">Tipografía</h3>
+    <div class="ba-type"><p style="font: var(--typography-display-06)">Diseño interfaces y sistemas<small>--typography-display-06</small></p><p style="font: var(--typography-heading-3xl)">Diseño interfaces y sistemas<small>--typography-heading-3xl</small></p><p style="font: var(--typography-heading-2xl)">Diseño interfaces y sistemas<small>--typography-heading-2xl</small></p><p style="font: var(--typography-heading-xl)">Diseño interfaces y sistemas<small>--typography-heading-xl</small></p><p style="font: var(--typography-heading-lg)">Diseño interfaces y sistemas<small>--typography-heading-lg</small></p><p style="font: var(--typography-heading-subtitle-md)">Diseño interfaces y sistemas<small>--typography-heading-subtitle-md</small></p><p style="font: var(--typography-heading-subtitle-sm)">Diseño interfaces y sistemas<small>--typography-heading-subtitle-sm</small></p><p style="font: var(--typography-body-lg)">Diseño interfaces y sistemas<small>--typography-body-lg</small></p><p style="font: var(--typography-body-md)">Diseño interfaces y sistemas<small>--typography-body-md</small></p><p style="font: var(--typography-body-md-emphasized)">Diseño interfaces y sistemas<small>--typography-body-md-emphasized</small></p><p style="font: var(--typography-body-sm)">Diseño interfaces y sistemas<small>--typography-body-sm</small></p><p style="font: var(--typography-body-sm-emphasized)">Diseño interfaces y sistemas<small>--typography-body-sm-emphasized</small></p><p style="font: var(--typography-body-button-md)">Diseño interfaces y sistemas<small>--typography-body-button-md</small></p><p style="font: var(--typography-body-button-sm)">Diseño interfaces y sistemas<small>--typography-body-button-sm</small></p><p style="font: var(--typography-body-label-md)">Diseño interfaces y sistemas<small>--typography-body-label-md</small></p><p style="font: var(--typography-body-label-md-emphasized)">Diseño interfaces y sistemas<small>--typography-body-label-md-emphasized</small></p><p style="font: var(--typography-body-caption)">Diseño interfaces y sistemas<small>--typography-body-caption</small></p><p style="font: var(--typography-body-caption-emphasized)">Diseño interfaces y sistemas<small>--typography-body-caption-emphasized</small></p></div>
+    <p><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/typography.md">Tipografía en GitHub</a></p>
+
+    <h3 id="uth-space">Espaciado</h3>
+    <div class="ba-space"><div><span style="width: var(--space-0)"></span><code>--space-0</code></div><div><span style="width: var(--space-1)"></span><code>--space-1</code></div><div><span style="width: var(--space-2)"></span><code>--space-2</code></div><div><span style="width: var(--space-3)"></span><code>--space-3</code></div><div><span style="width: var(--space-4)"></span><code>--space-4</code></div><div><span style="width: var(--space-6)"></span><code>--space-6</code></div><div><span style="width: var(--space-8)"></span><code>--space-8</code></div><div><span style="width: var(--space-9)"></span><code>--space-9</code></div><div><span style="width: var(--space-12)"></span><code>--space-12</code></div><div><span style="width: var(--space-16)"></span><code>--space-16</code></div><div><span style="width: var(--space-24)"></span><code>--space-24</code></div></div>
+    <p><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/spacing.md">Espaciado en GitHub</a></p>
+
+    <h3 id="uth-elevation">Elevación</h3>
+    <ul class="ba-shadows"><li style="box-shadow: var(--elevation-low-shadow-1)"><code>--elevation-low-shadow-1</code></li><li style="box-shadow: var(--elevation-low-shadow-2)"><code>--elevation-low-shadow-2</code></li><li style="box-shadow: var(--elevation-medium-shadow-3)"><code>--elevation-medium-shadow-3</code></li><li style="box-shadow: var(--elevation-high-shadow-4)"><code>--elevation-high-shadow-4</code></li><li style="box-shadow: var(--elevation-high-shadow-5)"><code>--elevation-high-shadow-5</code></li><li style="box-shadow: var(--elevation-paper-shadow-1)"><code>--elevation-paper-shadow-1</code></li><li style="box-shadow: var(--elevation-paper-shadow-2)"><code>--elevation-paper-shadow-2</code></li><li style="box-shadow: var(--elevation-paper-shadow-3)"><code>--elevation-paper-shadow-3</code></li></ul>
+    <p><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/elevation.md">Elevación en GitHub</a></p>
+
+    <h3 id="uth-tokens">tokens.json</h3>
+    <pre tabindex="0" aria-label="Ejemplo de tokens.json"><code>{
+  &quot;bg&quot;: {
+    &quot;fill&quot;: {
+      &quot;primary&quot;: {
+        &quot;$value&quot;: &quot;{color.palette.indigo.600}&quot;,
+        &quot;$type&quot;: &quot;color&quot;,
+        &quot;$description&quot;: &quot;Primary · Frame Tonal palettes · Light Theme · Dark Theme. Light → indigo/600 (Primitives Light). Dark → indigo/700 (Primitives Dark). Usar el mismo modo en ambas colecciones.&quot;
+      }
+    }
+  }
+}</code></pre>
+  </section>
+
+  <section aria-labelledby="foundations-title">
+    <h2 id="foundations-title">Foundations</h2>
+    <ul class="ba-foundations"><li><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/color.md">Colors</a></li><li><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/typography.md">Typography</a></li><li><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/spacing.md">Spacing</a></li><li><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/layout-grid.md">Layout Grid</a></li><li><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/elevation.md">Elevations</a></li><li><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/icons.md">Icon library</a></li><li><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/motion.md">Motions</a></li><li><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/foundations/logo.md">Logo</a></li></ul>
+  </section>
+
+  <section aria-labelledby="components-title">
+    <h2 id="components-title">Componentes</h2>
+    <h3>Átomos</h3>
+    <ul class="ba-grid">
+      <li class="ba-card">
+        <img src="assets/components/button.png" alt="Button: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Button</h4>
+          <p>24 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/button.md">GitHub<span class="ba-sr"> — Button</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=246-420">Figma<span class="ba-sr"> — Button</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/link.png" alt="Link: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Link</h4>
+          <p>10 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/link.md">GitHub<span class="ba-sr"> — Link</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=275-179">Figma<span class="ba-sr"> — Link</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/input-field.png" alt="Input Field: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Input Field</h4>
+          <p>16 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/input-field.md">GitHub<span class="ba-sr"> — Input Field</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=315-18">Figma<span class="ba-sr"> — Input Field</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/toggle.png" alt="Toggle: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Toggle</h4>
+          <p>10 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/toggle.md">GitHub<span class="ba-sr"> — Toggle</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1138-53">Figma<span class="ba-sr"> — Toggle</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/checkbox.png" alt="Checkbox: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Checkbox</h4>
+          <p>15 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/checkbox.md">GitHub<span class="ba-sr"> — Checkbox</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1139-78">Figma<span class="ba-sr"> — Checkbox</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/radio-button.png" alt="Radio button: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Radio button</h4>
+          <p>10 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/radio-button.md">GitHub<span class="ba-sr"> — Radio button</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1139-217">Figma<span class="ba-sr"> — Radio button</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/slider.png" alt="Slider: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Slider</h4>
+          <p>15 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/slider.md">GitHub<span class="ba-sr"> — Slider</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1139-376">Figma<span class="ba-sr"> — Slider</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/table-cell.png" alt="Table cell: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Table cell</h4>
+          <p>9 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/table-cell.md">GitHub<span class="ba-sr"> — Table cell</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1145-242">Figma<span class="ba-sr"> — Table cell</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/table-cell-title.png" alt="Table cell title: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Table cell title</h4>
+          <p>3 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/table-cell-title.md">GitHub<span class="ba-sr"> — Table cell title</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1145-379">Figma<span class="ba-sr"> — Table cell title</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/token-preview.png" alt="Token preview: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Token preview</h4>
+          <p>5 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/token-preview.md">GitHub<span class="ba-sr"> — Token preview</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1163-16">Figma<span class="ba-sr"> — Token preview</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/filter-chip.png" alt="Filter chip: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Filter chip</h4>
+          <p>2 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/filter-chip.md">GitHub<span class="ba-sr"> — Filter chip</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1188-243">Figma<span class="ba-sr"> — Filter chip</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/dock-item.png" alt="Dock item: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Dock item</h4>
+          <p>2 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/dock-item.md">GitHub<span class="ba-sr"> — Dock item</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1188-255">Figma<span class="ba-sr"> — Dock item</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/dot-grid.png" alt="Dot grid: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Dot grid</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/dot-grid.md">GitHub<span class="ba-sr"> — Dot grid</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1188-659">Figma<span class="ba-sr"> — Dot grid</span></a></p>
+        </div>
+      </li>
+    </ul>
+    <h3>Moléculas</h3>
+    <ul class="ba-grid">
+      <li class="ba-card">
+        <img src="assets/components/menu.png" alt="Menu: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Menu</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/menu.md">GitHub<span class="ba-sr"> — Menu</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1010-3302">Figma<span class="ba-sr"> — Menu</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/choice.png" alt="Choice: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Choice</h4>
+          <p>5 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/choice.md">GitHub<span class="ba-sr"> — Choice</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1023-4406">Figma<span class="ba-sr"> — Choice</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/accordion.png" alt="Accordeon: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Accordeon</h4>
+          <p>2 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/accordion.md">GitHub<span class="ba-sr"> — Accordeon</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=462-690">Figma<span class="ba-sr"> — Accordeon</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/card.png" alt="Card: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Card</h4>
+          <p>10 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/card.md">GitHub<span class="ba-sr"> — Card</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=299-77">Figma<span class="ba-sr"> — Card</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/navigation-card.png" alt="Navigation card: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Navigation card</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/navigation-card.md">GitHub<span class="ba-sr"> — Navigation card</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=557-1271">Figma<span class="ba-sr"> — Navigation card</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/bottom-sheet.png" alt="Bottom sheet: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Bottom sheet</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/bottom-sheet.md">GitHub<span class="ba-sr"> — Bottom sheet</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1064-3">Figma<span class="ba-sr"> — Bottom sheet</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/table-list.png" alt="Table list: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Table list</h4>
+          <p>9 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/table-list.md">GitHub<span class="ba-sr"> — Table list</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1146-1058">Figma<span class="ba-sr"> — Table list</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/table-header.png" alt="Table header: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Table header</h4>
+          <p>4 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/table-header.md">GitHub<span class="ba-sr"> — Table header</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1147-72">Figma<span class="ba-sr"> — Table header</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/folder.png" alt="Folder: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Folder</h4>
+          <p>2 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/folder.md">GitHub<span class="ba-sr"> — Folder</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-39">Figma<span class="ba-sr"> — Folder</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/paper-note.png" alt="Paper note: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Paper note</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/paper-note.md">GitHub<span class="ba-sr"> — Paper note</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-41">Figma<span class="ba-sr"> — Paper note</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/zoom-control.png" alt="Zoom control: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Zoom control</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/zoom-control.md">GitHub<span class="ba-sr"> — Zoom control</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-48">Figma<span class="ba-sr"> — Zoom control</span></a></p>
+        </div>
+      </li>
+    </ul>
+    <h3>Organismos</h3>
+    <ul class="ba-grid">
+      <li class="ba-card">
+        <img src="assets/components/header.png" alt="Header: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Header</h4>
+          <p>6 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/header.md">GitHub<span class="ba-sr"> — Header</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=333-235">Figma<span class="ba-sr"> — Header</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/panel-content.png" alt="Panel content: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Panel content</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/panel-content.md">GitHub<span class="ba-sr"> — Panel content</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=462-691">Figma<span class="ba-sr"> — Panel content</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/inspector.png" alt="Inspector: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Inspector</h4>
+          <p>4 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/inspector.md">GitHub<span class="ba-sr"> — Inspector</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=462-1152">Figma<span class="ba-sr"> — Inspector</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/system-personalize.png" alt="System · Personalize: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>System · Personalize</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/system-personalize.md">GitHub<span class="ba-sr"> — System · Personalize</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=868-1259">Figma<span class="ba-sr"> — System · Personalize</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/system-component-detail.png" alt="System · Component detail: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>System · Component detail</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/system-component-detail.md">GitHub<span class="ba-sr"> — System · Component detail</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=868-1484">Figma<span class="ba-sr"> — System · Component detail</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/system-mobile-sheet.png" alt="System · Mobile sheet: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>System · Mobile sheet</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/system-mobile-sheet.md">GitHub<span class="ba-sr"> — System · Mobile sheet</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=868-1751">Figma<span class="ba-sr"> — System · Mobile sheet</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/table.png" alt="Table: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Table</h4>
+          <p>6 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/table.md">GitHub<span class="ba-sr"> — Table</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1166-446">Figma<span class="ba-sr"> — Table</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/dock-nav.png" alt="Dock nav: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Dock nav</h4>
+          <p>4 variantes</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/dock-nav.md">GitHub<span class="ba-sr"> — Dock nav</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-173">Figma<span class="ba-sr"> — Dock nav</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/canvas-toolbar.png" alt="Canvas toolbar: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Canvas toolbar</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/canvas-toolbar.md">GitHub<span class="ba-sr"> — Canvas toolbar</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1189-175">Figma<span class="ba-sr"> — Canvas toolbar</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/case-study-modal.png" alt="Case study modal: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Case study modal</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/case-study-modal.md">GitHub<span class="ba-sr"> — Case study modal</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1190-2">Figma<span class="ba-sr"> — Case study modal</span></a></p>
+        </div>
+      </li>
+      <li class="ba-card">
+        <img src="assets/components/envelope-contact.png" alt="Envelope contact: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>Envelope contact</h4>
+          <p>1 variante</p>
+          <p class="ba-card__links"><a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/components/envelope-contact.md">GitHub<span class="ba-sr"> — Envelope contact</span></a> · <a href="https://www.figma.com/design/FvaEDyROUUsM8ntHj8C9f8/?node-id=1190-97">Figma<span class="ba-sr"> — Envelope contact</span></a></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
+<footer><p>Generado por <a href="https://github.com/Baah07/benjamin-abud-design-system/blob/main/scripts/build-site.mjs">scripts/build-site.mjs</a> desde Figma. No editar a mano.</p></footer>
+<script>
+  (() => {
+    const root = document.documentElement;
+    const apply = (key, value) => {
+      if (key === 'theme') root.dataset.theme = value;
+      else if (value === 'lienzo') root.dataset.style = 'lienzo';
+      else delete root.dataset.style;
+      document.querySelectorAll('[data-set="' + key + '"]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === value)));
+    };
+    if (matchMedia('(prefers-color-scheme: dark)').matches) apply('theme', 'dark');
+    document.querySelectorAll('[data-set]').forEach((b) => b.addEventListener('click', () => apply(b.dataset.set, b.dataset.value)));
+  })();
+</script>
+</body>
+</html>

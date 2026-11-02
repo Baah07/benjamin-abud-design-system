@@ -1,0 +1,16 @@
+# Benjamín Abud — Design System
+
+> DTCG 2025.10 design tokens exported from Figma, built with Style Dictionary into CSS Color 4 (oklch) custom properties. Light/dark themes, Clásico/Lienzo styles, mobile/tablet/desktop layout. WCAG 2.2 AA contrast, axe-core and Lighthouse checked.
+
+## Tokens
+- [tokens.json](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/tokens.json): all tokens, DTCG 2025.10, with darkTheme / lienzoStyle / tabletViewport / desktopViewport overrides
+- [tokens.resolver.json](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/tokens.resolver.json): how the overrides combine
+- [tokens.css](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/tokens.css): CSS custom properties
+
+## Rules
+- [AGENTS.md](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/AGENTS.md): how to use the system
+
+## Docs
+- [Foundations](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/foundations/README.md)
+- [Components](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/COMPONENTS.md)
+- [Component inventory (JSON)](https://raw.githubusercontent.com/Baah07/benjamin-abud-design-system/main/figma/components.json)

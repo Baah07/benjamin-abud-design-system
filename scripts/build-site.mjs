@@ -1,0 +1,185 @@
+// Builds docs/index.html — the "Under the hood" page: live tokens, components and deep links to GitHub and Figma.
+import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
+import { combine, GROUP_KEYS } from './lib/themes.mjs';
+import { figmaUrl, LEVELS } from './lib/pages.mjs';
+import { flatten } from './lib/dtcg.mjs';
+
+const root = new URL('../', import.meta.url);
+const read = async (p) => JSON.parse(await readFile(new URL(p, root), 'utf8'));
+const { repo, branch } = await read('ds.config.json');
+const { fileKey, components, foundations } = await read('figma/components.json');
+const tokens = await read('tokens.json');
+const contrast = await read('reports/contrast.json');
+
+// Inlined and comment-free: one request less on the critical path (Lighthouse FCP).
+const tokensCss = (await readFile(new URL('tokens.css', root), 'utf8')).replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s*\n\s*/g, '');
+const gh = (path) => `https://github.com/${repo}/blob/${branch}/${path}`;
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const cssVar = (p) => `--${p.replace(/\./g, '-')}`;
+const light = combine(tokens, []);
+const base = flatten(Object.fromEntries(Object.entries(tokens).filter(([k]) => !k.startsWith('$') && !GROUP_KEYS.includes(k))));
+
+const ramp = (name) => {
+  const keys = Object.keys(light).filter((k) => k.startsWith(`color.palette.${name}.`) && !k.includes('dark-source'));
+  return `<div class="ba-ramp" role="list" aria-label="${esc(name)}">${keys.map((k) => `<div class="ba-swatch" role="listitem"><span class="ba-swatch__chip" style="background: var(${cssVar(k)})"></span><code>${esc(k.split('.').pop())}</code></div>`).join('')}</div>`;
+};
+const roles = ['bg.surface.default', 'bg.surface.container', 'bg.fill.primary', 'bg.fill.secondary', 'text.on-surface', 'text.on-surface-variant', 'text.primary', 'border.outline', 'style.bg.paper', 'style.bg.folder', 'style.bg.canvas-dot', 'style.text.accent'];
+const typo = ['typography.display.06', ...Object.keys(light).filter((k) => k.startsWith('typography.heading.') || k.startsWith('typography.body.'))];
+const spaces = Object.keys(light).filter((k) => /^space\.\d+$/.test(k) && light[k].$value.value <= 96);
+const shadows = Object.keys(light).filter((k) => k.startsWith('elevation.'));
+
+const pairs = Object.values(contrast).flat();
+const passing = pairs.filter((p) => p.pass).length;
+// Badges only show what the last audit run actually measured.
+const optional = async (p) => { try { return await read(p); } catch { return null; } };
+const axe = await optional('reports/axe.json');
+const lh = await optional('reports/lighthouse.json');
+const extraBadges = [
+  axe && `axe-core · ${Object.values(axe).flat().length} violaciones`,
+  lh && `Lighthouse · ${['performance', 'accessibility', 'best-practices', 'seo'].map((c) => Math.min(lh.mobile[c], lh.desktop[c])).join(' / ')}`,
+].filter(Boolean);
+
+const compCard = (c) => `
+      <li class="ba-card">
+        <img src="assets/components/${c.slug}.png" alt="${esc(c.name)}: vista del componente en Figma" loading="lazy" decoding="async" width="320" height="200" />
+        <div class="ba-card__body">
+          <h4>${esc(c.name)}</h4>
+          <p>${c.variants} ${c.variants === 1 ? 'variante' : 'variantes'}</p>
+          <p class="ba-card__links"><a href="${gh(`components/${c.slug}.md`)}">GitHub<span class="ba-sr"> — ${esc(c.name)}</span></a> · <a href="${figmaUrl(fileKey, c.id)}">Figma<span class="ba-sr"> — ${esc(c.name)}</span></a></p>
+        </div>
+      </li>`;
+
+const html = `<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Design System · Benjamín Abud</title>
+<meta name="description" content="Under the hood del portfolio de Benjamín Abud: tokens DTCG exportados de Figma, compilados con Style Dictionary a CSS Color 4, con contraste WCAG verificado." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%234038db'/%3E%3C/svg%3E" />
+<style>${tokensCss}</style>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg-surface-default); color: var(--text-on-surface); font: var(--typography-body-md); }
+  a { color: var(--text-primary); }
+  :focus-visible { outline: 2px solid var(--text-primary); outline-offset: 2px; }
+  .ba-skip { position: absolute; left: var(--space-4); top: calc(-1 * var(--space-16)); background: var(--bg-fill-primary); color: var(--text-on-primary); padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); }
+  .ba-skip:focus { top: var(--space-4); }
+  .ba-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  header, main, footer { max-width: var(--size-1136); margin: 0 auto; padding: var(--space-8) var(--layout-grid-margin); }
+  h1 { font: var(--typography-heading-2xl); margin: 0 0 var(--space-2); }
+  h2 { font: var(--typography-heading-xl); margin: var(--space-12) 0 var(--space-4); }
+  h3 { font: var(--typography-heading-lg); margin: var(--space-8) 0 var(--space-3); }
+  h4 { font: var(--typography-heading-subtitle-sm); margin: 0; }
+  p { margin: 0 0 var(--space-3); }
+  code { font-size: var(--font-size-14); }
+  .ba-lead { color: var(--text-on-surface-variant); font: var(--typography-body-lg); }
+  .ba-controls { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+  .ba-controls fieldset { border: 1px solid var(--border-outline); border-radius: var(--radius-lg); padding: var(--space-2) var(--space-3); display: flex; gap: var(--space-2); align-items: center; margin: 0; }
+  .ba-controls legend { font: var(--typography-body-caption); padding: 0 var(--space-1); }
+  .ba-controls button { font: var(--typography-body-button-sm); background: var(--bg-surface-container); color: var(--text-on-surface); border: 1px solid var(--border-outline); border-radius: var(--style-radius-control); padding: var(--space-1) var(--space-3); cursor: pointer; }
+  .ba-controls button[aria-pressed="true"] { background: var(--bg-fill-primary); color: var(--text-on-primary); border-color: var(--bg-fill-primary); }
+  .ba-badges { display: flex; flex-wrap: wrap; gap: var(--space-2); padding: 0; list-style: none; margin: var(--space-6) 0 0; }
+  .ba-badges li { font: var(--typography-body-caption); background: var(--bg-fill-secondary); color: var(--text-on-primary-container); border-radius: var(--radius-full); padding: var(--space-1) var(--space-3); }
+  .ba-ramp { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--size-64), 1fr)); gap: var(--space-2); margin-bottom: var(--space-4); }
+  .ba-swatch { display: grid; gap: var(--space-1); }
+  .ba-swatch__chip { display: block; height: var(--size-48); border-radius: var(--radius-md); border: 1px solid var(--border-outline-variant); }
+  .ba-roles { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--size-256), 1fr)); gap: var(--space-3); padding: 0; list-style: none; }
+  .ba-roles li { display: flex; gap: var(--space-3); align-items: center; }
+  .ba-roles .ba-swatch__chip { width: var(--size-48); flex: none; }
+  .ba-type { display: grid; gap: var(--space-4); }
+  .ba-type p { margin: 0; }
+  .ba-type small { display: block; color: var(--text-on-surface-variant); font: var(--typography-body-caption); }
+  .ba-space { display: grid; gap: var(--space-2); }
+  .ba-space div { display: flex; align-items: center; gap: var(--space-3); }
+  .ba-space span { display: block; height: var(--space-4); background: var(--bg-fill-primary); border-radius: var(--radius-sm); }
+  .ba-shadows { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--size-192), 1fr)); gap: var(--space-6); padding: 0; list-style: none; }
+  .ba-shadows li { background: var(--style-bg-paper); border-radius: var(--style-radius-surface); padding: var(--space-6) var(--space-4); }
+  .ba-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--size-256), 1fr)); gap: var(--space-4); padding: 0; list-style: none; }
+  .ba-card { background: var(--style-bg-paper); border: 1px solid var(--style-border-paper); border-radius: var(--style-radius-surface); overflow: hidden; box-shadow: var(--elevation-paper-shadow-1); }
+  .ba-card img { display: block; width: 100%; height: var(--size-192); object-fit: contain; background: var(--color-palette-white); padding: var(--space-3); }
+  .ba-card__body { padding: var(--space-4); }
+  .ba-card__body p { color: var(--text-on-surface-variant); font: var(--typography-body-sm); margin: var(--space-1) 0 0; }
+  .ba-card__links a { font: var(--typography-body-sm-emphasized); }
+  .ba-foundations { columns: 2; padding-left: var(--space-6); }
+  pre { background: var(--bg-surface-container); padding: var(--space-4); border-radius: var(--radius-lg); overflow-x: auto; font-size: var(--font-size-14); }
+  footer { color: var(--text-on-surface-variant); font: var(--typography-body-sm); }
+</style>
+</head>
+<body>
+<a class="ba-skip" href="#main">Saltar al contenido</a>
+<header>
+  <h1>Design System</h1>
+  <p class="ba-lead">Benjamín Abud · las foundations y componentes detrás del portfolio, exportados de Figma.</p>
+  <p><a href="https://github.com/${repo}">Repositorio en GitHub</a> · <a href="${gh('tokens.json')}">tokens.json</a> · <a href="${gh('tokens.css')}">tokens.css</a> · <a href="https://www.figma.com/design/${fileKey}/">Figma</a></p>
+  <div class="ba-controls">
+    <fieldset><legend>Tema</legend><button type="button" data-set="theme" data-value="light" aria-pressed="true">Claro</button><button type="button" data-set="theme" data-value="dark" aria-pressed="false">Oscuro</button></fieldset>
+    <fieldset><legend>Estilo</legend><button type="button" data-set="style" data-value="clasico" aria-pressed="true">Clásico</button><button type="button" data-set="style" data-value="lienzo" aria-pressed="false">Lienzo</button></fieldset>
+  </div>
+  <ul class="ba-badges" aria-label="Estándares">
+    <li>DTCG 2025.10</li><li>Style Dictionary</li><li>CSS Color 4 · oklch</li><li>WCAG 2.2 · ${passing}/${pairs.length} pares de contraste</li>${extraBadges.map((b) => `<li>${esc(b)}</li>`).join('')}
+  </ul>
+</header>
+<main id="main">
+  <section id="under-the-hood" aria-labelledby="uth-title">
+    <h2 id="uth-title">Under the hood</h2>
+    <p>${Object.keys(base).length} tokens en <a href="${gh('tokens.json')}">DTCG 2025.10</a>, exportados con Token Exporter desde Figma y compilados con Style Dictionary a custom properties <code>oklch()</code>. Los temas claro/oscuro, el estilo Clásico/Lienzo y los viewports se combinan según <a href="${gh('tokens.resolver.json')}">tokens.resolver.json</a>.</p>
+
+    <h3 id="uth-color">Color</h3>
+    ${['indigo', 'neutral', 'paper'].map(ramp).join('\n    ')}
+    <ul class="ba-roles">${roles.map((r) => `<li><span class="ba-swatch__chip" style="background: var(${cssVar(r)})"></span><code>${cssVar(r)}</code></li>`).join('')}</ul>
+    <p><a href="${gh('foundations/color.md')}">Color en GitHub</a> · <a href="${gh('reports/contrast.json')}">reporte de contraste</a></p>
+
+    <h3 id="uth-type">Tipografía</h3>
+    <div class="ba-type">${typo.map((k) => `<p style="font: var(${cssVar(k)})">Diseño interfaces y sistemas<small>${cssVar(k)}</small></p>`).join('')}</div>
+    <p><a href="${gh('foundations/typography.md')}">Tipografía en GitHub</a></p>
+
+    <h3 id="uth-space">Espaciado</h3>
+    <div class="ba-space">${spaces.map((k) => `<div><span style="width: var(${cssVar(k)})"></span><code>${cssVar(k)}</code></div>`).join('')}</div>
+    <p><a href="${gh('foundations/spacing.md')}">Espaciado en GitHub</a></p>
+
+    <h3 id="uth-elevation">Elevación</h3>
+    <ul class="ba-shadows">${shadows.map((k) => `<li style="box-shadow: var(${cssVar(k)})"><code>${cssVar(k)}</code></li>`).join('')}</ul>
+    <p><a href="${gh('foundations/elevation.md')}">Elevación en GitHub</a></p>
+
+    <h3 id="uth-tokens">tokens.json</h3>
+    <pre tabindex="0" aria-label="Ejemplo de tokens.json"><code>${esc(JSON.stringify({ bg: { fill: { primary: tokens.bg.fill.primary } } }, null, 2))}</code></pre>
+  </section>
+
+  <section aria-labelledby="foundations-title">
+    <h2 id="foundations-title">Foundations</h2>
+    <ul class="ba-foundations">${foundations.map((f) => `<li><a href="${gh(`foundations/${f.slug}.md`)}">${esc(f.name)}</a></li>`).join('')}</ul>
+  </section>
+
+  <section aria-labelledby="components-title">
+    <h2 id="components-title">Componentes</h2>
+    ${LEVELS.map(([level, title]) => `<h3>${{ Atoms: 'Átomos', Molecules: 'Moléculas', Organisms: 'Organismos' }[title]}</h3>
+    <ul class="ba-grid">${components.filter((c) => c.level === level).map(compCard).join('')}
+    </ul>`).join('\n    ')}
+  </section>
+</main>
+<footer><p>Generado por <a href="${gh('scripts/build-site.mjs')}">scripts/build-site.mjs</a> desde Figma. No editar a mano.</p></footer>
+<script>
+  (() => {
+    const root = document.documentElement;
+    const apply = (key, value) => {
+      if (key === 'theme') root.dataset.theme = value;
+      else if (value === 'lienzo') root.dataset.style = 'lienzo';
+      else delete root.dataset.style;
+      document.querySelectorAll('[data-set="' + key + '"]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === value)));
+    };
+    if (matchMedia('(prefers-color-scheme: dark)').matches) apply('theme', 'dark');
+    document.querySelectorAll('[data-set]').forEach((b) => b.addEventListener('click', () => apply(b.dataset.set, b.dataset.value)));
+  })();
+</script>
+</body>
+</html>
+`;
+
+await mkdir(new URL('docs/assets/', root), { recursive: true });
+await writeFile(new URL('docs/index.html', root), html);
+await cp(new URL('tokens.css', root), new URL('docs/tokens.css', root));
+await cp(new URL('assets/components/', root), new URL('docs/assets/components/', root), { recursive: true });
+await writeFile(new URL('docs/.nojekyll', root), '');
+console.log(`docs/index.html (${html.length} bytes), ${components.length} components, links → github.com/${repo}`);

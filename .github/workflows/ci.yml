@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Unit tests
+        run: npm test
+      - name: Build is reproducible (generated files match Figma sources)
+        run: |
+          npm run build
+          git diff --exit-code -- tokens.json tokens.resolver.json tokens.css tokens.js tokens.d.ts components foundations COMPONENTS.md
+      - name: DTCG + WCAG contrast
+        run: npm run validate
+      - name: axe-core + Lighthouse
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: npm run audit
